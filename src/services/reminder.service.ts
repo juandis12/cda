@@ -69,6 +69,10 @@ export function calculateDaysUntil(dateStr: string): number {
  * 1. Enviar recordatorios a clientes cuya RTM está próxima a vencer (en los próximos 30 días o recién vencida)
  */
 export async function sendRtmExpirationReminders(provider: any): Promise<number> {
+  if (!provider?.vendor?.user?.id) {
+    console.log('⏳ [Recordatorios RTM] WhatsApp no está conectado aún. Esperando vinculación...');
+    return 0;
+  }
   console.log('🔍 [Recordatorios RTM] Verificando vencimientos próximos de la base de datos...');
   const allCustomers = getAllCustomers();
   let sentCount = 0;
@@ -158,6 +162,9 @@ export async function sendRtmExpirationReminders(provider: any): Promise<number>
  * 2. Enviar recordatorios de cita agendada faltando 1 día para la fecha programada
  */
 export async function sendTomorrowAppointmentReminders(provider: any): Promise<number> {
+  if (!provider?.vendor?.user?.id) {
+    return 0;
+  }
   console.log('🔍 [Recordatorios Citas] Verificando citas agendadas para el día de mañana...');
 
   const tomorrow = new Date();
@@ -252,6 +259,9 @@ export function parseBookingStartTime(booking: BookingData): Date | null {
 }
 
 export async function sendUpcoming1HourAppointmentReminders(provider: any): Promise<number> {
+  if (!provider?.vendor?.user?.id) {
+    return 0;
+  }
   const now = new Date();
   const y = now.getFullYear();
   const m = String(now.getMonth() + 1).padStart(2, '0');
