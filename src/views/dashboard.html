@@ -797,22 +797,29 @@
           <div class="metric-card">
             <div class="metric-icon blue">📅</div>
             <div class="metric-data">
-              <h4>Total Citas Registradas</h4>
+              <h4>Total Citas</h4>
               <div class="number" id="metricTotalBookings">0</div>
             </div>
           </div>
           <div class="metric-card">
-            <div class="metric-icon green">🟢</div>
+            <div class="metric-icon green">✅</div>
             <div class="metric-data">
-              <h4>Google Calendar Sincronizado</h4>
-              <div class="number" id="metricSyncedBookings">0</div>
+              <h4>Realizadas / Atendidas</h4>
+              <div class="number" id="metricCompletedBookings">0</div>
             </div>
           </div>
           <div class="metric-card">
-            <div class="metric-icon purple">⏱️</div>
+            <div class="metric-icon yellow">⏳</div>
             <div class="metric-data">
-              <h4>Duración por Turno</h4>
-              <div class="number">30 min</div>
+              <h4>Próximas / Pendientes</h4>
+              <div class="number" id="metricPendingBookings">0</div>
+            </div>
+          </div>
+          <div class="metric-card">
+            <div class="metric-icon purple">🟢</div>
+            <div class="metric-data">
+              <h4>Google Calendar</h4>
+              <div class="number" id="metricSyncedBookings">0</div>
             </div>
           </div>
         </div>
@@ -822,7 +829,7 @@
           <div class="table-header-row">
             <div>
               <h2>📅 Citas de Revisión Técnico-Mecánica en Tiempo Real</h2>
-              <p style="font-size: 13px; color: var(--text-muted); margin-top: 4px;">Agendadas por el Asistente Virtual y sincronizadas con Google Calendar de Control Autos.</p>
+              <p style="font-size: 13px; color: var(--text-muted); margin-top: 4px;">Las citas pasadas se marcan automáticamente como <b>Realizadas / Atendidas</b>.</p>
             </div>
             <div class="table-actions-group">
               <button class="btn-send" style="background: rgba(255,255,255,0.08); border: 1px solid var(--border-color);" onclick="sendDailySummaryNow()">📲 Enviar Resumen Diario a Mi WhatsApp</button>
@@ -840,7 +847,7 @@
                 <th>Combustible</th>
                 <th>Fecha</th>
                 <th>Hora</th>
-                <th>Teléfono</th>
+                <th>Estado de la Cita</th>
                 <th>Google Calendar</th>
               </tr>
             </thead>
@@ -1410,6 +1417,53 @@
       }
     }
 
+    function getBookingStatus(b) {
+      const now = new Date();
+      let isPast = false;
+      let isToday = false;
+
+      if (b.isoEnd) {
+        const end = new Date(b.isoEnd);
+        if (end < now) isPast = true;
+      } else if (b.date) {
+        const todayStr = now.toISOString().split('T')[0];
+        if (b.date < todayStr) {
+          isPast = true;
+        } else if (b.date === todayStr) {
+          isToday = true;
+          if (b.timeSlot) {
+            try {
+              const parts = b.date.split('-');
+              let [time, modifier] = b.timeSlot.split(' ');
+              let [hours, minutes] = time.split(':').map(Number);
+              if (modifier === 'PM' && hours < 12) hours += 12;
+              if (modifier === 'AM' && hours === 12) hours = 0;
+              const slotDate = new Date(Number(parts[0]), Number(parts[1]) - 1, Number(parts[2]), hours, minutes || 0);
+              slotDate.setMinutes(slotDate.getMinutes() + 30);
+              if (slotDate < now) isPast = true;
+            } catch {}
+          }
+        }
+      }
+
+      if (isPast) {
+        return {
+          status: 'COMPLETED',
+          badge: '<span class="table-badge" style="background: rgba(16, 185, 129, 0.18); color: #34d399; border: 1px solid rgba(16, 185, 129, 0.35);">✅ Realizada / Atendida</span>'
+        };
+      }
+      if (isToday) {
+        return {
+          status: 'TODAY',
+          badge: '<span class="table-badge" style="background: rgba(245, 158, 11, 0.18); color: #fbbf24; border: 1px solid rgba(245, 158, 11, 0.35);">⏳ Hoy (Pendiente)</span>'
+        };
+      }
+      return {
+        status: 'SCHEDULED',
+        badge: '<span class="table-badge" style="background: rgba(59, 130, 246, 0.18); color: #93c5fd; border: 1px solid rgba(59, 130, 246, 0.35);">📅 Programada</span>'
+      };
+    }
+
     // 2. Cargar Citas
     async function loadBookings() {
       try {
@@ -1422,6 +1476,21 @@
         const metricTotal = document.getElementById('metricTotalBookings');
         if (metricTotal) metricTotal.textContent = allBookings.length;
 
+        // Calcular Realizadas vs Pendientes
+        let completedCount = 0;
+        let pendingCount = 0;
+        allBookings.forEach(b => {
+          const st = getBookingStatus(b);
+          if (st.status === 'COMPLETED') completedCount++;
+          else pendingCount++;
+        });
+
+        const metricCompleted = document.getElementById('metricCompletedBookings');
+        if (metricCompleted) metricCompleted.textContent = completedCount;
+
+        const metricPending = document.getElementById('metricPendingBookings');
+        if (metricPending) metricPending.textContent = pendingCount;
+
         const metricSynced = document.getElementById('metricSyncedBookings');
         const syncedCount = allBookings.filter(b => b.googleEventId).length;
         if (metricSynced) metricSynced.textContent = syncedCount;
@@ -1433,19 +1502,25 @@
           return;
         }
 
-        tbody.innerHTML = allBookings.map(b => `
-          <tr>
-            <td><code>${b.id}</code></td>
-            <td><b style="color:#93c5fd; font-family:'Outfit', sans-serif;">${b.plate}</b></td>
-            <td>${b.name}</td>
-            <td>${b.vehicleType || '-'}</td>
-            <td>${b.fuelType || '-'}</td>
-            <td><b>${b.date}</b></td>
-            <td><span class="table-badge local">⏰ ${b.timeSlot}</span></td>
-            <td><a href="https://wa.me/${b.phone}" target="_blank" style="color: #60a5fa; text-decoration: none;">+${b.phone}</a></td>
-            <td>${b.googleEventId ? '<span class="table-badge synced">🟢 Google Calendar</span>' : '<span class="table-badge local">💾 Local</span>'}</td>
-          </tr>
-        `).join('');
+        tbody.innerHTML = allBookings.map(b => {
+          const st = getBookingStatus(b);
+          return `
+            <tr>
+              <td><code>${b.id}</code></td>
+              <td><b style="color:#93c5fd; font-family:'Outfit', sans-serif;">${b.plate}</b></td>
+              <td>
+                ${b.name}<br>
+                <a href="https://wa.me/${b.phone}" target="_blank" style="color: #60a5fa; text-decoration: none; font-size: 11px;">+${b.phone} 📲</a>
+              </td>
+              <td>${b.vehicleType || '-'}</td>
+              <td>${b.fuelType || '-'}</td>
+              <td><b>${b.date}</b></td>
+              <td><span class="table-badge local">⏰ ${b.timeSlot}</span></td>
+              <td>${st.badge}</td>
+              <td>${b.googleEventId ? '<span class="table-badge synced">🟢 Google Calendar</span>' : '<span class="table-badge local">💾 Local</span>'}</td>
+            </tr>
+          `;
+        }).join('');
       } catch (err) {}
     }
 
