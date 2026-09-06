@@ -86,8 +86,8 @@ export async function sendRtmExpirationReminders(provider: any): Promise<number>
 
     const daysLeft = calculateDaysUntil(customer.rtmExpirationDate);
 
-    // Enviar a cualquier cliente que venza en los próximos 30 días o con RTM vencida hasta 30 días atrás
-    if (daysLeft > 30 || daysLeft < -30) {
+    // Enviar ÚNICAMENTE a clientes cuya RTM está a máximo 1 mes (30 días) para vencerse (0 a 30 días)
+    if (daysLeft > 30 || daysLeft < 0) {
       continue;
     }
 
@@ -102,10 +102,8 @@ export async function sendRtmExpirationReminders(provider: any): Promise<number>
       urgencyText = `vence en *${daysLeft} día(s)* (Fecha: *${customer.rtmExpirationDate}*)`;
     } else if (daysLeft === 1) {
       urgencyText = `vence *MAÑANA* (Fecha: *${customer.rtmExpirationDate}*)`;
-    } else if (daysLeft === 0) {
-      urgencyText = `vence *HOY* (Fecha: *${customer.rtmExpirationDate}*)`;
     } else {
-      urgencyText = `se encuentra *VENCIDA* desde el *${customer.rtmExpirationDate}* (hace ${Math.abs(daysLeft)} días)`;
+      urgencyText = `vence *HOY* (Fecha: *${customer.rtmExpirationDate}*)`;
     }
 
     const priceInfo = customer.price ? `\n💰 *Valor oficial:* ${customer.price}` : '';
