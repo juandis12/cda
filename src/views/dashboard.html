@@ -46,11 +46,7 @@
       --shadow-glow: 0 0 20px rgba(59, 130, 246, 0.25);
     }
 
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
 
     body {
       font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
@@ -83,14 +79,8 @@
       box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
     }
 
-    .brand-section {
-      display: flex;
-      align-items: center;
-      gap: 14px;
-    }
-
+    .brand-section { display: flex; align-items: center; gap: 14px; }
     .brand-logo-container {
-      position: relative;
       width: 44px;
       height: 44px;
       background: var(--primary-gradient);
@@ -100,11 +90,7 @@
       justify-content: center;
       box-shadow: var(--shadow-glow);
     }
-
-    .brand-logo-container span {
-      font-size: 22px;
-    }
-
+    .brand-logo-container span { font-size: 22px; }
     .brand-info h1 {
       font-family: 'Outfit', sans-serif;
       font-size: 17px;
@@ -115,13 +101,7 @@
       align-items: center;
       gap: 8px;
     }
-
-    .brand-info p {
-      font-size: 12px;
-      color: var(--text-muted);
-      margin-top: 1px;
-    }
-
+    .brand-info p { font-size: 12px; color: var(--text-muted); margin-top: 1px; }
     .brand-badge {
       font-size: 10px;
       font-weight: 800;
@@ -160,17 +140,12 @@
       gap: 8px;
     }
 
-    .nav-btn:hover {
-      color: #fff;
-      background: rgba(255, 255, 255, 0.05);
-    }
-
+    .nav-btn:hover { color: #fff; background: rgba(255, 255, 255, 0.05); }
     .nav-btn.active {
       background: var(--primary-gradient);
       color: #fff;
       box-shadow: 0 4px 14px var(--primary-glow);
     }
-
     .nav-counter {
       background: rgba(0, 0, 0, 0.3);
       padding: 2px 7px;
@@ -179,13 +154,7 @@
       font-weight: 700;
     }
 
-    /* Header Actions */
-    .header-actions {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-    }
-
+    .header-actions { display: flex; align-items: center; gap: 12px; }
     .status-badge {
       display: flex;
       align-items: center;
@@ -197,73 +166,34 @@
       cursor: pointer;
       transition: all 0.2s;
     }
-
     .status-badge.connected {
       background: rgba(16, 185, 129, 0.12);
       color: #34d399;
       border: 1px solid rgba(16, 185, 129, 0.3);
     }
-
-    .status-badge.connected:hover {
-      background: rgba(16, 185, 129, 0.2);
-    }
-
     .status-badge.disconnected {
       background: rgba(239, 68, 68, 0.12);
       color: #f87171;
       border: 1px solid rgba(239, 68, 68, 0.3);
       animation: alertPulse 2s infinite;
     }
-
-    .status-badge .dot {
-      width: 8px;
-      height: 8px;
-      border-radius: 50%;
-    }
-
-    .connected .dot {
-      background: #10b981;
-      box-shadow: 0 0 10px #10b981;
-    }
-
-    .disconnected .dot {
-      background: #ef4444;
-      box-shadow: 0 0 10px #ef4444;
-    }
-
+    .status-badge .dot { width: 8px; height: 8px; border-radius: 50%; }
+    .connected .dot { background: #10b981; box-shadow: 0 0 10px #10b981; }
+    .disconnected .dot { background: #ef4444; box-shadow: 0 0 10px #ef4444; }
     @keyframes alertPulse {
       0%, 100% { opacity: 1; transform: scale(1); }
       50% { opacity: 0.85; transform: scale(0.98); }
     }
 
     /* Main Container & Panes */
-    .main-container {
-      flex: 1;
-      display: flex;
-      overflow: hidden;
-      position: relative;
-    }
-
-    .tab-pane {
-      width: 100%;
-      height: 100%;
-      display: none;
-    }
-
-    .tab-pane.active {
-      display: flex;
-    }
+    .main-container { flex: 1; display: flex; overflow: hidden; position: relative; }
+    .tab-pane { width: 100%; height: 100%; display: none; }
+    .tab-pane.active { display: flex; }
 
     /* ══════════════════════════════════════════
        1. MONITOR DE CHATS
        ══════════════════════════════════════════ */
-    .chat-layout {
-      display: flex;
-      width: 100%;
-      height: 100%;
-    }
-
-    /* Sidebar */
+    .chat-layout { display: flex; width: 100%; height: 100%; }
     .chat-sidebar {
       width: 360px;
       background: rgba(13, 19, 34, 0.95);
@@ -272,7 +202,6 @@
       flex-direction: column;
       z-index: 20;
     }
-
     .chat-sidebar-header {
       padding: 16px;
       border-bottom: 1px solid var(--border-color);
@@ -281,20 +210,8 @@
       gap: 10px;
       background: rgba(18, 26, 44, 0.4);
     }
-
-    .search-input-wrapper {
-      position: relative;
-      display: flex;
-      align-items: center;
-    }
-
-    .search-input-wrapper span {
-      position: absolute;
-      left: 14px;
-      font-size: 14px;
-      color: var(--text-dim);
-    }
-
+    .search-input-wrapper { position: relative; display: flex; align-items: center; }
+    .search-input-wrapper span { position: absolute; left: 14px; font-size: 14px; color: var(--text-dim); }
     .search-input-wrapper input {
       width: 100%;
       background: rgba(7, 10, 19, 0.7);
@@ -307,41 +224,12 @@
       outline: none;
       transition: all 0.2s;
     }
-
     .search-input-wrapper input:focus {
       border-color: var(--primary);
       background: rgba(7, 10, 19, 0.95);
       box-shadow: 0 0 12px rgba(59, 130, 246, 0.2);
     }
-
-    .filter-chips {
-      display: flex;
-      gap: 6px;
-    }
-
-    .filter-chip {
-      background: rgba(255, 255, 255, 0.05);
-      border: 1px solid var(--border-color);
-      color: var(--text-muted);
-      padding: 4px 10px;
-      border-radius: 999px;
-      font-size: 11px;
-      font-weight: 600;
-      cursor: pointer;
-      transition: all 0.15s;
-    }
-
-    .filter-chip:hover, .filter-chip.active {
-      background: rgba(59, 130, 246, 0.2);
-      color: #93c5fd;
-      border-color: rgba(59, 130, 246, 0.4);
-    }
-
-    .chat-list {
-      flex: 1;
-      overflow-y: auto;
-    }
-
+    .chat-list { flex: 1; overflow-y: auto; }
     .chat-item {
       padding: 14px 16px;
       border-bottom: 1px solid rgba(255, 255, 255, 0.03);
@@ -350,18 +238,13 @@
       display: flex;
       gap: 12px;
       align-items: center;
-      position: relative;
+      user-select: none;
     }
-
-    .chat-item:hover {
-      background: rgba(255, 255, 255, 0.04);
-    }
-
+    .chat-item:hover { background: rgba(255, 255, 255, 0.04); }
     .chat-item.active {
-      background: linear-gradient(90deg, rgba(59, 130, 246, 0.18), rgba(59, 130, 246, 0.05));
+      background: linear-gradient(90deg, rgba(59, 130, 246, 0.22), rgba(59, 130, 246, 0.06));
       border-left: 3px solid var(--primary);
     }
-
     .chat-avatar {
       width: 44px;
       height: 44px;
@@ -377,49 +260,12 @@
       flex-shrink: 0;
       box-shadow: var(--shadow-sm);
     }
-
-    .chat-info {
-      flex: 1;
-      min-width: 0;
-    }
-
-    .chat-name-row {
-      display: flex;
-      justify-content: space-between;
-      align-items: baseline;
-      margin-bottom: 3px;
-    }
-
-    .chat-name {
-      font-weight: 700;
-      font-size: 14px;
-      color: #fff;
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
-    }
-
-    .chat-time {
-      font-size: 11px;
-      color: var(--text-dim);
-      font-weight: 500;
-    }
-
-    .chat-snippet {
-      font-size: 12px;
-      color: var(--text-muted);
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      margin-bottom: 4px;
-    }
-
-    .chat-meta-row {
-      display: flex;
-      gap: 6px;
-      align-items: center;
-    }
-
+    .chat-info { flex: 1; min-width: 0; pointer-events: none; }
+    .chat-name-row { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 3px; }
+    .chat-name { font-weight: 700; font-size: 14px; color: #fff; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+    .chat-time { font-size: 11px; color: var(--text-dim); font-weight: 500; }
+    .chat-snippet { font-size: 12px; color: var(--text-muted); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; margin-bottom: 4px; }
+    .chat-meta-row { display: flex; gap: 6px; align-items: center; }
     .plate-badge {
       display: inline-flex;
       align-items: center;
@@ -433,11 +279,7 @@
       letter-spacing: 0.5px;
       border: 1px solid rgba(59, 130, 246, 0.3);
     }
-
-    .phone-text {
-      font-size: 11px;
-      color: var(--text-dim);
-    }
+    .phone-text { font-size: 11px; color: var(--text-dim); }
 
     /* Chat Active Conversation View */
     .chat-view {
@@ -447,7 +289,6 @@
       background: #060911;
       position: relative;
     }
-
     .chat-view-header {
       padding: 16px 24px;
       border-bottom: 1px solid var(--border-color);
@@ -458,31 +299,10 @@
       align-items: center;
       z-index: 10;
     }
-
-    .active-contact-profile {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-    }
-
-    .active-contact-profile h3 {
-      font-family: 'Outfit', sans-serif;
-      font-size: 17px;
-      font-weight: 800;
-      color: #fff;
-    }
-
-    .active-contact-profile p {
-      font-size: 12px;
-      color: var(--text-muted);
-      margin-top: 2px;
-    }
-
-    .chat-header-actions {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-    }
+    .active-contact-profile { display: flex; align-items: center; gap: 12px; }
+    .active-contact-profile h3 { font-family: 'Outfit', sans-serif; font-size: 17px; font-weight: 800; color: #fff; }
+    .active-contact-profile p { font-size: 12px; color: var(--text-muted); margin-top: 2px; }
+    .chat-header-actions { display: flex; align-items: center; gap: 8px; }
 
     .btn-ai {
       background: var(--purple-gradient);
@@ -500,17 +320,8 @@
       gap: 7px;
       box-shadow: 0 4px 14px rgba(139, 92, 246, 0.35);
     }
-
-    .btn-ai:hover {
-      transform: translateY(-1px);
-      box-shadow: 0 6px 20px rgba(139, 92, 246, 0.5);
-    }
-
-    .btn-ai:disabled {
-      opacity: 0.6;
-      cursor: not-allowed;
-      transform: none;
-    }
+    .btn-ai:hover { transform: translateY(-1px); box-shadow: 0 6px 20px rgba(139, 92, 246, 0.5); }
+    .btn-ai:disabled { opacity: 0.6; cursor: not-allowed; transform: none; }
 
     .btn-ai-outline {
       background: rgba(139, 92, 246, 0.12);
@@ -527,12 +338,7 @@
       align-items: center;
       gap: 6px;
     }
-
-    .btn-ai-outline:hover {
-      background: rgba(139, 92, 246, 0.22);
-      color: #fff;
-      border-color: #8b5cf6;
-    }
+    .btn-ai-outline:hover { background: rgba(139, 92, 246, 0.22); color: #fff; border-color: #8b5cf6; }
 
     /* Messages Area */
     .chat-messages {
@@ -545,7 +351,6 @@
       background-image: radial-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px);
       background-size: 24px 24px;
     }
-
     .msg-bubble {
       max-width: 68%;
       padding: 12px 16px;
@@ -557,7 +362,6 @@
       white-space: pre-wrap;
       box-shadow: var(--shadow-sm);
     }
-
     .msg-client {
       align-self: flex-start;
       background: rgba(22, 30, 49, 0.9);
@@ -565,7 +369,6 @@
       color: #f1f5f9;
       border-bottom-left-radius: 4px;
     }
-
     .msg-bot {
       align-self: flex-end;
       background: linear-gradient(135deg, #1d4ed8, #2563eb);
@@ -573,7 +376,6 @@
       border-bottom-right-radius: 4px;
       box-shadow: 0 4px 16px rgba(37, 99, 235, 0.25);
     }
-
     .msg-agent {
       align-self: flex-end;
       background: linear-gradient(135deg, #059669, #10b981);
@@ -581,7 +383,6 @@
       border-bottom-right-radius: 4px;
       box-shadow: 0 4px 16px rgba(16, 185, 129, 0.25);
     }
-
     .msg-tag {
       font-size: 10px;
       font-weight: 800;
@@ -590,13 +391,7 @@
       text-transform: uppercase;
       letter-spacing: 0.5px;
     }
-
-    .msg-time {
-      font-size: 10px;
-      opacity: 0.65;
-      margin-top: 6px;
-      text-align: right;
-    }
+    .msg-time { font-size: 10px; opacity: 0.65; margin-top: 6px; text-align: right; }
 
     /* Media Cards Inside Messages */
     .media-chip {
@@ -611,32 +406,26 @@
       backdrop-filter: blur(8px);
       box-shadow: 0 4px 12px rgba(0,0,0,0.2);
     }
-
     .media-chip.media-photo {
       background: linear-gradient(135deg, rgba(236, 72, 153, 0.18), rgba(168, 85, 247, 0.18));
       border-color: rgba(236, 72, 153, 0.35);
     }
-
     .media-chip.media-audio {
       background: linear-gradient(135deg, rgba(59, 130, 246, 0.18), rgba(14, 165, 233, 0.18));
       border-color: rgba(59, 130, 246, 0.35);
     }
-
     .media-chip.media-doc {
       background: linear-gradient(135deg, rgba(245, 158, 11, 0.18), rgba(234, 88, 12, 0.18));
       border-color: rgba(245, 158, 11, 0.35);
     }
-
     .media-chip.media-call {
       background: linear-gradient(135deg, rgba(16, 185, 129, 0.18), rgba(5, 150, 105, 0.18));
       border-color: rgba(16, 185, 129, 0.35);
     }
-
     .media-chip.media-loc {
       background: linear-gradient(135deg, rgba(99, 102, 241, 0.18), rgba(139, 92, 246, 0.18));
       border-color: rgba(99, 102, 241, 0.35);
     }
-
     .media-chip-icon {
       font-size: 24px;
       line-height: 1;
@@ -649,24 +438,9 @@
       border-radius: 12px;
       flex-shrink: 0;
     }
-
-    .media-chip-info {
-      display: flex;
-      flex-direction: column;
-      gap: 2px;
-      text-align: left;
-    }
-
-    .media-chip-title {
-      font-size: 13px;
-      font-weight: 700;
-      color: #fff;
-    }
-
-    .media-chip-desc {
-      font-size: 11px;
-      color: var(--text-muted);
-    }
+    .media-chip-info { display: flex; flex-direction: column; gap: 2px; text-align: left; }
+    .media-chip-title { font-size: 13px; font-weight: 700; color: #fff; }
+    .media-chip-desc { font-size: 11px; color: var(--text-muted); }
 
     /* Input Area */
     .chat-input-area {
@@ -678,7 +452,6 @@
       gap: 10px;
       align-items: center;
     }
-
     .chat-input-area input {
       flex: 1;
       background: rgba(7, 10, 19, 0.8);
@@ -691,13 +464,11 @@
       outline: none;
       transition: all 0.2s;
     }
-
     .chat-input-area input:focus {
       border-color: var(--primary);
       background: rgba(7, 10, 19, 0.95);
       box-shadow: 0 0 16px rgba(59, 130, 246, 0.25);
     }
-
     .btn-send {
       background: var(--primary-gradient);
       color: #fff;
@@ -714,11 +485,7 @@
       gap: 6px;
       box-shadow: 0 4px 14px var(--primary-glow);
     }
-
-    .btn-send:hover {
-      transform: translateY(-1px);
-      box-shadow: 0 6px 20px var(--primary-glow);
-    }
+    .btn-send:hover { transform: translateY(-1px); box-shadow: 0 6px 20px var(--primary-glow); }
 
     /* ══════════════════════════════════════════
        2 & 3. TABLAS & METRICAS (CITAS Y CLIENTES)
@@ -732,14 +499,11 @@
       flex-direction: column;
       gap: 24px;
     }
-
-    /* KPI Metrics Cards */
     .metrics-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
       gap: 16px;
     }
-
     .metric-card {
       background: var(--bg-card);
       border: 1px solid var(--border-color);
@@ -751,12 +515,7 @@
       box-shadow: var(--shadow-sm);
       transition: transform 0.2s, background 0.2s;
     }
-
-    .metric-card:hover {
-      transform: translateY(-2px);
-      background: var(--bg-card-hover);
-    }
-
+    .metric-card:hover { transform: translateY(-2px); background: var(--bg-card-hover); }
     .metric-icon {
       width: 48px;
       height: 48px;
@@ -767,12 +526,10 @@
       font-size: 22px;
       flex-shrink: 0;
     }
-
     .metric-icon.blue { background: rgba(59, 130, 246, 0.15); color: #60a5fa; }
     .metric-icon.green { background: rgba(16, 185, 129, 0.15); color: #34d399; }
     .metric-icon.yellow { background: rgba(245, 158, 11, 0.15); color: #fbbf24; }
     .metric-icon.purple { background: rgba(139, 92, 246, 0.15); color: #c4b5fd; }
-
     .metric-data h4 {
       font-size: 12px;
       color: var(--text-muted);
@@ -780,7 +537,6 @@
       text-transform: uppercase;
       letter-spacing: 0.5px;
     }
-
     .metric-data .number {
       font-family: 'Outfit', sans-serif;
       font-size: 26px;
@@ -789,7 +545,6 @@
       margin-top: 4px;
     }
 
-    /* Data Tables Container */
     .table-card {
       background: var(--bg-card);
       border: 1px solid var(--border-color);
@@ -800,7 +555,6 @@
       flex-direction: column;
       gap: 18px;
     }
-
     .table-header-row {
       display: flex;
       justify-content: space-between;
@@ -808,7 +562,6 @@
       flex-wrap: wrap;
       gap: 14px;
     }
-
     .table-header-row h2 {
       font-family: 'Outfit', sans-serif;
       font-size: 20px;
@@ -818,20 +571,9 @@
       align-items: center;
       gap: 8px;
     }
+    .table-actions-group { display: flex; align-items: center; gap: 10px; }
 
-    .table-actions-group {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-    }
-
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      text-align: left;
-      font-size: 13.5px;
-    }
-
+    table { width: 100%; border-collapse: collapse; text-align: left; font-size: 13.5px; }
     th {
       padding: 14px 16px;
       border-bottom: 1px solid var(--border-color);
@@ -842,21 +584,11 @@
       letter-spacing: 0.5px;
       background: rgba(7, 10, 19, 0.3);
     }
-
     th:first-child { border-top-left-radius: var(--radius-sm); }
     th:last-child { border-top-right-radius: var(--radius-sm); }
+    td { padding: 14px 16px; border-bottom: 1px solid rgba(255, 255, 255, 0.03); vertical-align: middle; }
+    tr:hover td { background: rgba(255, 255, 255, 0.02); }
 
-    td {
-      padding: 14px 16px;
-      border-bottom: 1px solid rgba(255, 255, 255, 0.03);
-      vertical-align: middle;
-    }
-
-    tr:hover td {
-      background: rgba(255, 255, 255, 0.02);
-    }
-
-    /* Status Badges in Tables */
     .table-badge {
       display: inline-flex;
       align-items: center;
@@ -866,30 +598,10 @@
       font-size: 11px;
       font-weight: 700;
     }
-
-    .table-badge.synced {
-      background: rgba(16, 185, 129, 0.15);
-      color: #34d399;
-      border: 1px solid rgba(16, 185, 129, 0.3);
-    }
-
-    .table-badge.local {
-      background: rgba(59, 130, 246, 0.15);
-      color: #93c5fd;
-      border: 1px solid rgba(59, 130, 246, 0.3);
-    }
-
-    .table-badge.warning {
-      background: rgba(245, 158, 11, 0.15);
-      color: #fbbf24;
-      border: 1px solid rgba(245, 158, 11, 0.3);
-    }
-
-    .table-badge.danger {
-      background: rgba(239, 68, 68, 0.15);
-      color: #f87171;
-      border: 1px solid rgba(239, 68, 68, 0.3);
-    }
+    .table-badge.synced { background: rgba(16, 185, 129, 0.15); color: #34d399; border: 1px solid rgba(16, 185, 129, 0.3); }
+    .table-badge.local { background: rgba(59, 130, 246, 0.15); color: #93c5fd; border: 1px solid rgba(59, 130, 246, 0.3); }
+    .table-badge.warning { background: rgba(245, 158, 11, 0.15); color: #fbbf24; border: 1px solid rgba(245, 158, 11, 0.3); }
+    .table-badge.danger { background: rgba(239, 68, 68, 0.15); color: #f87171; border: 1px solid rgba(239, 68, 68, 0.3); }
 
     /* Modal Styling */
     .modal-overlay {
@@ -903,11 +615,7 @@
       justify-content: center;
       z-index: 100;
     }
-
-    .modal-overlay.show {
-      display: flex;
-    }
-
+    .modal-overlay.show { display: flex; }
     .modal-card {
       background: #0f172a;
       border: 1px solid rgba(255, 255, 255, 0.15);
@@ -921,7 +629,6 @@
       max-height: 90vh;
       overflow-y: auto;
     }
-
     .btn-close {
       position: absolute;
       top: 18px;
@@ -939,12 +646,7 @@
       cursor: pointer;
       transition: all 0.2s;
     }
-
-    .btn-close:hover {
-      background: rgba(239, 68, 68, 0.25);
-      color: #f87171;
-    }
-
+    .btn-close:hover { background: rgba(239, 68, 68, 0.25); color: #f87171; }
     .pairing-box {
       background: rgba(59, 130, 246, 0.08);
       border: 1px solid rgba(59, 130, 246, 0.25);
@@ -953,7 +655,6 @@
       margin-top: 18px;
       text-align: center;
     }
-
     .pairing-code-display {
       font-size: 34px;
       font-weight: 800;
@@ -967,21 +668,8 @@
       border: 1px dashed #3b82f6;
       user-select: all;
     }
-
-    .qr-box {
-      background: #fff;
-      padding: 16px;
-      border-radius: var(--radius-lg);
-      display: inline-block;
-      margin: 14px 0;
-    }
-
-    .qr-box img {
-      width: 220px;
-      height: 220px;
-      display: block;
-      border-radius: 8px;
-    }
+    .qr-box { background: #fff; padding: 16px; border-radius: var(--radius-lg); display: inline-block; margin: 14px 0; }
+    .qr-box img { width: 220px; height: 220px; display: block; border-radius: 8px; }
 
     .empty-state {
       text-align: center;
@@ -992,12 +680,7 @@
       align-items: center;
       gap: 10px;
     }
-
-    .empty-state h3 {
-      color: #fff;
-      font-family: 'Outfit', sans-serif;
-      font-size: 18px;
-    }
+    .empty-state h3 { color: #fff; font-family: 'Outfit', sans-serif; font-size: 18px; }
   </style>
 </head>
 <body>
@@ -1048,7 +731,7 @@
           <div class="chat-sidebar-header">
             <div class="search-input-wrapper">
               <span>🔍</span>
-              <input type="text" id="chatSearchInput" placeholder="Buscar por placa, nombre o teléfono..." onkeyup="filterConversations()">
+              <input type="text" id="chatSearchInput" placeholder="Buscar por placa, nombre o teléfono..." oninput="filterConversations()">
             </div>
             <div style="display: flex; gap: 8px;">
               <button class="btn-ai-outline" style="width: 100%; justify-content: center; font-size: 11px;" onclick="scanAndRecoverAll()" id="btnRecoverAll" title="Escanear y responder todas las preguntas pendientes de clientes">
@@ -1209,7 +892,7 @@
             <div class="table-actions-group">
               <div class="search-input-wrapper" style="width: 260px;">
                 <span>🔍</span>
-                <input type="text" id="customerSearchInput" placeholder="Buscar placa o titular..." onkeyup="filterCustomersTable()">
+                <input type="text" id="customerSearchInput" placeholder="Buscar placa o titular..." oninput="filterCustomersTable()">
               </div>
               <button class="btn-send" style="background: linear-gradient(135deg, #f59e0b, #d97706); color: #000; font-weight: 800;" onclick="triggerReminders()">
                 🚀 Enviar Avisos Masivos Ahora
@@ -1280,12 +963,13 @@
     </div>
   </div>
 
-  <!-- SCRIPT DE CONTROL -->
+  <!-- SCRIPT DE CONTROL TOTAL -->
   <script>
     let activePhone = null;
     let allConversations = [];
     let allCustomers = [];
     let allBookings = [];
+    let lastRenderedPhone = null;
     let lastRenderedJson = '';
     let lastMessageCount = {};
 
@@ -1361,12 +1045,11 @@
       } catch (err) {}
     }
 
-    // Formateo Multimedia con Tarjetas Visuales
+    // Formateo Multimedia
     function formatMediaBadge(raw) {
       if (!raw) return null;
       const str = String(raw).trim();
 
-      // Foto / Imagen / Video
       if (/📷|foto|imagen|_?event_?media|eventmedia|__event_media__/i.test(str)) {
         return `
           <div class="media-chip media-photo">
@@ -1378,7 +1061,6 @@
           </div>
         `;
       }
-      // Audio / Nota de voz
       if (/🎤|nota de voz|audio|_?event_?(voice_note|audio)|eventvoicenote|eventaudio/i.test(str)) {
         return `
           <div class="media-chip media-audio">
@@ -1390,7 +1072,6 @@
           </div>
         `;
       }
-      // Documento / PDF / Archivo
       if (/📄|documento|archivo|_?event_?document|eventdocument|eventfile/i.test(str)) {
         return `
           <div class="media-chip media-doc">
@@ -1402,7 +1083,6 @@
           </div>
         `;
       }
-      // Llamada
       if (/📞|llamada|_?event_?call|eventcall/i.test(str)) {
         return `
           <div class="media-chip media-call">
@@ -1414,7 +1094,6 @@
           </div>
         `;
       }
-      // Ubicación
       if (/📍|ubicaci|_?event_?location|eventlocation/i.test(str)) {
         return `
           <div class="media-chip media-loc">
@@ -1482,7 +1161,7 @@
 
         if (!activePhone && allConversations.length > 0) {
           const first = allConversations[0];
-          selectChat(first.phone, first.name, first.plate || '');
+          selectChat(first.phone);
         } else if (activePhone) {
           loadMessages(activePhone, false);
         }
@@ -1497,7 +1176,7 @@
       }
 
       container.innerHTML = list.map(c => `
-        <div class="chat-item ${activePhone === c.phone ? 'active' : ''}" onclick="selectChat('${c.phone}', '${c.name.replace(/'/g, "\\'")}', '${c.plate || ''}')">
+        <div class="chat-item ${activePhone === c.phone ? 'active' : ''}" data-phone="${c.phone}" onclick="selectChat('${c.phone}')">
           <div class="chat-avatar">${c.name ? c.name.charAt(0).toUpperCase() : '👤'}</div>
           <div class="chat-info">
             <div class="chat-name-row">
@@ -1525,8 +1204,15 @@
       renderChatList(filtered);
     }
 
-    async function selectChat(phone, name, plate) {
+    async function selectChat(phone) {
+      if (!phone) return;
       activePhone = phone;
+
+      // Buscar datos del contacto en la lista
+      const contact = allConversations.find(c => c.phone === phone);
+      const name = contact ? contact.name : `+${phone}`;
+      const plate = contact ? contact.plate : '';
+
       document.getElementById('activeChatName').textContent = `${name}`;
       document.getElementById('activeChatSub').textContent = `${formatPhoneDisplay(phone)} ${plate ? '• Placa: ' + plate.toUpperCase() : ''}`;
       
@@ -1537,47 +1223,76 @@
       const actions = document.getElementById('chatHeaderActions');
       if (actions) actions.style.display = 'flex';
       
-      renderChatList(allConversations);
+      // Actualizar selección visual inmediata en sidebar
+      document.querySelectorAll('.chat-item').forEach(el => {
+        if (el.getAttribute('data-phone') === phone) {
+          el.classList.add('active');
+        } else {
+          el.classList.remove('active');
+        }
+      });
+
+      // Forzar carga de mensajes del chat seleccionado
+      lastRenderedPhone = null;
+      lastRenderedJson = '';
       loadMessages(phone, true);
     }
 
     async function loadMessages(phone, forceScroll) {
+      if (!phone || phone !== activePhone) return;
+
       try {
         const res = await fetch('/api/chats/' + phone);
         const messages = await res.json();
+        
+        // Verificar que seguimos en el mismo chat al llegar la respuesta
+        if (phone !== activePhone) return;
+
         const container = document.getElementById('chatMessagesContainer');
         const serialized = JSON.stringify(messages);
 
-        const isScrolledToBottom = container.scrollHeight - container.clientHeight <= container.scrollTop + 60;
+        const isScrolledToBottom = container.scrollHeight - container.clientHeight <= container.scrollTop + 80;
 
-        if (serialized !== lastRenderedJson) {
+        if (lastRenderedPhone !== phone || serialized !== lastRenderedJson) {
+          lastRenderedPhone = phone;
           lastRenderedJson = serialized;
-          container.innerHTML = messages.map(m => {
-            let typeClass = 'msg-client';
-            let tag = '👤 ' + (m.name || 'Cliente');
-            if (m.sender === 'BOT') {
-              typeClass = 'msg-bot';
-              tag = '🤖 Control Autos CDA';
-            } else if (m.sender === 'AGENT') {
-              typeClass = 'msg-agent';
-              tag = '👨‍💼 Asesor Humano';
-            }
 
-            const time = new Date(m.timestamp).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
-            return `
-              <div class="msg-bubble ${typeClass}">
-                <div class="msg-tag">${tag}</div>
-                <div>${formatWhatsAppText(m.text)}</div>
-                <div class="msg-time">${time}</div>
+          if (!messages || messages.length === 0) {
+            container.innerHTML = `
+              <div class="empty-state">
+                <div style="font-size: 36px; margin-bottom: 8px;">💬</div>
+                <h3>Conversación Iniciada</h3>
+                <p>Aún no hay mensajes en este chat.</p>
               </div>
             `;
-          }).join('');
+          } else {
+            container.innerHTML = messages.map(m => {
+              let typeClass = 'msg-client';
+              let tag = '👤 ' + (m.name || 'Cliente');
+              if (m.sender === 'BOT') {
+                typeClass = 'msg-bot';
+                tag = '🤖 Control Autos CDA';
+              } else if (m.sender === 'AGENT') {
+                typeClass = 'msg-agent';
+                tag = '👨‍💼 Asesor Humano';
+              }
+
+              const time = new Date(m.timestamp).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+              return `
+                <div class="msg-bubble ${typeClass}">
+                  <div class="msg-tag">${tag}</div>
+                  <div>${formatWhatsAppText(m.text)}</div>
+                  <div class="msg-time">${time}</div>
+                </div>
+              `;
+            }).join('');
+          }
 
           if (forceScroll || isScrolledToBottom || !lastMessageCount[phone] || lastMessageCount[phone] !== messages.length) {
             lastMessageCount[phone] = messages.length;
             setTimeout(() => {
               container.scrollTop = container.scrollHeight;
-            }, 50);
+            }, 30);
           }
         }
       } catch (err) {}
@@ -1761,7 +1476,6 @@
         const metricTotal = document.getElementById('metricTotalCustomers');
         if (metricTotal) metricTotal.textContent = allCustomers.length;
 
-        // Calcular clientes que vencen en los próximos 7 días
         const now = new Date();
         const sevenDaysLater = new Date();
         sevenDaysLater.setDate(now.getDate() + 7);
@@ -1787,7 +1501,6 @@
         return;
       }
 
-      // Renderizar los primeros 250 para rendimiento instantáneo
       const previewList = list.slice(0, 250);
 
       tbody.innerHTML = previewList.map(c => {
