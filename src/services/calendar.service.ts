@@ -2,7 +2,7 @@ import { google } from 'googleapis';
 import fs from 'fs';
 import path from 'path';
 import { cdaConfig } from '../config/cda.config.js';
-import { saveBooking, getBookingsByDate } from './booking.service.js';
+import { saveBooking, getBookingsByDate, getAllBookings, updateAllBookings, BookingData } from './booking.service.js';
 
 const SCOPES = ['https://www.googleapis.com/auth/calendar'];
 const CREDENTIALS_PATH = path.resolve(process.cwd(), 'google-credentials.json');
@@ -296,4 +296,162 @@ export async function createCalendarAppointment(req: BookingRequest) {
     googleEventId,
     googleHtmlLink,
   };
+}
+
+/**
+ * Sincronizar citas bidireccionalmente con Google Calendar.
+ * Si una cita fue modificada en Google Calendar (cambio de fecha, hora o estado),
+ * actualiza automáticamente el registro local para que coincida exactamente con Google Calendar.
+ */
+export async function syncBookingsWithGoogleCalendar(): Promise<{
+  totalSynced: number;
+  updatedCount: number;
+  addedCount: number;
+  details: string[];
+}> {
+  const calendar = getCalendarClient();
+  if (!calendar) {
+    console.log('⚠️ [Calendar Sync] No hay cliente de Google Calendar disponible.');
+    return { totalSynced: 0, updatedCount: 0, addedCount: 0, details: [] };
+  }
+
+  const calendarId = getCalendarId();
+  const localBookings = getAllBookings();
+  let updatedCount = 0;
+  let addedCount = 0;
+  const details: string[] = [];
+
+  try {
+    // Consultar eventos desde hace 30 días hasta 90 días en el futuro
+    const timeMin = new Date(Date.now() - 30 * 24 * 60 * 60 * 1000).toISOString();
+    const timeMax = new Date(Date.now() + 90 * 24 * 60 * 60 * 1000).toISOString();
+
+    const response = await calendar.events.list({
+      calendarId,
+      timeMin,
+      timeMax,
+      singleEvents: true,
+      orderBy: 'startTime',
+      maxResults: 250,
+    });
+
+    const googleEvents = response.data.items || [];
+    console.log(`📅 [Calendar Sync] Consultados ${googleEvents.length} eventos de Google Calendar (${calendarId}).`);
+
+    for (const ev of googleEvents) {
+      if (!ev.id) continue;
+      const startIso = ev.start?.dateTime || (ev.start?.date ? `${ev.start.date}T12:00:00.000Z` : '');
+      const endIso = ev.end?.dateTime || (ev.end?.date ? `${ev.end.date}T12:30:00.000Z` : '');
+      if (!startIso) continue;
+
+      const dt = new Date(startIso);
+      const colDateStr = new Intl.DateTimeFormat('en-CA', {
+        timeZone: 'America/Bogota',
+        year: 'numeric',
+        month: '2-digit',
+        day: '2-digit',
+      }).format(dt);
+
+      const colTimeSlot = new Intl.DateTimeFormat('en-US', {
+        timeZone: 'America/Bogota',
+        hour: 'numeric',
+        minute: '2-digit',
+        hour12: true,
+      }).format(dt);
+
+      // Parsear placa, cliente, teléfono desde summary o descripción
+      const summary = ev.summary || '';
+      const desc = ev.description || '';
+
+      const plateMatch = summary.match(/RTM\s+([A-Z0-9]{5,6})/i) || desc.match(/Placa:\s*([A-Z0-9]{5,6})/i);
+      const plate = plateMatch ? plateMatch[1].toUpperCase() : '';
+
+      const nameMatch = desc.match(/Cliente:\s*([^\n\r]+)/i) || summary.match(/-\s*([^(]+)/);
+      const name = nameMatch ? nameMatch[1].trim() : 'Cliente CDA';
+
+      const phoneMatch = desc.match(/Tel(?:éfono)?:\s*([0-9]+)/i);
+      const phone = phoneMatch ? phoneMatch[1] : '';
+
+      const typeMatch = desc.match(/Tipo:\s*([^\n\r]+)/i);
+      const vehicleType = typeMatch ? typeMatch[1].trim() : 'Liviano';
+
+      const brandModelMatch = desc.match(/Marca y Modelo:\s*([^\n\r]+)/i);
+      const brandModelStr = brandModelMatch ? brandModelMatch[1].trim() : '';
+      const [brand, ...modelParts] = brandModelStr.split(' - ');
+      const model = modelParts.join(' - ');
+
+      // Buscar si ya existe la cita local por googleEventId o por placa + fecha cercana
+      let existing = localBookings.find((b) => b.googleEventId === ev.id);
+      if (!existing && plate) {
+        existing = localBookings.find((b) => b.plate === plate && (b.date === colDateStr || b.isoStart?.startsWith(colDateStr)));
+      }
+
+      if (existing) {
+        // Verificar si la fecha o la hora en Google Calendar son diferentes a las locales
+        const hasDateChanged = existing.date !== colDateStr;
+        const hasTimeChanged = existing.timeSlot !== colTimeSlot;
+        const hasStartIsoChanged = existing.isoStart !== startIso;
+
+        if (hasDateChanged || hasTimeChanged || hasStartIsoChanged || !existing.googleEventId) {
+          const oldTime = `${existing.date} ${existing.timeSlot}`;
+          const newTime = `${colDateStr} ${colTimeSlot}`;
+
+          existing.date = colDateStr;
+          existing.timeSlot = colTimeSlot;
+          existing.isoStart = startIso;
+          existing.isoEnd = endIso;
+          existing.googleEventId = ev.id;
+          existing.googleHtmlLink = ev.htmlLink || existing.googleHtmlLink;
+          existing.status = ev.status === 'cancelled' ? 'CANCELLED' : 'CONFIRMED';
+          if (name && (existing.name === 'Cliente CDA' || !existing.name)) existing.name = name;
+          if (phone && !existing.phone) existing.phone = phone;
+
+          updatedCount++;
+          details.push(`Modificada cita ${existing.plate} de [${oldTime}] a [${newTime}] según Google Calendar`);
+          console.log(`🔄 [Calendar Sync] Cita ${existing.plate} actualizada a: ${newTime} (ID: ${ev.id})`);
+        }
+      } else if (plate) {
+        // Cita nueva creada directamente en Google Calendar
+        const newBooking: BookingData = {
+          id: `CITA-GCAL-${ev.id.slice(-6)}`,
+          phone: phone || '',
+          name: name || 'Cliente CDA',
+          plate,
+          vehicleType: vehicleType || 'Liviano',
+          brand: (brand && brand !== 'N/A') ? brand : '',
+          model: (model && model !== 'N/A') ? model : '',
+          date: colDateStr,
+          timeSlot: colTimeSlot,
+          isoStart: startIso,
+          isoEnd: endIso,
+          googleEventId: ev.id,
+          googleHtmlLink: ev.htmlLink || undefined,
+          createdAt: new Date().toISOString(),
+          status: ev.status === 'cancelled' ? 'CANCELLED' : 'CONFIRMED',
+        };
+        localBookings.push(newBooking);
+        addedCount++;
+        details.push(`Agregada nueva cita ${plate} (${colDateStr} ${colTimeSlot}) encontrada en Google Calendar`);
+        console.log(`➕ [Calendar Sync] Nueva cita ${plate} importada de Google Calendar: ${colDateStr} ${colTimeSlot}`);
+      }
+    }
+
+    // Persistir cambios si hubo alguna actualización o adición
+    if (updatedCount > 0 || addedCount > 0) {
+      updateAllBookings(localBookings);
+      console.log(`💾 [Calendar Sync] Base de citas actualizada con éxito (${updatedCount} modificadas, ${addedCount} añadidas).`);
+    } else {
+      console.log(`✅ [Calendar Sync] Las citas ya están 100% sincronizadas con Google Calendar.`);
+    }
+
+    return {
+      totalSynced: googleEvents.length,
+      updatedCount,
+      addedCount,
+      details,
+    };
+  } catch (err: any) {
+    console.error('❌ [Calendar Sync] Error sincronizando con Google Calendar:', err?.message || err);
+    return { totalSynced: 0, updatedCount, addedCount, details: [`Error: ${err?.message || err}`] };
+  }
 }

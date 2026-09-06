@@ -5,6 +5,7 @@ import { cdaConfig, isBlacklisted } from '../config/cda.config.js';
 import { getCustomersExpiringInDays, getAllCustomers, CustomerRecord } from './customers.service.js';
 import { getBookingsByDate, BookingData } from './booking.service.js';
 import { addMessage } from './chat-history.service.js';
+import { syncBookingsWithGoogleCalendar } from './calendar.service.js';
 
 const DATA_DIR = path.resolve(process.cwd(), 'data');
 const LOG_FILE = path.join(DATA_DIR, 'reminders_log.json');
@@ -438,10 +439,12 @@ export function initReminderCronJob(provider: any): void {
   });
 
   // 3. Chequeo periódico cada 5 minutos:
+  // - Sincroniza citas con Google Calendar (por si fueron modificadas o reprogramadas directamente en Google)
   // - Revisa si faltan clientes con RTM por vencer
   // - Revisa si hay citas para dentro de 1 hora y les envía su recordatorio inmediato
   cron.schedule('*/5 * * * *', async () => {
     try {
+      await syncBookingsWithGoogleCalendar();
       await sendRtmExpirationReminders(provider);
       await sendUpcoming1HourAppointmentReminders(provider);
     } catch {}

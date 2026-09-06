@@ -832,6 +832,7 @@
               <p style="font-size: 13px; color: var(--text-muted); margin-top: 4px;">Las citas pasadas se marcan automáticamente como <b>Realizadas / Atendidas</b>.</p>
             </div>
             <div class="table-actions-group">
+              <button class="btn-send" style="background: linear-gradient(135deg, #10b981 0%, #059669 100%);" onclick="syncGoogleCalendarNow()">🔄 Sincronizar Google Calendar</button>
               <button class="btn-send" style="background: rgba(255,255,255,0.08); border: 1px solid var(--border-color);" onclick="sendDailySummaryNow()">📲 Enviar Resumen Diario a Mi WhatsApp</button>
               <button class="btn-send" onclick="loadBookings()">Actualizar 🔄</button>
             </div>
@@ -1522,6 +1523,26 @@
           `;
         }).join('');
       } catch (err) {}
+    }
+
+    // Sincronizar Citas con Google Calendar
+    async function syncGoogleCalendarNow() {
+      try {
+        const btn = event?.target;
+        if (btn) btn.innerHTML = '⏳ Sincronizando...';
+        const res = await fetch('/api/calendar/sync', { method: 'POST' });
+        const data = await res.json();
+        if (data.success) {
+          await loadBookings();
+          alert(`✅ Sincronización Exitosa con Google Calendar:\n• Total Eventos consultados: ${data.totalSynced}\n• Citas Modificadas: ${data.updatedCount}\n• Nuevas Citas Añadidas: ${data.addedCount}\n\n${data.details.length > 0 ? data.details.join('\n') : 'Todas las citas estaban ya al día.'}`);
+        } else {
+          alert('Error sincronizando con Google Calendar: ' + (data.error || 'Verifique credenciales'));
+        }
+      } catch (err) {
+        alert('Error de conexión al sincronizar con Google Calendar');
+      } finally {
+        if (event?.target) event.target.innerHTML = '🔄 Sincronizar Google Calendar';
+      }
     }
 
     // Enviar Resumen Diario a WhatsApp

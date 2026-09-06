@@ -66,13 +66,22 @@ export const getBookingsByDate = (dateStr: string): BookingData[] => {
   }
 };
 
-export const getBookingsByPhone = (phone: string): BookingData[] => {
+export const getAllBookings = (): BookingData[] => {
   initStorage();
   try {
     const raw = fs.readFileSync(BOOKINGS_FILE, 'utf-8');
-    const bookings: BookingData[] = JSON.parse(raw || '[]');
-    return bookings.filter((b) => b.phone.includes(phone) || phone.includes(b.phone));
+    return JSON.parse(raw || '[]');
   } catch {
     return [];
   }
 };
+
+export const updateAllBookings = (bookings: BookingData[]): void => {
+  initStorage();
+  try {
+    fs.writeFileSync(BOOKINGS_FILE, JSON.stringify(bookings, null, 2), 'utf-8');
+  } catch (err) {
+    console.error('Error actualizando citas:', err);
+  }
+};
+

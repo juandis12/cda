@@ -22,6 +22,7 @@ import { getAiResponse } from './services/ai.service.js';
 import { getAllCustomers } from './services/customers.service.js';
 import { addMessage, getConversation, getAllConversations, normalizePhoneNumber } from './services/chat-history.service.js';
 import { pauseBotForPhone } from './services/pause.service.js';
+import { syncBookingsWithGoogleCalendar } from './services/calendar.service.js';
 
 const PORT = parseInt(process.env.PORT || '3008', 10);
 const DASHBOARD_HTML_PATH = path.resolve(process.cwd(), 'src', 'views', 'dashboard.html');
@@ -425,6 +426,20 @@ const main = async () => {
       res.writeHead(200, { 'Content-Type': 'application/json' });
       res.end(JSON.stringify(getConversation(phone)));
       return;
+    }
+
+    // API: Sincronizar Citas bidireccionalmente con Google Calendar
+    if ((url === '/api/calendar/sync' || url === '/api/bookings/sync') && (req.method === 'POST' || req.method === 'GET')) {
+      try {
+        const syncResult = await syncBookingsWithGoogleCalendar();
+        res.writeHead(200, { 'Content-Type': 'application/json' });
+        res.end(JSON.stringify({ success: true, ...syncResult }));
+        return;
+      } catch (err: any) {
+        res.writeHead(500, { 'Content-Type': 'application/json' });
+        res.end(JSON.stringify({ success: false, error: err?.message || err }));
+        return;
+      }
     }
 
     // API: Listar Citas
