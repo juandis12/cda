@@ -11,7 +11,7 @@ const LOG_FILE = path.join(DATA_DIR, 'reminders_log.json');
 
 interface ReminderLog {
   id: string;
-  type: 'RTM_EXPIRATION' | 'APPOINTMENT_REMINDER';
+  type: 'RTM_EXPIRATION' | 'APPOINTMENT_REMINDER' | 'APPOINTMENT_1HOUR_REMINDER';
   phone: string;
   plate: string;
   sentAt: string;
@@ -39,7 +39,7 @@ function saveLogEntry(entry: ReminderLog): void {
   fs.writeFileSync(LOG_FILE, JSON.stringify(log, null, 2), 'utf-8');
 }
 
-function alreadySentToday(phone: string, plate: string, type: 'RTM_EXPIRATION' | 'APPOINTMENT_REMINDER'): boolean {
+function alreadySentToday(phone: string, plate: string, type: 'RTM_EXPIRATION' | 'APPOINTMENT_REMINDER' | 'APPOINTMENT_1HOUR_REMINDER'): boolean {
   const todayStr = new Date().toISOString().split('T')[0];
   const log = getLog();
   return log.some(
@@ -229,7 +229,108 @@ export async function sendTomorrowAppointmentReminders(provider: any): Promise<n
 }
 
 /**
- * 3. Enviar reporte diario a las 7:00 AM al número del CDA con las citas agendadas para el día
+ * 3. Enviar recordatorio a clientes faltando 1 hora antes de su cita agendada
+ */
+export function parseBookingStartTime(booking: BookingData): Date | null {
+  if (booking.isoStart) {
+    return new Date(booking.isoStart);
+  }
+  if (!booking.date || !booking.timeSlot) return null;
+  try {
+    const parts = booking.date.split('-');
+    let [time, modifier] = booking.timeSlot.trim().split(' ');
+    let [hours, minutes] = time.split(':').map(Number);
+    if (modifier?.toUpperCase() === 'PM' && hours < 12) hours += 12;
+    if (modifier?.toUpperCase() === 'AM' && hours === 12) hours = 0;
+    
+    // Convertir fecha de turno
+    const dt = new Date(Number(parts[0]), Number(parts[1]) - 1, Number(parts[2]), hours, minutes || 0);
+    return dt;
+  } catch {
+    return null;
+  }
+}
+
+export async function sendUpcoming1HourAppointmentReminders(provider: any): Promise<number> {
+  const now = new Date();
+  const y = now.getFullYear();
+  const m = String(now.getMonth() + 1).padStart(2, '0');
+  const d = String(now.getDate()).padStart(2, '0');
+  const todayStr = `${y}-${m}-${d}`;
+
+  const todayBookings = getBookingsByDate(todayStr);
+  let sentCount = 0;
+
+  for (const booking of todayBookings) {
+    if (!booking.phone || !booking.plate) continue;
+
+    if (isBlacklisted(booking.phone)) continue;
+
+    if (alreadySentToday(booking.phone, booking.plate, 'APPOINTMENT_1HOUR_REMINDER')) {
+      continue;
+    }
+
+    const startTime = parseBookingStartTime(booking);
+    if (!startTime) continue;
+
+    const diffMinutes = Math.round((startTime.getTime() - now.getTime()) / (1000 * 60));
+
+    // Si faltan entre 10 y 80 minutos para la cita (aprox 1 hora antes)
+    if (diffMinutes >= 10 && diffMinutes <= 80) {
+      const vehicleInfo = [booking.brand, booking.model].filter(Boolean).join(' ') || booking.vehicleType || 'tu vehículo';
+
+      const message = [
+        `🔔 *¡RECORDATORIO: TU CITA ES EN 1 HORA! - ${cdaConfig.shortName.toUpperCase()}* 🔔`,
+        `Hola *${booking.name}*, te recordamos los detalles de tu turno programado para hoy:`,
+        '',
+        `🚘 *Placa:* ${booking.plate}`,
+        `🏷️ *Vehículo:* ${vehicleInfo}`,
+        `📅 *Fecha:* Hoy (${booking.date})`,
+        `⏰ *Hora de tu Turno:* *${booking.timeSlot}* (¡En aprox. ${diffMinutes} minutos!)`,
+        `⏱️ *Duración de la inspección:* ${cdaConfig.inspectionDurationMinutes} minutos`,
+        `📍 *Sede:* ${cdaConfig.address} (${cdaConfig.city})`,
+        `🗺️ *Google Maps:* ${cdaConfig.mapsUrl}`,
+        '',
+        `📋 *RECOMENDACIONES IMPORTANTES PARA TU LLEGADA:*`,
+        `• 🟢 *SOAT:* Recuerda que el SOAT vigente *NO es obligatorio* para la inspección.`,
+        `• Por favor llegar *10 a 15 minutos antes* para ingresar a pista puntualmente.`,
+        `• Presentar Licencia de Tránsito (Tarjeta de propiedad).`,
+        `• Vehículo limpio y baúl desocupado.`,
+        '',
+        `¿Tienes algún imprevisto o necesitas ayuda? Responde a este mensaje y un asesor te atenderá. ¡Te esperamos!`,
+      ].join('\n');
+
+      try {
+        await provider.sendMessage(booking.phone, message, {});
+        addMessage({
+          from: booking.phone,
+          name: booking.name,
+          plate: booking.plate,
+          text: message,
+          sender: 'BOT',
+        });
+        saveLogEntry({
+          id: `CITA-1H-${Date.now()}`,
+          type: 'APPOINTMENT_1HOUR_REMINDER',
+          phone: booking.phone,
+          plate: booking.plate,
+          sentAt: new Date().toISOString(),
+          details: `Aviso 1 hora antes enviado exitosamente. Cita programada: ${booking.timeSlot}`,
+        });
+        sentCount++;
+        console.log(`🚀 [Aviso 1 Hora Antes] Recordatorio enviado a ${booking.name} (${booking.plate}) - Turno: ${booking.timeSlot}`);
+        await new Promise((resolve) => setTimeout(resolve, 2000));
+      } catch (err) {
+        console.error(`❌ Error enviando recordatorio de 1 hora a ${booking.phone}:`, err);
+      }
+    }
+  }
+
+  return sentCount;
+}
+
+/**
+ * 4. Enviar reporte diario a las 7:00 AM al número del CDA con las citas agendadas para el día
  */
 export async function sendDailyAdminBookingSummary(provider: any, customDateStr?: string): Promise<boolean> {
   const targetPhone = '573184561999';
@@ -302,7 +403,7 @@ export async function sendDailyAdminBookingSummary(provider: any, customDateStr?
 }
 
 /**
- * Inicializar el cron job y vigilante automático de clientes
+ * Inicializar el cron job y vigilante automático de clientes y citas
  */
 export function initReminderCronJob(provider: any): void {
   // 1. Cron diario a las 7:00 AM para enviar el resumen de citas del día al propio WhatsApp del CDA
@@ -328,25 +429,29 @@ export function initReminderCronJob(provider: any): void {
     }
   });
 
-  // Chequeo periódico cada 5 minutos por si se agregaron clientes nuevos
+  // 3. Chequeo periódico cada 5 minutos:
+  // - Revisa si faltan clientes con RTM por vencer
+  // - Revisa si hay citas para dentro de 1 hora y les envía su recordatorio inmediato
   cron.schedule('*/5 * * * *', async () => {
     try {
       await sendRtmExpirationReminders(provider);
+      await sendUpcoming1HourAppointmentReminders(provider);
     } catch {}
   });
 
-  // Observador de cambios en tiempo real en data/clientes.json
+  // Observador de cambios en tiempo real en data/clientes.json y data/citas.json
   let fileDebounceTimer: NodeJS.Timeout | null = null;
   try {
     fs.watch(DATA_DIR, (eventType, filename) => {
-      if (filename && (filename.includes('clientes.json') || filename.includes('clientes.csv'))) {
+      if (filename && (filename.includes('clientes.json') || filename.includes('clientes.csv') || filename.includes('citas.json'))) {
         if (fileDebounceTimer) clearTimeout(fileDebounceTimer);
         fileDebounceTimer = setTimeout(async () => {
           console.log(`📂 [Watcher] Cambio detectado en ${filename}, escaneando avisos pendientes...`);
           try {
             await sendRtmExpirationReminders(provider);
+            await sendUpcoming1HourAppointmentReminders(provider);
           } catch (e) {
-            console.error('Error enviando avisos tras cambio en clientes:', e);
+            console.error('Error enviando avisos tras cambio en archivos:', e);
           }
         }, 2000);
       }
@@ -355,5 +460,5 @@ export function initReminderCronJob(provider: any): void {
     console.warn('No se pudo inicializar watcher de clientes:', err);
   }
 
-  console.log(`⏰ Cron de recordatorios programado (7:00 AM Reporte Citas Diario a +573184561999 | ${cronTime} Recordatorios Clientes)`);
+  console.log(`⏰ Cron de recordatorios programado (7:00 AM Reporte Citas Diario a +573184561999 | ${cronTime} Recordatorios Clientes | Chequeo 1h antes activo)`);
 }
