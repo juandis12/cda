@@ -75,6 +75,13 @@ const main = async () => {
     name: 'bot',
     version: waVersion,
     browser: Browsers.macOS('Desktop'),
+    syncFullHistory: false,
+    keepAliveIntervalMs: 25000,
+    connectTimeoutMs: 60000,
+    defaultQueryTimeoutMs: 60000,
+    retryRequestDelayMs: 500,
+    maxRetries: 10,
+    markOnlineOnConnect: true,
   };
 
   if (process.env.BOT_PHONE_NUMBER) {
