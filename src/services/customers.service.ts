@@ -95,10 +95,19 @@ export function getVehiclePrice(type?: string, service?: string): string {
   return s.includes('PUBLIC') || s.includes('PÚBLIC') ? '$367.937' : '$368.537';
 }
 
+let cachedCustomers: CustomerRecord[] | null = null;
+let lastCacheTime = 0;
+const CACHE_TTL_MS = 60 * 1000; // 60 segundos de caché ultrarrápido en RAM
+
 /**
- * Cargar todos los clientes registrados desde CSV o JSON
+ * Cargar todos los clientes registrados desde CSV o JSON con caché en memoria
  */
-export function getAllCustomers(): CustomerRecord[] {
+export function getAllCustomers(forceRefresh: boolean = false): CustomerRecord[] {
+  const now = Date.now();
+  if (!forceRefresh && cachedCustomers && (now - lastCacheTime < CACHE_TTL_MS)) {
+    return cachedCustomers;
+  }
+
   const customers: CustomerRecord[] = [];
   const seenPlates = new Set<string>();
 
@@ -202,6 +211,8 @@ export function getAllCustomers(): CustomerRecord[] {
     }
   }
 
+  cachedCustomers = customers;
+  lastCacheTime = now;
   return customers;
 }
 

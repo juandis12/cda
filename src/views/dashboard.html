@@ -1176,29 +1176,45 @@
       } catch (err) {}
     }
 
+    let lastRenderedChatListJson = '';
+
     function renderChatList(list) {
       const container = document.getElementById('chatListContainer');
       if (!list || list.length === 0) {
-        container.innerHTML = '<div class="empty-state"><p>No hay mensajes aún.<br>Cuando un cliente escriba se reflejará aquí.</p></div>';
+        if (lastRenderedChatListJson !== 'empty') {
+          lastRenderedChatListJson = 'empty';
+          container.innerHTML = '<div class="empty-state"><p>No hay mensajes aún.<br>Cuando un cliente escriba se reflejará aquí.</p></div>';
+        }
         return;
       }
 
-      container.innerHTML = list.map(c => `
-        <div class="chat-item ${activePhone === c.phone ? 'active' : ''}" data-phone="${c.phone}" onclick="selectChat('${c.phone}')">
-          <div class="chat-avatar">${c.name ? c.name.charAt(0).toUpperCase() : '👤'}</div>
-          <div class="chat-info">
-            <div class="chat-name-row">
-              <span class="chat-name">${c.name}</span>
-              <span class="chat-time">${new Date(c.lastTimestamp).toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'})}</span>
-            </div>
-            <div class="chat-snippet">${formatSnippet(c.lastMessage)}</div>
-            <div class="chat-meta-row">
-              ${c.plate ? `<span class="plate-badge">🚘 ${c.plate.toUpperCase()}</span>` : ''}
-              <span class="phone-text">${formatPhoneDisplay(c.phone)}</span>
+      const listJson = JSON.stringify(list);
+      if (listJson !== lastRenderedChatListJson) {
+        lastRenderedChatListJson = listJson;
+        container.innerHTML = list.map(c => `
+          <div class="chat-item ${activePhone === c.phone ? 'active' : ''}" data-phone="${c.phone}" onclick="selectChat('${c.phone}')">
+            <div class="chat-avatar">${c.name ? c.name.charAt(0).toUpperCase() : '👤'}</div>
+            <div class="chat-info">
+              <div class="chat-name-row">
+                <span class="chat-name">${c.name}</span>
+                <span class="chat-time">${new Date(c.lastTimestamp).toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'})}</span>
+              </div>
+              <div class="chat-snippet">${formatSnippet(c.lastMessage)}</div>
+              <div class="chat-meta-row">
+                ${c.plate ? `<span class="plate-badge">🚘 ${c.plate.toUpperCase()}</span>` : ''}
+                <span class="phone-text">${formatPhoneDisplay(c.phone)}</span>
+              </div>
             </div>
           </div>
-        </div>
-      `).join('');
+        `).join('');
+      } else {
+        // Solo actualizar la clase active si no cambiaron los mensajes
+        document.querySelectorAll('.chat-item').forEach(el => {
+          const ph = el.getAttribute('data-phone');
+          if (ph === activePhone) el.classList.add('active');
+          else el.classList.remove('active');
+        });
+      }
     }
 
     function filterConversations() {
@@ -1694,7 +1710,7 @@
     checkStatus();
     loadConversations();
     loadBookings();
-    loadCustomers();
+    setTimeout(loadCustomers, 500); // Cargar clientes en segundo plano sin bloquear interfaz inicial
   </script>
 </body>
 </html>
