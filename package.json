@@ -1,0 +1,43 @@
+{
+  "name": "cda-builderbot",
+  "version": "1.0.0",
+  "description": "Chatbot de WhatsApp con BuilderBot & Google Calendar para Control Autos De Girardot",
+  "main": "dist/app.js",
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch src/app.ts",
+    "build": "tsc",
+    "start": "node dist/app.js",
+    "reminders": "tsx src/scripts/send-reminders.ts"
+  },
+  "keywords": [
+    "builderbot",
+    "whatsapp",
+    "cda",
+    "colombia",
+    "rtm",
+    "girardot",
+    "google-calendar"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@builderbot/bot": "^1.2.6",
+    "@builderbot/database-json": "^1.2.6",
+    "@builderbot/provider-baileys": "^1.2.6",
+    "csv-parser": "^3.2.0",
+    "dotenv": "^16.4.7",
+    "googleapis": "^144.0.0",
+    "node-cron": "^3.0.3",
+    "qrcode": "^1.5.4",
+    "qrcode-terminal": "^0.12.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "@types/node-cron": "^3.0.11",
+    "@types/qrcode": "^1.5.6",
+    "@types/qrcode-terminal": "^0.12.2",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  }
+}

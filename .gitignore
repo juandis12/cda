@@ -1,0 +1,14 @@
+node_modules/
+dist/
+.env
+.env.local
+google-credentials.json
+credentials.json
+token.json
+bot_sessions/
+baileys_store.json
+bot.qr.*
+*.log
+.DS_Store
+
+

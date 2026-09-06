@@ -1,0 +1,5 @@
+nombre,telefono,placa,tipo_vehiculo,marca,modelo,fecha_vencimiento_rtm,notas
+Juan Perez,573001234567,ABC123,Liviano Gasolina,Chevrolet,Sail 2018,2026-09-15,Cliente particular
+Andres Gutierrez,573105554433,KLR45E,Moto 4T,Kawasaki,Versys 2021,2026-09-11,Moto de viaje
+Maria Lopez,573208889900,TLK789,Pesado Diesel,Hino,Dutro 2019,2026-09-07,Camion de carga
+Carlos Mendoza,573151112233,WYX234,Liviano Diesel,Toyota,Hilux 2020,2026-09-08,Flota empresa

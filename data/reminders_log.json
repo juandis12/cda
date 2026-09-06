@@ -1,0 +1,3146 @@
+[
+  {
+    "id": "REM-1788546760618",
+    "type": "RTM_EXPIRATION",
+    "phone": "573504896417",
+    "plate": "IBS810",
+    "sentAt": "2026-09-04T18:32:40.618Z",
+    "details": "Vence en 3 días (2026-09-07)"
+  },
+  {
+    "id": "REM-1788547332248",
+    "type": "RTM_EXPIRATION",
+    "phone": "573025897192",
+    "plate": "AGI18G",
+    "sentAt": "2026-09-04T18:42:12.248Z",
+    "details": "vence en *2 día(s)* (Fecha: *2026-09-06*)"
+  },
+  {
+    "id": "REM-1788547635208",
+    "type": "RTM_EXPIRATION",
+    "phone": "573508496417",
+    "plate": "IBS810",
+    "sentAt": "2026-09-04T18:47:15.208Z",
+    "details": "vence en *3 día(s)* (Fecha: *2026-09-07*)"
+  },
+  {
+    "id": "REM-1788621098983",
+    "type": "RTM_EXPIRATION",
+    "phone": "573508496417",
+    "plate": "IBS810",
+    "sentAt": "2026-09-05T15:11:38.983Z",
+    "details": "vence en *2 día(s)* (Fecha: *2026-09-07*)"
+  },
+  {
+    "id": "REM-1788621101587",
+    "type": "RTM_EXPIRATION",
+    "phone": "573025897192",
+    "plate": "AGI18G",
+    "sentAt": "2026-09-05T15:11:41.587Z",
+    "details": "vence *MAÑANA* (Fecha: *2026-09-06*)"
+  },
+  {
+    "id": "REM-1788622305155",
+    "type": "RTM_EXPIRATION",
+    "phone": "148126",
+    "plate": "2025-09-07 08:18:56",
+    "sentAt": "2026-09-05T15:31:45.155Z",
+    "details": "vence en *2 día(s)* (Fecha: *2026-09-07*)"
+  },
+  {
+    "id": "REM-1788622307649",
+    "type": "RTM_EXPIRATION",
+    "phone": "148127",
+    "plate": "2025-09-07 08:35:22",
+    "sentAt": "2026-09-05T15:31:47.649Z",
+    "details": "vence en *2 día(s)* (Fecha: *2026-09-07*)"
+  },
+  {
+    "id": "REM-1788622310096",
+    "type": "RTM_EXPIRATION",
+    "phone": "148128",
+    "plate": "2025-09-07 08:56:03",
+    "sentAt": "2026-09-05T15:31:50.096Z",
+    "details": "vence en *2 día(s)* (Fecha: *2026-09-07*)"
+  },
+  {
+    "id": "REM-1788622312512",
+    "type": "RTM_EXPIRATION",
+    "phone": "148129",
+    "plate": "2025-09-07 08:56:09",
+    "sentAt": "2026-09-05T15:31:52.512Z",
+    "details": "vence en *2 día(s)* (Fecha: *2026-09-07*)"
+  },
+  {
+    "id": "REM-1788622314904",
+    "type": "RTM_EXPIRATION",
+    "phone": "148130",
+    "plate": "2025-09-07 09:19:19",
+    "sentAt": "2026-09-05T15:31:54.904Z",
+    "details": "vence en *2 día(s)* (Fecha: *2026-09-07*)"
+  },
+  {
+    "id": "REM-1788622317305",
+    "type": "RTM_EXPIRATION",
+    "phone": "148131",
+    "plate": "2025-09-07 09:19:27",
+    "sentAt": "2026-09-05T15:31:57.305Z",
+    "details": "vence en *2 día(s)* (Fecha: *2026-09-07*)"
+  },
+  {
+    "id": "REM-1788622319707",
+    "type": "RTM_EXPIRATION",
+    "phone": "148132",
+    "plate": "2025-09-07 09:46:42",
+    "sentAt": "2026-09-05T15:31:59.707Z",
+    "details": "vence en *2 día(s)* (Fecha: *2026-09-07*)"
+  },
+  {
+    "id": "REM-1788622322154",
+    "type": "RTM_EXPIRATION",
+    "phone": "148133",
+    "plate": "2025-09-07 09:46:55",
+    "sentAt": "2026-09-05T15:32:02.154Z",
+    "details": "vence en *2 día(s)* (Fecha: *2026-09-07*)"
+  },
+  {
+    "id": "REM-1788622324627",
+    "type": "RTM_EXPIRATION",
+    "phone": "148135",
+    "plate": "2025-09-07 10:32:17",
+    "sentAt": "2026-09-05T15:32:04.627Z",
+    "details": "vence en *2 día(s)* (Fecha: *2026-09-07*)"
+  },
+  {
+    "id": "REM-1788622327074",
+    "type": "RTM_EXPIRATION",
+    "phone": "148136",
+    "plate": "2025-09-07 10:32:26",
+    "sentAt": "2026-09-05T15:32:07.074Z",
+    "details": "vence en *2 día(s)* (Fecha: *2026-09-07*)"
+  },
+  {
+    "id": "REM-1788622329575",
+    "type": "RTM_EXPIRATION",
+    "phone": "148137",
+    "plate": "2025-09-07 10:45:47",
+    "sentAt": "2026-09-05T15:32:09.575Z",
+    "details": "vence en *2 día(s)* (Fecha: *2026-09-07*)"
+  },
+  {
+    "id": "REM-1788622357709",
+    "type": "RTM_EXPIRATION",
+    "phone": "573102890395",
+    "plate": "NAS353",
+    "sentAt": "2026-09-05T15:32:37.709Z",
+    "details": "vence en *2 día(s)* (Fecha: *2026-09-07*)"
+  },
+  {
+    "id": "REM-1788622360167",
+    "type": "RTM_EXPIRATION",
+    "phone": "573102387045",
+    "plate": "VDQ41F",
+    "sentAt": "2026-09-05T15:32:40.167Z",
+    "details": "vence en *2 día(s)* (Fecha: *2026-09-07*)"
+  },
+  {
+    "id": "REM-1788622362537",
+    "type": "RTM_EXPIRATION",
+    "phone": "573115102245",
+    "plate": "RCS984",
+    "sentAt": "2026-09-05T15:32:42.537Z",
+    "details": "vence en *2 día(s)* (Fecha: *2026-09-07*)"
+  },
+  {
+    "id": "REM-1788622364905",
+    "type": "RTM_EXPIRATION",
+    "phone": "573105588380",
+    "plate": "BKM715",
+    "sentAt": "2026-09-05T15:32:44.905Z",
+    "details": "vence en *2 día(s)* (Fecha: *2026-09-07*)"
+  },
+  {
+    "id": "REM-1788622367324",
+    "type": "RTM_EXPIRATION",
+    "phone": "573118372934",
+    "plate": "WZA554",
+    "sentAt": "2026-09-05T15:32:47.324Z",
+    "details": "vence en *2 día(s)* (Fecha: *2026-09-07*)"
+  },
+  {
+    "id": "REM-1788622369746",
+    "type": "RTM_EXPIRATION",
+    "phone": "573102689189",
+    "plate": "OJF397",
+    "sentAt": "2026-09-05T15:32:49.746Z",
+    "details": "vence en *2 día(s)* (Fecha: *2026-09-07*)"
+  },
+  {
+    "id": "REM-1788622372133",
+    "type": "RTM_EXPIRATION",
+    "phone": "573205776453",
+    "plate": "ARG377",
+    "sentAt": "2026-09-05T15:32:52.133Z",
+    "details": "vence en *2 día(s)* (Fecha: *2026-09-07*)"
+  },
+  {
+    "id": "REM-1788622374739",
+    "type": "RTM_EXPIRATION",
+    "phone": "573218352436",
+    "plate": "GTX891",
+    "sentAt": "2026-09-05T15:32:54.739Z",
+    "details": "vence en *2 día(s)* (Fecha: *2026-09-07*)"
+  },
+  {
+    "id": "REM-1788622377332",
+    "type": "RTM_EXPIRATION",
+    "phone": "573218352436",
+    "plate": "IGY002",
+    "sentAt": "2026-09-05T15:32:57.332Z",
+    "details": "vence en *2 día(s)* (Fecha: *2026-09-07*)"
+  },
+  {
+    "id": "REM-1788622380017",
+    "type": "RTM_EXPIRATION",
+    "phone": "573208416604",
+    "plate": "HHV255",
+    "sentAt": "2026-09-05T15:33:00.017Z",
+    "details": "vence en *2 día(s)* (Fecha: *2026-09-07*)"
+  },
+  {
+    "id": "REM-1788622382397",
+    "type": "RTM_EXPIRATION",
+    "phone": "573102134874",
+    "plate": "JCK410",
+    "sentAt": "2026-09-05T15:33:02.397Z",
+    "details": "vence en *2 día(s)* (Fecha: *2026-09-07*)"
+  },
+  {
+    "id": "REM-1788622384916",
+    "type": "RTM_EXPIRATION",
+    "phone": "573208390549",
+    "plate": "JBZ779",
+    "sentAt": "2026-09-05T15:33:04.916Z",
+    "details": "vence en *2 día(s)* (Fecha: *2026-09-07*)"
+  },
+  {
+    "id": "REM-1788622387308",
+    "type": "RTM_EXPIRATION",
+    "phone": "573118204422",
+    "plate": "TLM65E",
+    "sentAt": "2026-09-05T15:33:07.308Z",
+    "details": "vence en *2 día(s)* (Fecha: *2026-09-07*)"
+  },
+  {
+    "id": "REM-1788622389677",
+    "type": "RTM_EXPIRATION",
+    "phone": "573175044304",
+    "plate": "BJK430",
+    "sentAt": "2026-09-05T15:33:09.677Z",
+    "details": "vence en *2 día(s)* (Fecha: *2026-09-07*)"
+  },
+  {
+    "id": "REM-1788622392178",
+    "type": "RTM_EXPIRATION",
+    "phone": "573102420797",
+    "plate": "DDU827",
+    "sentAt": "2026-09-05T15:33:12.178Z",
+    "details": "vence en *2 día(s)* (Fecha: *2026-09-07*)"
+  },
+  {
+    "id": "REM-1788622394562",
+    "type": "RTM_EXPIRATION",
+    "phone": "573115151577",
+    "plate": "SUJ024",
+    "sentAt": "2026-09-05T15:33:14.562Z",
+    "details": "vence en *2 día(s)* (Fecha: *2026-09-07*)"
+  },
+  {
+    "id": "REM-1788622396980",
+    "type": "RTM_EXPIRATION",
+    "phone": "573105725495",
+    "plate": "SPP913",
+    "sentAt": "2026-09-05T15:33:16.980Z",
+    "details": "vence en *2 día(s)* (Fecha: *2026-09-07*)"
+  },
+  {
+    "id": "REM-1788622399370",
+    "type": "RTM_EXPIRATION",
+    "phone": "573165113380",
+    "plate": "DCH257",
+    "sentAt": "2026-09-05T15:33:19.370Z",
+    "details": "vence en *2 día(s)* (Fecha: *2026-09-07*)"
+  },
+  {
+    "id": "REM-1788622401888",
+    "type": "RTM_EXPIRATION",
+    "phone": "573103460998",
+    "plate": "EQZ033",
+    "sentAt": "2026-09-05T15:33:21.888Z",
+    "details": "vence en *2 día(s)* (Fecha: *2026-09-07*)"
+  },
+  {
+    "id": "REM-1788622404461",
+    "type": "RTM_EXPIRATION",
+    "phone": "573222308932",
+    "plate": "CVB817",
+    "sentAt": "2026-09-05T15:33:24.461Z",
+    "details": "vence en *3 día(s)* (Fecha: *2026-09-08*)"
+  },
+  {
+    "id": "REM-1788622406867",
+    "type": "RTM_EXPIRATION",
+    "phone": "573219824797",
+    "plate": "YXF26D",
+    "sentAt": "2026-09-05T15:33:26.867Z",
+    "details": "vence en *3 día(s)* (Fecha: *2026-09-08*)"
+  },
+  {
+    "id": "REM-1788622409269",
+    "type": "RTM_EXPIRATION",
+    "phone": "573133996089",
+    "plate": "XDW14D",
+    "sentAt": "2026-09-05T15:33:29.269Z",
+    "details": "vence en *3 día(s)* (Fecha: *2026-09-08*)"
+  },
+  {
+    "id": "REM-1788622411972",
+    "type": "RTM_EXPIRATION",
+    "phone": "573144130586",
+    "plate": "FLA522",
+    "sentAt": "2026-09-05T15:33:31.972Z",
+    "details": "vence en *3 día(s)* (Fecha: *2026-09-08*)"
+  },
+  {
+    "id": "REM-1788622414566",
+    "type": "RTM_EXPIRATION",
+    "phone": "573188310834",
+    "plate": "ICL486",
+    "sentAt": "2026-09-05T15:33:34.566Z",
+    "details": "vence en *3 día(s)* (Fecha: *2026-09-08*)"
+  },
+  {
+    "id": "REM-1788622416981",
+    "type": "RTM_EXPIRATION",
+    "phone": "573166899121",
+    "plate": "MKX009",
+    "sentAt": "2026-09-05T15:33:36.981Z",
+    "details": "vence en *3 día(s)* (Fecha: *2026-09-08*)"
+  },
+  {
+    "id": "REM-1788622419365",
+    "type": "RTM_EXPIRATION",
+    "phone": "573202770066",
+    "plate": "TFS069",
+    "sentAt": "2026-09-05T15:33:39.365Z",
+    "details": "vence en *3 día(s)* (Fecha: *2026-09-08*)"
+  },
+  {
+    "id": "REM-1788622421907",
+    "type": "RTM_EXPIRATION",
+    "phone": "573214031493",
+    "plate": "BJO851",
+    "sentAt": "2026-09-05T15:33:41.907Z",
+    "details": "vence en *3 día(s)* (Fecha: *2026-09-08*)"
+  },
+  {
+    "id": "REM-1788622424455",
+    "type": "RTM_EXPIRATION",
+    "phone": "573022279927",
+    "plate": "SWN136",
+    "sentAt": "2026-09-05T15:33:44.455Z",
+    "details": "vence en *3 día(s)* (Fecha: *2026-09-08*)"
+  },
+  {
+    "id": "REM-1788622426819",
+    "type": "RTM_EXPIRATION",
+    "phone": "573112382048",
+    "plate": "BSK729",
+    "sentAt": "2026-09-05T15:33:46.819Z",
+    "details": "vence en *3 día(s)* (Fecha: *2026-09-08*)"
+  },
+  {
+    "id": "REM-1788622429239",
+    "type": "RTM_EXPIRATION",
+    "phone": "573202635189",
+    "plate": "DEH82G",
+    "sentAt": "2026-09-05T15:33:49.239Z",
+    "details": "vence en *3 día(s)* (Fecha: *2026-09-08*)"
+  },
+  {
+    "id": "REM-1788622431633",
+    "type": "RTM_EXPIRATION",
+    "phone": "573103394099",
+    "plate": "GKW969",
+    "sentAt": "2026-09-05T15:33:51.633Z",
+    "details": "vence en *3 día(s)* (Fecha: *2026-09-08*)"
+  },
+  {
+    "id": "REM-1788622434171",
+    "type": "RTM_EXPIRATION",
+    "phone": "573204803226",
+    "plate": "RCW096",
+    "sentAt": "2026-09-05T15:33:54.171Z",
+    "details": "vence en *3 día(s)* (Fecha: *2026-09-08*)"
+  },
+  {
+    "id": "REM-1788622436573",
+    "type": "RTM_EXPIRATION",
+    "phone": "573212059394",
+    "plate": "XYK048",
+    "sentAt": "2026-09-05T15:33:56.573Z",
+    "details": "vence en *3 día(s)* (Fecha: *2026-09-08*)"
+  },
+  {
+    "id": "REM-1788622439165",
+    "type": "RTM_EXPIRATION",
+    "phone": "573218352436",
+    "plate": "PSE24B",
+    "sentAt": "2026-09-05T15:33:59.165Z",
+    "details": "vence en *3 día(s)* (Fecha: *2026-09-08*)"
+  },
+  {
+    "id": "REM-1788622514906",
+    "type": "RTM_EXPIRATION",
+    "phone": "573103376974",
+    "plate": "HSW630",
+    "sentAt": "2026-09-05T15:35:14.906Z",
+    "details": "vence en *3 día(s)* (Fecha: *2026-09-08*)"
+  },
+  {
+    "id": "REM-1788622517314",
+    "type": "RTM_EXPIRATION",
+    "phone": "573175363074",
+    "plate": "TFB18E",
+    "sentAt": "2026-09-05T15:35:17.314Z",
+    "details": "vence en *3 día(s)* (Fecha: *2026-09-08*)"
+  },
+  {
+    "id": "REM-1788622519946",
+    "type": "RTM_EXPIRATION",
+    "phone": "573204414393",
+    "plate": "JDP269",
+    "sentAt": "2026-09-05T15:35:19.946Z",
+    "details": "vence en *3 día(s)* (Fecha: *2026-09-08*)"
+  },
+  {
+    "id": "REM-1788622522364",
+    "type": "RTM_EXPIRATION",
+    "phone": "573214375416",
+    "plate": "BCY393",
+    "sentAt": "2026-09-05T15:35:22.364Z",
+    "details": "vence en *3 día(s)* (Fecha: *2026-09-08*)"
+  },
+  {
+    "id": "REM-1788622524716",
+    "type": "RTM_EXPIRATION",
+    "phone": "573115021303",
+    "plate": "THV078",
+    "sentAt": "2026-09-05T15:35:24.716Z",
+    "details": "vence en *3 día(s)* (Fecha: *2026-09-08*)"
+  },
+  {
+    "id": "REM-1788622527113",
+    "type": "RTM_EXPIRATION",
+    "phone": "573118201014",
+    "plate": "FGS585",
+    "sentAt": "2026-09-05T15:35:27.113Z",
+    "details": "vence en *3 día(s)* (Fecha: *2026-09-08*)"
+  },
+  {
+    "id": "REM-1788622529685",
+    "type": "RTM_EXPIRATION",
+    "phone": "573118762387",
+    "plate": "SJQ532",
+    "sentAt": "2026-09-05T15:35:29.685Z",
+    "details": "vence en *3 día(s)* (Fecha: *2026-09-08*)"
+  },
+  {
+    "id": "REM-1788622532180",
+    "type": "RTM_EXPIRATION",
+    "phone": "573204131698",
+    "plate": "TFA43E",
+    "sentAt": "2026-09-05T15:35:32.180Z",
+    "details": "vence en *3 día(s)* (Fecha: *2026-09-08*)"
+  },
+  {
+    "id": "REM-1788622534559",
+    "type": "RTM_EXPIRATION",
+    "phone": "573175500543",
+    "plate": "MZZ02G",
+    "sentAt": "2026-09-05T15:35:34.559Z",
+    "details": "vence en *3 día(s)* (Fecha: *2026-09-08*)"
+  },
+  {
+    "id": "REM-1788622536927",
+    "type": "RTM_EXPIRATION",
+    "phone": "573108648665",
+    "plate": "UUW390",
+    "sentAt": "2026-09-05T15:35:36.927Z",
+    "details": "vence en *3 día(s)* (Fecha: *2026-09-08*)"
+  },
+  {
+    "id": "REM-1788622539681",
+    "type": "RTM_EXPIRATION",
+    "phone": "573132531279",
+    "plate": "EDW83F",
+    "sentAt": "2026-09-05T15:35:39.681Z",
+    "details": "vence en *3 día(s)* (Fecha: *2026-09-08*)"
+  },
+  {
+    "id": "REM-1788622542254",
+    "type": "RTM_EXPIRATION",
+    "phone": "573167669675",
+    "plate": "FJX39F",
+    "sentAt": "2026-09-05T15:35:42.254Z",
+    "details": "vence en *3 día(s)* (Fecha: *2026-09-08*)"
+  },
+  {
+    "id": "REM-1788622544643",
+    "type": "RTM_EXPIRATION",
+    "phone": "573218352436",
+    "plate": "UAZ53C",
+    "sentAt": "2026-09-05T15:35:44.643Z",
+    "details": "vence en *3 día(s)* (Fecha: *2026-09-08*)"
+  },
+  {
+    "id": "REM-1788622547020",
+    "type": "RTM_EXPIRATION",
+    "phone": "573218352436",
+    "plate": "SWN278",
+    "sentAt": "2026-09-05T15:35:47.020Z",
+    "details": "vence en *3 día(s)* (Fecha: *2026-09-08*)"
+  },
+  {
+    "id": "REM-1788622549387",
+    "type": "RTM_EXPIRATION",
+    "phone": "573228778585",
+    "plate": "QGV730",
+    "sentAt": "2026-09-05T15:35:49.387Z",
+    "details": "vence en *3 día(s)* (Fecha: *2026-09-08*)"
+  },
+  {
+    "id": "REM-1788622551777",
+    "type": "RTM_EXPIRATION",
+    "phone": "573102216954",
+    "plate": "AJE563",
+    "sentAt": "2026-09-05T15:35:51.777Z",
+    "details": "vence en *3 día(s)* (Fecha: *2026-09-08*)"
+  },
+  {
+    "id": "REM-1788622554173",
+    "type": "RTM_EXPIRATION",
+    "phone": "573152550911",
+    "plate": "RFN837",
+    "sentAt": "2026-09-05T15:35:54.173Z",
+    "details": "vence en *3 día(s)* (Fecha: *2026-09-08*)"
+  },
+  {
+    "id": "REM-1788622556940",
+    "type": "RTM_EXPIRATION",
+    "phone": "573144144459",
+    "plate": "JBZ637",
+    "sentAt": "2026-09-05T15:35:56.940Z",
+    "details": "vence en *3 día(s)* (Fecha: *2026-09-08*)"
+  },
+  {
+    "id": "REM-1788622559307",
+    "type": "RTM_EXPIRATION",
+    "phone": "573185954100",
+    "plate": "GWO615",
+    "sentAt": "2026-09-05T15:35:59.307Z",
+    "details": "vence en *3 día(s)* (Fecha: *2026-09-08*)"
+  },
+  {
+    "id": "REM-1788622561715",
+    "type": "RTM_EXPIRATION",
+    "phone": "573022834545",
+    "plate": "ZDH24D",
+    "sentAt": "2026-09-05T15:36:01.715Z",
+    "details": "vence en *3 día(s)* (Fecha: *2026-09-08*)"
+  },
+  {
+    "id": "REM-1788622564121",
+    "type": "RTM_EXPIRATION",
+    "phone": "573214864984",
+    "plate": "JCT85D",
+    "sentAt": "2026-09-05T15:36:04.121Z",
+    "details": "vence en *3 día(s)* (Fecha: *2026-09-08*)"
+  },
+  {
+    "id": "REM-1788622566551",
+    "type": "RTM_EXPIRATION",
+    "phone": "573182953730",
+    "plate": "BTR388",
+    "sentAt": "2026-09-05T15:36:06.551Z",
+    "details": "vence en *3 día(s)* (Fecha: *2026-09-08*)"
+  },
+  {
+    "id": "REM-1788622569064",
+    "type": "RTM_EXPIRATION",
+    "phone": "573232230526",
+    "plate": "BOA498",
+    "sentAt": "2026-09-05T15:36:09.064Z",
+    "details": "vence en *3 día(s)* (Fecha: *2026-09-08*)"
+  },
+  {
+    "id": "REM-1788622571996",
+    "type": "RTM_EXPIRATION",
+    "phone": "573218352436",
+    "plate": "JBZ664",
+    "sentAt": "2026-09-05T15:36:11.996Z",
+    "details": "vence en *3 día(s)* (Fecha: *2026-09-08*)"
+  },
+  {
+    "id": "REM-1788622574709",
+    "type": "RTM_EXPIRATION",
+    "phone": "573143782617",
+    "plate": "YHR15D",
+    "sentAt": "2026-09-05T15:36:14.709Z",
+    "details": "vence en *3 día(s)* (Fecha: *2026-09-08*)"
+  },
+  {
+    "id": "REM-1788622577089",
+    "type": "RTM_EXPIRATION",
+    "phone": "573225340856",
+    "plate": "MPU41F",
+    "sentAt": "2026-09-05T15:36:17.089Z",
+    "details": "vence en *3 día(s)* (Fecha: *2026-09-08*)"
+  },
+  {
+    "id": "REM-1788622579485",
+    "type": "RTM_EXPIRATION",
+    "phone": "573209703695",
+    "plate": "FAI65A",
+    "sentAt": "2026-09-05T15:36:19.485Z",
+    "details": "vence en *3 día(s)* (Fecha: *2026-09-08*)"
+  },
+  {
+    "id": "REM-1788622582189",
+    "type": "RTM_EXPIRATION",
+    "phone": "573118747442",
+    "plate": "ZOF206",
+    "sentAt": "2026-09-05T15:36:22.189Z",
+    "details": "vence en *3 día(s)* (Fecha: *2026-09-08*)"
+  },
+  {
+    "id": "REM-1788622584599",
+    "type": "RTM_EXPIRATION",
+    "phone": "573214317039",
+    "plate": "OCJ463",
+    "sentAt": "2026-09-05T15:36:24.599Z",
+    "details": "vence en *3 día(s)* (Fecha: *2026-09-08*)"
+  },
+  {
+    "id": "REM-1788622587077",
+    "type": "RTM_EXPIRATION",
+    "phone": "573138463337",
+    "plate": "GZM868",
+    "sentAt": "2026-09-05T15:36:27.077Z",
+    "details": "vence en *3 día(s)* (Fecha: *2026-09-08*)"
+  },
+  {
+    "id": "REM-1788622589480",
+    "type": "RTM_EXPIRATION",
+    "phone": "573108092073",
+    "plate": "GIL865",
+    "sentAt": "2026-09-05T15:36:29.480Z",
+    "details": "vence en *3 día(s)* (Fecha: *2026-09-08*)"
+  },
+  {
+    "id": "REM-1788622591957",
+    "type": "RTM_EXPIRATION",
+    "phone": "573125371719",
+    "plate": "USR988",
+    "sentAt": "2026-09-05T15:36:31.957Z",
+    "details": "vence en *4 día(s)* (Fecha: *2026-09-09*)"
+  },
+  {
+    "id": "REM-1788622594383",
+    "type": "RTM_EXPIRATION",
+    "phone": "573144420251",
+    "plate": "XGJ282",
+    "sentAt": "2026-09-05T15:36:34.383Z",
+    "details": "vence en *4 día(s)* (Fecha: *2026-09-09*)"
+  },
+  {
+    "id": "REM-1788622596815",
+    "type": "RTM_EXPIRATION",
+    "phone": "573102495346",
+    "plate": "JDM341",
+    "sentAt": "2026-09-05T15:36:36.815Z",
+    "details": "vence en *4 día(s)* (Fecha: *2026-09-09*)"
+  },
+  {
+    "id": "REM-1788622599353",
+    "type": "RTM_EXPIRATION",
+    "phone": "573128948139",
+    "plate": "SSW594",
+    "sentAt": "2026-09-05T15:36:39.353Z",
+    "details": "vence en *4 día(s)* (Fecha: *2026-09-09*)"
+  },
+  {
+    "id": "REM-1788622602064",
+    "type": "RTM_EXPIRATION",
+    "phone": "573214943238",
+    "plate": "NAR89G",
+    "sentAt": "2026-09-05T15:36:42.064Z",
+    "details": "vence en *4 día(s)* (Fecha: *2026-09-09*)"
+  },
+  {
+    "id": "REM-1788622604624",
+    "type": "RTM_EXPIRATION",
+    "phone": "573118866819",
+    "plate": "YRD31C",
+    "sentAt": "2026-09-05T15:36:44.624Z",
+    "details": "vence en *4 día(s)* (Fecha: *2026-09-09*)"
+  },
+  {
+    "id": "REM-1788622607045",
+    "type": "RTM_EXPIRATION",
+    "phone": "573138557928",
+    "plate": "SSW043",
+    "sentAt": "2026-09-05T15:36:47.045Z",
+    "details": "vence en *4 día(s)* (Fecha: *2026-09-09*)"
+  },
+  {
+    "id": "REM-1788705774603",
+    "type": "RTM_EXPIRATION",
+    "phone": "573102890395",
+    "plate": "NAS353",
+    "sentAt": "2026-09-06T14:42:54.603Z",
+    "details": "vence *MAÑANA* (Fecha: *2026-09-07*)"
+  },
+  {
+    "id": "REM-1788705837652",
+    "type": "RTM_EXPIRATION",
+    "phone": "573102387045",
+    "plate": "VDQ41F",
+    "sentAt": "2026-09-06T14:43:57.652Z",
+    "details": "vence *MAÑANA* (Fecha: *2026-09-07*)"
+  },
+  {
+    "id": "REM-1788705840276",
+    "type": "RTM_EXPIRATION",
+    "phone": "573115102245",
+    "plate": "RCS984",
+    "sentAt": "2026-09-06T14:44:00.276Z",
+    "details": "vence *MAÑANA* (Fecha: *2026-09-07*)"
+  },
+  {
+    "id": "REM-1788705842827",
+    "type": "RTM_EXPIRATION",
+    "phone": "573105588380",
+    "plate": "BKM715",
+    "sentAt": "2026-09-06T14:44:02.827Z",
+    "details": "vence *MAÑANA* (Fecha: *2026-09-07*)"
+  },
+  {
+    "id": "REM-1788705845406",
+    "type": "RTM_EXPIRATION",
+    "phone": "573118372934",
+    "plate": "WZA554",
+    "sentAt": "2026-09-06T14:44:05.406Z",
+    "details": "vence *MAÑANA* (Fecha: *2026-09-07*)"
+  },
+  {
+    "id": "REM-1788705848022",
+    "type": "RTM_EXPIRATION",
+    "phone": "573102689189",
+    "plate": "OJF397",
+    "sentAt": "2026-09-06T14:44:08.022Z",
+    "details": "vence *MAÑANA* (Fecha: *2026-09-07*)"
+  },
+  {
+    "id": "REM-1788705850657",
+    "type": "RTM_EXPIRATION",
+    "phone": "573205776453",
+    "plate": "ARG377",
+    "sentAt": "2026-09-06T14:44:10.657Z",
+    "details": "vence *MAÑANA* (Fecha: *2026-09-07*)"
+  },
+  {
+    "id": "REM-1788705853182",
+    "type": "RTM_EXPIRATION",
+    "phone": "573218352436",
+    "plate": "GTX891",
+    "sentAt": "2026-09-06T14:44:13.182Z",
+    "details": "vence *MAÑANA* (Fecha: *2026-09-07*)"
+  },
+  {
+    "id": "REM-1788705855689",
+    "type": "RTM_EXPIRATION",
+    "phone": "573218352436",
+    "plate": "IGY002",
+    "sentAt": "2026-09-06T14:44:15.689Z",
+    "details": "vence *MAÑANA* (Fecha: *2026-09-07*)"
+  },
+  {
+    "id": "REM-1788705858654",
+    "type": "RTM_EXPIRATION",
+    "phone": "573208416604",
+    "plate": "HHV255",
+    "sentAt": "2026-09-06T14:44:18.654Z",
+    "details": "vence *MAÑANA* (Fecha: *2026-09-07*)"
+  },
+  {
+    "id": "REM-1788705861243",
+    "type": "RTM_EXPIRATION",
+    "phone": "573102134874",
+    "plate": "JCK410",
+    "sentAt": "2026-09-06T14:44:21.243Z",
+    "details": "vence *MAÑANA* (Fecha: *2026-09-07*)"
+  },
+  {
+    "id": "REM-1788705863816",
+    "type": "RTM_EXPIRATION",
+    "phone": "573208390549",
+    "plate": "JBZ779",
+    "sentAt": "2026-09-06T14:44:23.816Z",
+    "details": "vence *MAÑANA* (Fecha: *2026-09-07*)"
+  },
+  {
+    "id": "REM-1788705866357",
+    "type": "RTM_EXPIRATION",
+    "phone": "573118204422",
+    "plate": "TLM65E",
+    "sentAt": "2026-09-06T14:44:26.357Z",
+    "details": "vence *MAÑANA* (Fecha: *2026-09-07*)"
+  },
+  {
+    "id": "REM-1788705868871",
+    "type": "RTM_EXPIRATION",
+    "phone": "573175044304",
+    "plate": "BJK430",
+    "sentAt": "2026-09-06T14:44:28.871Z",
+    "details": "vence *MAÑANA* (Fecha: *2026-09-07*)"
+  },
+  {
+    "id": "REM-1788705871394",
+    "type": "RTM_EXPIRATION",
+    "phone": "573102420797",
+    "plate": "DDU827",
+    "sentAt": "2026-09-06T14:44:31.394Z",
+    "details": "vence *MAÑANA* (Fecha: *2026-09-07*)"
+  },
+  {
+    "id": "REM-1788705873844",
+    "type": "RTM_EXPIRATION",
+    "phone": "573115151577",
+    "plate": "SUJ024",
+    "sentAt": "2026-09-06T14:44:33.844Z",
+    "details": "vence *MAÑANA* (Fecha: *2026-09-07*)"
+  },
+  {
+    "id": "REM-1788705876470",
+    "type": "RTM_EXPIRATION",
+    "phone": "573105725495",
+    "plate": "SPP913",
+    "sentAt": "2026-09-06T14:44:36.470Z",
+    "details": "vence *MAÑANA* (Fecha: *2026-09-07*)"
+  },
+  {
+    "id": "REM-1788705879001",
+    "type": "RTM_EXPIRATION",
+    "phone": "573165113380",
+    "plate": "DCH257",
+    "sentAt": "2026-09-06T14:44:39.001Z",
+    "details": "vence *MAÑANA* (Fecha: *2026-09-07*)"
+  },
+  {
+    "id": "REM-1788705881630",
+    "type": "RTM_EXPIRATION",
+    "phone": "573103460998",
+    "plate": "EQZ033",
+    "sentAt": "2026-09-06T14:44:41.630Z",
+    "details": "vence *MAÑANA* (Fecha: *2026-09-07*)"
+  },
+  {
+    "id": "REM-1788705884215",
+    "type": "RTM_EXPIRATION",
+    "phone": "573222308932",
+    "plate": "CVB817",
+    "sentAt": "2026-09-06T14:44:44.215Z",
+    "details": "vence en *2 día(s)* (Fecha: *2026-09-08*)"
+  },
+  {
+    "id": "REM-1788705886888",
+    "type": "RTM_EXPIRATION",
+    "phone": "573219824797",
+    "plate": "YXF26D",
+    "sentAt": "2026-09-06T14:44:46.888Z",
+    "details": "vence en *2 día(s)* (Fecha: *2026-09-08*)"
+  },
+  {
+    "id": "REM-1788705889485",
+    "type": "RTM_EXPIRATION",
+    "phone": "573133996089",
+    "plate": "XDW14D",
+    "sentAt": "2026-09-06T14:44:49.485Z",
+    "details": "vence en *2 día(s)* (Fecha: *2026-09-08*)"
+  },
+  {
+    "id": "REM-1788705892077",
+    "type": "RTM_EXPIRATION",
+    "phone": "573188310834",
+    "plate": "ICL486",
+    "sentAt": "2026-09-06T14:44:52.077Z",
+    "details": "vence en *2 día(s)* (Fecha: *2026-09-08*)"
+  },
+  {
+    "id": "REM-1788705894660",
+    "type": "RTM_EXPIRATION",
+    "phone": "573166899121",
+    "plate": "MKX009",
+    "sentAt": "2026-09-06T14:44:54.660Z",
+    "details": "vence en *2 día(s)* (Fecha: *2026-09-08*)"
+  },
+  {
+    "id": "REM-1788705897157",
+    "type": "RTM_EXPIRATION",
+    "phone": "573202770066",
+    "plate": "TFS069",
+    "sentAt": "2026-09-06T14:44:57.157Z",
+    "details": "vence en *2 día(s)* (Fecha: *2026-09-08*)"
+  },
+  {
+    "id": "REM-1788705899783",
+    "type": "RTM_EXPIRATION",
+    "phone": "573214031493",
+    "plate": "BJO851",
+    "sentAt": "2026-09-06T14:44:59.783Z",
+    "details": "vence en *2 día(s)* (Fecha: *2026-09-08*)"
+  },
+  {
+    "id": "REM-1788705901432",
+    "type": "RTM_EXPIRATION",
+    "phone": "573022279927",
+    "plate": "SWN136",
+    "sentAt": "2026-09-06T14:45:01.432Z",
+    "details": "vence en *2 día(s)* (Fecha: *2026-09-08*)"
+  },
+  {
+    "id": "REM-1788705902359",
+    "type": "RTM_EXPIRATION",
+    "phone": "573112382048",
+    "plate": "BSK729",
+    "sentAt": "2026-09-06T14:45:02.359Z",
+    "details": "vence en *2 día(s)* (Fecha: *2026-09-08*)"
+  },
+  {
+    "id": "REM-1788705904021",
+    "type": "RTM_EXPIRATION",
+    "phone": "573202635189",
+    "plate": "DEH82G",
+    "sentAt": "2026-09-06T14:45:04.021Z",
+    "details": "vence en *2 día(s)* (Fecha: *2026-09-08*)"
+  },
+  {
+    "id": "REM-1788705905037",
+    "type": "RTM_EXPIRATION",
+    "phone": "573103394099",
+    "plate": "GKW969",
+    "sentAt": "2026-09-06T14:45:05.037Z",
+    "details": "vence en *2 día(s)* (Fecha: *2026-09-08*)"
+  },
+  {
+    "id": "REM-1788705906553",
+    "type": "RTM_EXPIRATION",
+    "phone": "573204803226",
+    "plate": "RCW096",
+    "sentAt": "2026-09-06T14:45:06.553Z",
+    "details": "vence en *2 día(s)* (Fecha: *2026-09-08*)"
+  },
+  {
+    "id": "REM-1788705907613",
+    "type": "RTM_EXPIRATION",
+    "phone": "573212059394",
+    "plate": "XYK048",
+    "sentAt": "2026-09-06T14:45:07.613Z",
+    "details": "vence en *2 día(s)* (Fecha: *2026-09-08*)"
+  },
+  {
+    "id": "REM-1788705909086",
+    "type": "RTM_EXPIRATION",
+    "phone": "573218352436",
+    "plate": "PSE24B",
+    "sentAt": "2026-09-06T14:45:09.086Z",
+    "details": "vence en *2 día(s)* (Fecha: *2026-09-08*)"
+  },
+  {
+    "id": "REM-1788705910194",
+    "type": "RTM_EXPIRATION",
+    "phone": "573103376974",
+    "plate": "HSW630",
+    "sentAt": "2026-09-06T14:45:10.194Z",
+    "details": "vence en *2 día(s)* (Fecha: *2026-09-08*)"
+  },
+  {
+    "id": "REM-1788705911604",
+    "type": "RTM_EXPIRATION",
+    "phone": "573175363074",
+    "plate": "TFB18E",
+    "sentAt": "2026-09-06T14:45:11.604Z",
+    "details": "vence en *2 día(s)* (Fecha: *2026-09-08*)"
+  },
+  {
+    "id": "REM-1788705912767",
+    "type": "RTM_EXPIRATION",
+    "phone": "573204414393",
+    "plate": "JDP269",
+    "sentAt": "2026-09-06T14:45:12.767Z",
+    "details": "vence en *2 día(s)* (Fecha: *2026-09-08*)"
+  },
+  {
+    "id": "REM-1788705914155",
+    "type": "RTM_EXPIRATION",
+    "phone": "573214375416",
+    "plate": "BCY393",
+    "sentAt": "2026-09-06T14:45:14.155Z",
+    "details": "vence en *2 día(s)* (Fecha: *2026-09-08*)"
+  },
+  {
+    "id": "REM-1788705915248",
+    "type": "RTM_EXPIRATION",
+    "phone": "573115021303",
+    "plate": "THV078",
+    "sentAt": "2026-09-06T14:45:15.248Z",
+    "details": "vence en *2 día(s)* (Fecha: *2026-09-08*)"
+  },
+  {
+    "id": "REM-1788705916669",
+    "type": "RTM_EXPIRATION",
+    "phone": "573118201014",
+    "plate": "FGS585",
+    "sentAt": "2026-09-06T14:45:16.669Z",
+    "details": "vence en *2 día(s)* (Fecha: *2026-09-08*)"
+  },
+  {
+    "id": "REM-1788705917742",
+    "type": "RTM_EXPIRATION",
+    "phone": "573118762387",
+    "plate": "SJQ532",
+    "sentAt": "2026-09-06T14:45:17.742Z",
+    "details": "vence en *2 día(s)* (Fecha: *2026-09-08*)"
+  },
+  {
+    "id": "REM-1788705919217",
+    "type": "RTM_EXPIRATION",
+    "phone": "573204131698",
+    "plate": "TFA43E",
+    "sentAt": "2026-09-06T14:45:19.217Z",
+    "details": "vence en *2 día(s)* (Fecha: *2026-09-08*)"
+  },
+  {
+    "id": "REM-1788705920243",
+    "type": "RTM_EXPIRATION",
+    "phone": "573175500543",
+    "plate": "MZZ02G",
+    "sentAt": "2026-09-06T14:45:20.243Z",
+    "details": "vence en *2 día(s)* (Fecha: *2026-09-08*)"
+  },
+  {
+    "id": "REM-1788705921736",
+    "type": "RTM_EXPIRATION",
+    "phone": "573108648665",
+    "plate": "UUW390",
+    "sentAt": "2026-09-06T14:45:21.736Z",
+    "details": "vence en *2 día(s)* (Fecha: *2026-09-08*)"
+  },
+  {
+    "id": "REM-1788705922784",
+    "type": "RTM_EXPIRATION",
+    "phone": "573132531279",
+    "plate": "EDW83F",
+    "sentAt": "2026-09-06T14:45:22.784Z",
+    "details": "vence en *2 día(s)* (Fecha: *2026-09-08*)"
+  },
+  {
+    "id": "REM-1788705924671",
+    "type": "RTM_EXPIRATION",
+    "phone": "573167669675",
+    "plate": "FJX39F",
+    "sentAt": "2026-09-06T14:45:24.671Z",
+    "details": "vence en *2 día(s)* (Fecha: *2026-09-08*)"
+  },
+  {
+    "id": "REM-1788705925293",
+    "type": "RTM_EXPIRATION",
+    "phone": "573218352436",
+    "plate": "UAZ53C",
+    "sentAt": "2026-09-06T14:45:25.293Z",
+    "details": "vence en *2 día(s)* (Fecha: *2026-09-08*)"
+  },
+  {
+    "id": "REM-1788705927147",
+    "type": "RTM_EXPIRATION",
+    "phone": "573218352436",
+    "plate": "SWN278",
+    "sentAt": "2026-09-06T14:45:27.147Z",
+    "details": "vence en *2 día(s)* (Fecha: *2026-09-08*)"
+  },
+  {
+    "id": "REM-1788705927895",
+    "type": "RTM_EXPIRATION",
+    "phone": "573228778585",
+    "plate": "QGV730",
+    "sentAt": "2026-09-06T14:45:27.895Z",
+    "details": "vence en *2 día(s)* (Fecha: *2026-09-08*)"
+  },
+  {
+    "id": "REM-1788705929640",
+    "type": "RTM_EXPIRATION",
+    "phone": "573102216954",
+    "plate": "AJE563",
+    "sentAt": "2026-09-06T14:45:29.640Z",
+    "details": "vence en *2 día(s)* (Fecha: *2026-09-08*)"
+  },
+  {
+    "id": "REM-1788705930449",
+    "type": "RTM_EXPIRATION",
+    "phone": "573152550911",
+    "plate": "RFN837",
+    "sentAt": "2026-09-06T14:45:30.449Z",
+    "details": "vence en *2 día(s)* (Fecha: *2026-09-08*)"
+  },
+  {
+    "id": "REM-1788705932210",
+    "type": "RTM_EXPIRATION",
+    "phone": "573144144459",
+    "plate": "JBZ637",
+    "sentAt": "2026-09-06T14:45:32.210Z",
+    "details": "vence en *2 día(s)* (Fecha: *2026-09-08*)"
+  },
+  {
+    "id": "REM-1788705933000",
+    "type": "RTM_EXPIRATION",
+    "phone": "573185954100",
+    "plate": "GWO615",
+    "sentAt": "2026-09-06T14:45:33.000Z",
+    "details": "vence en *2 día(s)* (Fecha: *2026-09-08*)"
+  },
+  {
+    "id": "REM-1788705934733",
+    "type": "RTM_EXPIRATION",
+    "phone": "573022834545",
+    "plate": "ZDH24D",
+    "sentAt": "2026-09-06T14:45:34.733Z",
+    "details": "vence en *2 día(s)* (Fecha: *2026-09-08*)"
+  },
+  {
+    "id": "REM-1788705935469",
+    "type": "RTM_EXPIRATION",
+    "phone": "573214864984",
+    "plate": "JCT85D",
+    "sentAt": "2026-09-06T14:45:35.469Z",
+    "details": "vence en *2 día(s)* (Fecha: *2026-09-08*)"
+  },
+  {
+    "id": "REM-1788705937253",
+    "type": "RTM_EXPIRATION",
+    "phone": "573182953730",
+    "plate": "BTR388",
+    "sentAt": "2026-09-06T14:45:37.253Z",
+    "details": "vence en *2 día(s)* (Fecha: *2026-09-08*)"
+  },
+  {
+    "id": "REM-1788705937972",
+    "type": "RTM_EXPIRATION",
+    "phone": "573232230526",
+    "plate": "BOA498",
+    "sentAt": "2026-09-06T14:45:37.972Z",
+    "details": "vence en *2 día(s)* (Fecha: *2026-09-08*)"
+  },
+  {
+    "id": "REM-1788705939717",
+    "type": "RTM_EXPIRATION",
+    "phone": "573218352436",
+    "plate": "JBZ664",
+    "sentAt": "2026-09-06T14:45:39.717Z",
+    "details": "vence en *2 día(s)* (Fecha: *2026-09-08*)"
+  },
+  {
+    "id": "REM-1788705940533",
+    "type": "RTM_EXPIRATION",
+    "phone": "573143782617",
+    "plate": "YHR15D",
+    "sentAt": "2026-09-06T14:45:40.533Z",
+    "details": "vence en *2 día(s)* (Fecha: *2026-09-08*)"
+  },
+  {
+    "id": "REM-1788705942292",
+    "type": "RTM_EXPIRATION",
+    "phone": "573225340856",
+    "plate": "MPU41F",
+    "sentAt": "2026-09-06T14:45:42.292Z",
+    "details": "vence en *2 día(s)* (Fecha: *2026-09-08*)"
+  },
+  {
+    "id": "REM-1788705943058",
+    "type": "RTM_EXPIRATION",
+    "phone": "573209703695",
+    "plate": "FAI65A",
+    "sentAt": "2026-09-06T14:45:43.058Z",
+    "details": "vence en *2 día(s)* (Fecha: *2026-09-08*)"
+  },
+  {
+    "id": "REM-1788705944949",
+    "type": "RTM_EXPIRATION",
+    "phone": "573118747442",
+    "plate": "ZOF206",
+    "sentAt": "2026-09-06T14:45:44.949Z",
+    "details": "vence en *2 día(s)* (Fecha: *2026-09-08*)"
+  },
+  {
+    "id": "REM-1788705945627",
+    "type": "RTM_EXPIRATION",
+    "phone": "573214317039",
+    "plate": "OCJ463",
+    "sentAt": "2026-09-06T14:45:45.627Z",
+    "details": "vence en *2 día(s)* (Fecha: *2026-09-08*)"
+  },
+  {
+    "id": "REM-1788705947403",
+    "type": "RTM_EXPIRATION",
+    "phone": "573138463337",
+    "plate": "GZM868",
+    "sentAt": "2026-09-06T14:45:47.403Z",
+    "details": "vence en *2 día(s)* (Fecha: *2026-09-08*)"
+  },
+  {
+    "id": "REM-1788705948236",
+    "type": "RTM_EXPIRATION",
+    "phone": "573108092073",
+    "plate": "GIL865",
+    "sentAt": "2026-09-06T14:45:48.236Z",
+    "details": "vence en *2 día(s)* (Fecha: *2026-09-08*)"
+  },
+  {
+    "id": "REM-1788705949887",
+    "type": "RTM_EXPIRATION",
+    "phone": "573125371719",
+    "plate": "USR988",
+    "sentAt": "2026-09-06T14:45:49.887Z",
+    "details": "vence en *3 día(s)* (Fecha: *2026-09-09*)"
+  },
+  {
+    "id": "REM-1788705950732",
+    "type": "RTM_EXPIRATION",
+    "phone": "573144420251",
+    "plate": "XGJ282",
+    "sentAt": "2026-09-06T14:45:50.732Z",
+    "details": "vence en *3 día(s)* (Fecha: *2026-09-09*)"
+  },
+  {
+    "id": "REM-1788705952439",
+    "type": "RTM_EXPIRATION",
+    "phone": "573102495346",
+    "plate": "JDM341",
+    "sentAt": "2026-09-06T14:45:52.439Z",
+    "details": "vence en *3 día(s)* (Fecha: *2026-09-09*)"
+  },
+  {
+    "id": "REM-1788705953252",
+    "type": "RTM_EXPIRATION",
+    "phone": "573128948139",
+    "plate": "SSW594",
+    "sentAt": "2026-09-06T14:45:53.252Z",
+    "details": "vence en *3 día(s)* (Fecha: *2026-09-09*)"
+  },
+  {
+    "id": "REM-1788705954895",
+    "type": "RTM_EXPIRATION",
+    "phone": "573214943238",
+    "plate": "NAR89G",
+    "sentAt": "2026-09-06T14:45:54.895Z",
+    "details": "vence en *3 día(s)* (Fecha: *2026-09-09*)"
+  },
+  {
+    "id": "REM-1788705955752",
+    "type": "RTM_EXPIRATION",
+    "phone": "573118866819",
+    "plate": "YRD31C",
+    "sentAt": "2026-09-06T14:45:55.752Z",
+    "details": "vence en *3 día(s)* (Fecha: *2026-09-09*)"
+  },
+  {
+    "id": "REM-1788705957382",
+    "type": "RTM_EXPIRATION",
+    "phone": "573138557928",
+    "plate": "SSW043",
+    "sentAt": "2026-09-06T14:45:57.382Z",
+    "details": "vence en *3 día(s)* (Fecha: *2026-09-09*)"
+  },
+  {
+    "id": "CITA-REM-1788705958263",
+    "type": "APPOINTMENT_REMINDER",
+    "phone": "573209703695",
+    "plate": "FAI65A",
+    "sentAt": "2026-09-06T14:45:58.263Z",
+    "details": "Cita programada para: 2026-09-07 a las 2:00 PM"
+  },
+  {
+    "id": "REM-1788706190683",
+    "type": "RTM_EXPIRATION",
+    "phone": "573167434801",
+    "plate": "JMO176",
+    "sentAt": "2026-09-06T14:49:50.683Z",
+    "details": "vence en *3 día(s)* (Fecha: *2026-09-09*)"
+  },
+  {
+    "id": "REM-1788706193250",
+    "type": "RTM_EXPIRATION",
+    "phone": "573132649023",
+    "plate": "KAX79B",
+    "sentAt": "2026-09-06T14:49:53.250Z",
+    "details": "vence en *3 día(s)* (Fecha: *2026-09-09*)"
+  },
+  {
+    "id": "REM-1788706195735",
+    "type": "RTM_EXPIRATION",
+    "phone": "573138151203",
+    "plate": "SYR213",
+    "sentAt": "2026-09-06T14:49:55.735Z",
+    "details": "vence en *3 día(s)* (Fecha: *2026-09-09*)"
+  },
+  {
+    "id": "REM-1788706198221",
+    "type": "RTM_EXPIRATION",
+    "phone": "573196903654",
+    "plate": "GYC121",
+    "sentAt": "2026-09-06T14:49:58.221Z",
+    "details": "vence en *3 día(s)* (Fecha: *2026-09-09*)"
+  },
+  {
+    "id": "REM-1788706200830",
+    "type": "RTM_EXPIRATION",
+    "phone": "573215693845",
+    "plate": "SSI026",
+    "sentAt": "2026-09-06T14:50:00.830Z",
+    "details": "vence en *3 día(s)* (Fecha: *2026-09-09*)"
+  },
+  {
+    "id": "REM-1788706201308",
+    "type": "RTM_EXPIRATION",
+    "phone": "573215693845",
+    "plate": "SSI026",
+    "sentAt": "2026-09-06T14:50:01.308Z",
+    "details": "vence en *3 día(s)* (Fecha: *2026-09-09*)"
+  },
+  {
+    "id": "REM-1788706203312",
+    "type": "RTM_EXPIRATION",
+    "phone": "573007022930",
+    "plate": "FNW562",
+    "sentAt": "2026-09-06T14:50:03.312Z",
+    "details": "vence en *3 día(s)* (Fecha: *2026-09-09*)"
+  },
+  {
+    "id": "REM-1788706204102",
+    "type": "RTM_EXPIRATION",
+    "phone": "573115395305",
+    "plate": "KEZ573",
+    "sentAt": "2026-09-06T14:50:04.102Z",
+    "details": "vence en *3 día(s)* (Fecha: *2026-09-09*)"
+  },
+  {
+    "id": "REM-1788706205783",
+    "type": "RTM_EXPIRATION",
+    "phone": "573115220994",
+    "plate": "SGN139",
+    "sentAt": "2026-09-06T14:50:05.783Z",
+    "details": "vence en *3 día(s)* (Fecha: *2026-09-09*)"
+  },
+  {
+    "id": "REM-1788706206620",
+    "type": "RTM_EXPIRATION",
+    "phone": "573115996265",
+    "plate": "JMM951",
+    "sentAt": "2026-09-06T14:50:06.620Z",
+    "details": "vence en *3 día(s)* (Fecha: *2026-09-09*)"
+  },
+  {
+    "id": "REM-1788706208282",
+    "type": "RTM_EXPIRATION",
+    "phone": "573212530724",
+    "plate": "SKH215",
+    "sentAt": "2026-09-06T14:50:08.282Z",
+    "details": "vence en *3 día(s)* (Fecha: *2026-09-09*)"
+  },
+  {
+    "id": "REM-1788706209217",
+    "type": "RTM_EXPIRATION",
+    "phone": "573114700765",
+    "plate": "OAN82D",
+    "sentAt": "2026-09-06T14:50:09.217Z",
+    "details": "vence en *3 día(s)* (Fecha: *2026-09-09*)"
+  },
+  {
+    "id": "REM-1788706210763",
+    "type": "RTM_EXPIRATION",
+    "phone": "573218352433",
+    "plate": "NZT79D",
+    "sentAt": "2026-09-06T14:50:10.763Z",
+    "details": "vence en *3 día(s)* (Fecha: *2026-09-09*)"
+  },
+  {
+    "id": "REM-1788706211720",
+    "type": "RTM_EXPIRATION",
+    "phone": "573218352433",
+    "plate": "OIG201",
+    "sentAt": "2026-09-06T14:50:11.720Z",
+    "details": "vence en *3 día(s)* (Fecha: *2026-09-09*)"
+  },
+  {
+    "id": "REM-1788706213266",
+    "type": "RTM_EXPIRATION",
+    "phone": "573218352433",
+    "plate": "NZT78D",
+    "sentAt": "2026-09-06T14:50:13.266Z",
+    "details": "vence en *3 día(s)* (Fecha: *2026-09-09*)"
+  },
+  {
+    "id": "REM-1788706214278",
+    "type": "RTM_EXPIRATION",
+    "phone": "573212569685",
+    "plate": "RLY553",
+    "sentAt": "2026-09-06T14:50:14.278Z",
+    "details": "vence en *3 día(s)* (Fecha: *2026-09-09*)"
+  },
+  {
+    "id": "REM-1788706310604",
+    "type": "RTM_EXPIRATION",
+    "phone": "573212020261",
+    "plate": "XDY13D",
+    "sentAt": "2026-09-06T14:51:50.604Z",
+    "details": "vence en *4 día(s)* (Fecha: *2026-09-10*)"
+  },
+  {
+    "id": "REM-1788706310993",
+    "type": "RTM_EXPIRATION",
+    "phone": "573212020261",
+    "plate": "XDY13D",
+    "sentAt": "2026-09-06T14:51:50.993Z",
+    "details": "vence en *4 día(s)* (Fecha: *2026-09-10*)"
+  },
+  {
+    "id": "REM-1788706313061",
+    "type": "RTM_EXPIRATION",
+    "phone": "573152278157",
+    "plate": "LBF89F",
+    "sentAt": "2026-09-06T14:51:53.061Z",
+    "details": "vence en *4 día(s)* (Fecha: *2026-09-10*)"
+  },
+  {
+    "id": "REM-1788706314068",
+    "type": "RTM_EXPIRATION",
+    "phone": "573152278157",
+    "plate": "LBF89F",
+    "sentAt": "2026-09-06T14:51:54.068Z",
+    "details": "vence en *4 día(s)* (Fecha: *2026-09-10*)"
+  },
+  {
+    "id": "REM-1788706315871",
+    "type": "RTM_EXPIRATION",
+    "phone": "573202973656",
+    "plate": "IJV753",
+    "sentAt": "2026-09-06T14:51:55.871Z",
+    "details": "vence en *4 día(s)* (Fecha: *2026-09-10*)"
+  },
+  {
+    "id": "REM-1788706316409",
+    "type": "RTM_EXPIRATION",
+    "phone": "573218352436",
+    "plate": "NDZ619",
+    "sentAt": "2026-09-06T14:51:56.409Z",
+    "details": "vence en *4 día(s)* (Fecha: *2026-09-10*)"
+  },
+  {
+    "id": "REM-1788706318220",
+    "type": "RTM_EXPIRATION",
+    "phone": "573218352436",
+    "plate": "RKS997",
+    "sentAt": "2026-09-06T14:51:58.220Z",
+    "details": "vence en *4 día(s)* (Fecha: *2026-09-10*)"
+  },
+  {
+    "id": "REM-1788706318849",
+    "type": "RTM_EXPIRATION",
+    "phone": "573219170211",
+    "plate": "SNQ487",
+    "sentAt": "2026-09-06T14:51:58.849Z",
+    "details": "vence en *4 día(s)* (Fecha: *2026-09-10*)"
+  },
+  {
+    "id": "REM-1788706320575",
+    "type": "RTM_EXPIRATION",
+    "phone": "573143093849",
+    "plate": "AGD700",
+    "sentAt": "2026-09-06T14:52:00.575Z",
+    "details": "vence en *4 día(s)* (Fecha: *2026-09-10*)"
+  },
+  {
+    "id": "REM-1788706321973",
+    "type": "RTM_EXPIRATION",
+    "phone": "573103409054",
+    "plate": "KAZ38B",
+    "sentAt": "2026-09-06T14:52:01.973Z",
+    "details": "vence en *4 día(s)* (Fecha: *2026-09-10*)"
+  },
+  {
+    "id": "REM-1788706322917",
+    "type": "RTM_EXPIRATION",
+    "phone": "573212530724",
+    "plate": "SGP175",
+    "sentAt": "2026-09-06T14:52:02.917Z",
+    "details": "vence en *4 día(s)* (Fecha: *2026-09-10*)"
+  },
+  {
+    "id": "REM-1788706324575",
+    "type": "RTM_EXPIRATION",
+    "phone": "573163124942",
+    "plate": "JMQ862",
+    "sentAt": "2026-09-06T14:52:04.575Z",
+    "details": "vence en *4 día(s)* (Fecha: *2026-09-10*)"
+  },
+  {
+    "id": "REM-1788706325872",
+    "type": "RTM_EXPIRATION",
+    "phone": "573135368177",
+    "plate": "WHN109",
+    "sentAt": "2026-09-06T14:52:05.872Z",
+    "details": "vence en *4 día(s)* (Fecha: *2026-09-10*)"
+  },
+  {
+    "id": "REM-1788706326941",
+    "type": "RTM_EXPIRATION",
+    "phone": "573123649592",
+    "plate": "BTR398",
+    "sentAt": "2026-09-06T14:52:06.941Z",
+    "details": "vence en *4 día(s)* (Fecha: *2026-09-10*)"
+  },
+  {
+    "id": "REM-1788706328581",
+    "type": "RTM_EXPIRATION",
+    "phone": "573152498579",
+    "plate": "SPX778",
+    "sentAt": "2026-09-06T14:52:08.581Z",
+    "details": "vence en *4 día(s)* (Fecha: *2026-09-10*)"
+  },
+  {
+    "id": "REM-1788706329976",
+    "type": "RTM_EXPIRATION",
+    "phone": "573218352436",
+    "plate": "GGD29E",
+    "sentAt": "2026-09-06T14:52:09.976Z",
+    "details": "vence en *4 día(s)* (Fecha: *2026-09-10*)"
+  },
+  {
+    "id": "REM-1788706331119",
+    "type": "RTM_EXPIRATION",
+    "phone": "573114616713",
+    "plate": "SSG981",
+    "sentAt": "2026-09-06T14:52:11.119Z",
+    "details": "vence en *4 día(s)* (Fecha: *2026-09-10*)"
+  },
+  {
+    "id": "REM-1788706332609",
+    "type": "RTM_EXPIRATION",
+    "phone": "573505710567",
+    "plate": "FHF182",
+    "sentAt": "2026-09-06T14:52:12.609Z",
+    "details": "vence en *4 día(s)* (Fecha: *2026-09-10*)"
+  },
+  {
+    "id": "REM-1788706333462",
+    "type": "RTM_EXPIRATION",
+    "phone": "573012257222",
+    "plate": "PLI50E",
+    "sentAt": "2026-09-06T14:52:13.462Z",
+    "details": "vence en *4 día(s)* (Fecha: *2026-09-10*)"
+  },
+  {
+    "id": "REM-1788706335319",
+    "type": "RTM_EXPIRATION",
+    "phone": "573011075582",
+    "plate": "PJH463",
+    "sentAt": "2026-09-06T14:52:15.319Z",
+    "details": "vence en *4 día(s)* (Fecha: *2026-09-10*)"
+  },
+  {
+    "id": "REM-1788706335813",
+    "type": "RTM_EXPIRATION",
+    "phone": "573115498878",
+    "plate": "MWO622",
+    "sentAt": "2026-09-06T14:52:15.813Z",
+    "details": "vence en *4 día(s)* (Fecha: *2026-09-10*)"
+  },
+  {
+    "id": "REM-1788706337920",
+    "type": "RTM_EXPIRATION",
+    "phone": "573012330477",
+    "plate": "CZS820",
+    "sentAt": "2026-09-06T14:52:17.920Z",
+    "details": "vence en *4 día(s)* (Fecha: *2026-09-10*)"
+  },
+  {
+    "id": "REM-1788706338902",
+    "type": "RTM_EXPIRATION",
+    "phone": "573012330477",
+    "plate": "CZS820",
+    "sentAt": "2026-09-06T14:52:18.902Z",
+    "details": "vence en *4 día(s)* (Fecha: *2026-09-10*)"
+  },
+  {
+    "id": "REM-1788706340759",
+    "type": "RTM_EXPIRATION",
+    "phone": "573118936815",
+    "plate": "AAI252",
+    "sentAt": "2026-09-06T14:52:20.759Z",
+    "details": "vence en *4 día(s)* (Fecha: *2026-09-10*)"
+  },
+  {
+    "id": "REM-1788706341250",
+    "type": "RTM_EXPIRATION",
+    "phone": "573106801901",
+    "plate": "BRX132",
+    "sentAt": "2026-09-06T14:52:21.250Z",
+    "details": "vence en *4 día(s)* (Fecha: *2026-09-10*)"
+  },
+  {
+    "id": "REM-1788706343390",
+    "type": "RTM_EXPIRATION",
+    "phone": "573194178067",
+    "plate": "TLM367",
+    "sentAt": "2026-09-06T14:52:23.390Z",
+    "details": "vence en *4 día(s)* (Fecha: *2026-09-10*)"
+  },
+  {
+    "id": "REM-1788706343786",
+    "type": "RTM_EXPIRATION",
+    "phone": "573194178067",
+    "plate": "TLM367",
+    "sentAt": "2026-09-06T14:52:23.786Z",
+    "details": "vence en *4 día(s)* (Fecha: *2026-09-10*)"
+  },
+  {
+    "id": "REM-1788706346947",
+    "type": "RTM_EXPIRATION",
+    "phone": "573222481806",
+    "plate": "EDL22C",
+    "sentAt": "2026-09-06T14:52:26.947Z",
+    "details": "vence en *4 día(s)* (Fecha: *2026-09-10*)"
+  },
+  {
+    "id": "REM-1788706348341",
+    "type": "RTM_EXPIRATION",
+    "phone": "573222481806",
+    "plate": "EDL22C",
+    "sentAt": "2026-09-06T14:52:28.341Z",
+    "details": "vence en *4 día(s)* (Fecha: *2026-09-10*)"
+  },
+  {
+    "id": "REM-1788706349891",
+    "type": "RTM_EXPIRATION",
+    "phone": "573168768871",
+    "plate": "SSH813",
+    "sentAt": "2026-09-06T14:52:29.891Z",
+    "details": "vence en *4 día(s)* (Fecha: *2026-09-10*)"
+  },
+  {
+    "id": "REM-1788706351942",
+    "type": "RTM_EXPIRATION",
+    "phone": "573167007936",
+    "plate": "JJK95G",
+    "sentAt": "2026-09-06T14:52:31.942Z",
+    "details": "vence en *4 día(s)* (Fecha: *2026-09-10*)"
+  },
+  {
+    "id": "REM-1788706352478",
+    "type": "RTM_EXPIRATION",
+    "phone": "573167007936",
+    "plate": "JJK95G",
+    "sentAt": "2026-09-06T14:52:32.478Z",
+    "details": "vence en *4 día(s)* (Fecha: *2026-09-10*)"
+  },
+  {
+    "id": "REM-1788706354491",
+    "type": "RTM_EXPIRATION",
+    "phone": "573202716240",
+    "plate": "JXT57D",
+    "sentAt": "2026-09-06T14:52:34.491Z",
+    "details": "vence en *4 día(s)* (Fecha: *2026-09-10*)"
+  },
+  {
+    "id": "REM-1788706355548",
+    "type": "RTM_EXPIRATION",
+    "phone": "573202716240",
+    "plate": "JXT57D",
+    "sentAt": "2026-09-06T14:52:35.548Z",
+    "details": "vence en *4 día(s)* (Fecha: *2026-09-10*)"
+  },
+  {
+    "id": "REM-1788706428815",
+    "type": "RTM_EXPIRATION",
+    "phone": "573213570421",
+    "plate": "SOS501",
+    "sentAt": "2026-09-06T14:53:48.815Z",
+    "details": "vence en *5 día(s)* (Fecha: *2026-09-11*)"
+  },
+  {
+    "id": "REM-1788706431777",
+    "type": "RTM_EXPIRATION",
+    "phone": "573112547298",
+    "plate": "GLN932",
+    "sentAt": "2026-09-06T14:53:51.777Z",
+    "details": "vence en *5 día(s)* (Fecha: *2026-09-11*)"
+  },
+  {
+    "id": "REM-1788706434734",
+    "type": "RTM_EXPIRATION",
+    "phone": "573108105676",
+    "plate": "BRN708",
+    "sentAt": "2026-09-06T14:53:54.734Z",
+    "details": "vence en *5 día(s)* (Fecha: *2026-09-11*)"
+  },
+  {
+    "id": "REM-1788706438804",
+    "type": "RTM_EXPIRATION",
+    "phone": "573165246611",
+    "plate": "BNK426",
+    "sentAt": "2026-09-06T14:53:58.804Z",
+    "details": "vence en *5 día(s)* (Fecha: *2026-09-11*)"
+  },
+  {
+    "id": "REM-1788706441664",
+    "type": "RTM_EXPIRATION",
+    "phone": "573218352436",
+    "plate": "DCB350",
+    "sentAt": "2026-09-06T14:54:01.664Z",
+    "details": "vence en *5 día(s)* (Fecha: *2026-09-11*)"
+  },
+  {
+    "id": "REM-1788706444573",
+    "type": "RTM_EXPIRATION",
+    "phone": "573133778385",
+    "plate": "MFS11E",
+    "sentAt": "2026-09-06T14:54:04.573Z",
+    "details": "vence en *5 día(s)* (Fecha: *2026-09-11*)"
+  },
+  {
+    "id": "REM-1788706447630",
+    "type": "RTM_EXPIRATION",
+    "phone": "573122716865",
+    "plate": "SPC028",
+    "sentAt": "2026-09-06T14:54:07.630Z",
+    "details": "vence en *5 día(s)* (Fecha: *2026-09-11*)"
+  },
+  {
+    "id": "REM-1788706450597",
+    "type": "RTM_EXPIRATION",
+    "phone": "573209637355",
+    "plate": "ESZ018",
+    "sentAt": "2026-09-06T14:54:10.597Z",
+    "details": "vence en *5 día(s)* (Fecha: *2026-09-11*)"
+  },
+  {
+    "id": "REM-1788706453560",
+    "type": "RTM_EXPIRATION",
+    "phone": "573125464082",
+    "plate": "FQN303",
+    "sentAt": "2026-09-06T14:54:13.560Z",
+    "details": "vence en *5 día(s)* (Fecha: *2026-09-11*)"
+  },
+  {
+    "id": "REM-1788706456806",
+    "type": "RTM_EXPIRATION",
+    "phone": "573114564536",
+    "plate": "KAM048",
+    "sentAt": "2026-09-06T14:54:16.806Z",
+    "details": "vence en *5 día(s)* (Fecha: *2026-09-11*)"
+  },
+  {
+    "id": "REM-1788706460325",
+    "type": "RTM_EXPIRATION",
+    "phone": "573204406178",
+    "plate": "JBZ826",
+    "sentAt": "2026-09-06T14:54:20.325Z",
+    "details": "vence en *5 día(s)* (Fecha: *2026-09-11*)"
+  },
+  {
+    "id": "REM-1788706463214",
+    "type": "RTM_EXPIRATION",
+    "phone": "573227105394",
+    "plate": "TGK461",
+    "sentAt": "2026-09-06T14:54:23.214Z",
+    "details": "vence en *5 día(s)* (Fecha: *2026-09-11*)"
+  },
+  {
+    "id": "REM-1788706466788",
+    "type": "RTM_EXPIRATION",
+    "phone": "573105520567",
+    "plate": "INN17G",
+    "sentAt": "2026-09-06T14:54:26.788Z",
+    "details": "vence en *5 día(s)* (Fecha: *2026-09-11*)"
+  },
+  {
+    "id": "REM-1788706469755",
+    "type": "RTM_EXPIRATION",
+    "phone": "573168752464",
+    "plate": "BTV233",
+    "sentAt": "2026-09-06T14:54:29.755Z",
+    "details": "vence en *5 día(s)* (Fecha: *2026-09-11*)"
+  },
+  {
+    "id": "REM-1788706472631",
+    "type": "RTM_EXPIRATION",
+    "phone": "573228417886",
+    "plate": "THY750",
+    "sentAt": "2026-09-06T14:54:32.631Z",
+    "details": "vence en *5 día(s)* (Fecha: *2026-09-11*)"
+  },
+  {
+    "id": "REM-1788706475670",
+    "type": "RTM_EXPIRATION",
+    "phone": "573209085236",
+    "plate": "EMF81E",
+    "sentAt": "2026-09-06T14:54:35.670Z",
+    "details": "vence en *5 día(s)* (Fecha: *2026-09-11*)"
+  },
+  {
+    "id": "REM-1788706478606",
+    "type": "RTM_EXPIRATION",
+    "phone": "573227060645",
+    "plate": "GOA27F",
+    "sentAt": "2026-09-06T14:54:38.606Z",
+    "details": "vence en *5 día(s)* (Fecha: *2026-09-11*)"
+  },
+  {
+    "id": "REM-1788706481488",
+    "type": "RTM_EXPIRATION",
+    "phone": "573146597198",
+    "plate": "MNZ392",
+    "sentAt": "2026-09-06T14:54:41.488Z",
+    "details": "vence en *5 día(s)* (Fecha: *2026-09-11*)"
+  },
+  {
+    "id": "REM-1788706485037",
+    "type": "RTM_EXPIRATION",
+    "phone": "573183865683",
+    "plate": "DEY205",
+    "sentAt": "2026-09-06T14:54:45.037Z",
+    "details": "vence en *5 día(s)* (Fecha: *2026-09-11*)"
+  },
+  {
+    "id": "REM-1788706487896",
+    "type": "RTM_EXPIRATION",
+    "phone": "573218352436",
+    "plate": "GDY398",
+    "sentAt": "2026-09-06T14:54:47.896Z",
+    "details": "vence en *5 día(s)* (Fecha: *2026-09-11*)"
+  },
+  {
+    "id": "REM-1788706490782",
+    "type": "RTM_EXPIRATION",
+    "phone": "573144188309",
+    "plate": "PRU69A",
+    "sentAt": "2026-09-06T14:54:50.782Z",
+    "details": "vence en *5 día(s)* (Fecha: *2026-09-11*)"
+  },
+  {
+    "id": "REM-1788706493917",
+    "type": "RTM_EXPIRATION",
+    "phone": "573105651775",
+    "plate": "GBF62E",
+    "sentAt": "2026-09-06T14:54:53.917Z",
+    "details": "vence en *5 día(s)* (Fecha: *2026-09-11*)"
+  },
+  {
+    "id": "REM-1788706496779",
+    "type": "RTM_EXPIRATION",
+    "phone": "573218352436",
+    "plate": "HBZ685",
+    "sentAt": "2026-09-06T14:54:56.779Z",
+    "details": "vence en *5 día(s)* (Fecha: *2026-09-11*)"
+  },
+  {
+    "id": "REM-1788706499668",
+    "type": "RTM_EXPIRATION",
+    "phone": "573218352436",
+    "plate": "JBZ713",
+    "sentAt": "2026-09-06T14:54:59.668Z",
+    "details": "vence en *5 día(s)* (Fecha: *2026-09-11*)"
+  },
+  {
+    "id": "REM-1788706501422",
+    "type": "RTM_EXPIRATION",
+    "phone": "573123843776",
+    "plate": "TAL419",
+    "sentAt": "2026-09-06T14:55:01.422Z",
+    "details": "vence en *5 día(s)* (Fecha: *2026-09-11*)"
+  },
+  {
+    "id": "REM-1788706502550",
+    "type": "RTM_EXPIRATION",
+    "phone": "573133709331",
+    "plate": "ZOE165",
+    "sentAt": "2026-09-06T14:55:02.550Z",
+    "details": "vence en *5 día(s)* (Fecha: *2026-09-11*)"
+  },
+  {
+    "id": "REM-1788706504353",
+    "type": "RTM_EXPIRATION",
+    "phone": "573218352436",
+    "plate": "RFK253",
+    "sentAt": "2026-09-06T14:55:04.353Z",
+    "details": "vence en *5 día(s)* (Fecha: *2026-09-11*)"
+  },
+  {
+    "id": "REM-1788706505404",
+    "type": "RTM_EXPIRATION",
+    "phone": "573218352436",
+    "plate": "SGO821",
+    "sentAt": "2026-09-06T14:55:05.404Z",
+    "details": "vence en *5 día(s)* (Fecha: *2026-09-11*)"
+  },
+  {
+    "id": "REM-1788706507281",
+    "type": "RTM_EXPIRATION",
+    "phone": "573173069845",
+    "plate": "CDP429",
+    "sentAt": "2026-09-06T14:55:07.281Z",
+    "details": "vence en *5 día(s)* (Fecha: *2026-09-11*)"
+  },
+  {
+    "id": "REM-1788706508545",
+    "type": "RTM_EXPIRATION",
+    "phone": "573145317561",
+    "plate": "VJJ234",
+    "sentAt": "2026-09-06T14:55:08.545Z",
+    "details": "vence en *5 día(s)* (Fecha: *2026-09-11*)"
+  },
+  {
+    "id": "REM-1788706510163",
+    "type": "RTM_EXPIRATION",
+    "phone": "573112859916",
+    "plate": "TAM543",
+    "sentAt": "2026-09-06T14:55:10.163Z",
+    "details": "vence en *5 día(s)* (Fecha: *2026-09-11*)"
+  },
+  {
+    "id": "REM-1788706512541",
+    "type": "RTM_EXPIRATION",
+    "phone": "573105571605",
+    "plate": "JMV015",
+    "sentAt": "2026-09-06T14:55:12.541Z",
+    "details": "vence en *5 día(s)* (Fecha: *2026-09-11*)"
+  },
+  {
+    "id": "REM-1788706513602",
+    "type": "RTM_EXPIRATION",
+    "phone": "573105571605",
+    "plate": "JMV015",
+    "sentAt": "2026-09-06T14:55:13.602Z",
+    "details": "vence en *5 día(s)* (Fecha: *2026-09-11*)"
+  },
+  {
+    "id": "REM-1788706515397",
+    "type": "RTM_EXPIRATION",
+    "phone": "573026330822",
+    "plate": "VAL555",
+    "sentAt": "2026-09-06T14:55:15.397Z",
+    "details": "vence en *5 día(s)* (Fecha: *2026-09-11*)"
+  },
+  {
+    "id": "REM-1788706517168",
+    "type": "RTM_EXPIRATION",
+    "phone": "573013174109",
+    "plate": "EJT662",
+    "sentAt": "2026-09-06T14:55:17.168Z",
+    "details": "vence en *5 día(s)* (Fecha: *2026-09-11*)"
+  },
+  {
+    "id": "REM-1788706518366",
+    "type": "RTM_EXPIRATION",
+    "phone": "573026330822",
+    "plate": "FJH92F",
+    "sentAt": "2026-09-06T14:55:18.366Z",
+    "details": "vence en *5 día(s)* (Fecha: *2026-09-11*)"
+  },
+  {
+    "id": "REM-1788706520209",
+    "type": "RTM_EXPIRATION",
+    "phone": "573114826999",
+    "plate": "NOE07B",
+    "sentAt": "2026-09-06T14:55:20.209Z",
+    "details": "vence en *5 día(s)* (Fecha: *2026-09-11*)"
+  },
+  {
+    "id": "REM-1788706521236",
+    "type": "RTM_EXPIRATION",
+    "phone": "573105748118",
+    "plate": "JFQ27C",
+    "sentAt": "2026-09-06T14:55:21.236Z",
+    "details": "vence en *5 día(s)* (Fecha: *2026-09-11*)"
+  },
+  {
+    "id": "REM-1788706523222",
+    "type": "RTM_EXPIRATION",
+    "phone": "573204554219",
+    "plate": "LIN011",
+    "sentAt": "2026-09-06T14:55:23.222Z",
+    "details": "vence en *5 día(s)* (Fecha: *2026-09-11*)"
+  },
+  {
+    "id": "REM-1788706524100",
+    "type": "RTM_EXPIRATION",
+    "phone": "573227181205",
+    "plate": "TET53E",
+    "sentAt": "2026-09-06T14:55:24.100Z",
+    "details": "vence en *5 día(s)* (Fecha: *2026-09-11*)"
+  },
+  {
+    "id": "REM-1788706526132",
+    "type": "RTM_EXPIRATION",
+    "phone": "573218352436",
+    "plate": "JBZ375",
+    "sentAt": "2026-09-06T14:55:26.132Z",
+    "details": "vence en *5 día(s)* (Fecha: *2026-09-11*)"
+  },
+  {
+    "id": "REM-1788706526987",
+    "type": "RTM_EXPIRATION",
+    "phone": "573218352436",
+    "plate": "JBZ375",
+    "sentAt": "2026-09-06T14:55:26.987Z",
+    "details": "vence en *5 día(s)* (Fecha: *2026-09-11*)"
+  },
+  {
+    "id": "REM-1788706529024",
+    "type": "RTM_EXPIRATION",
+    "phone": "573132307585",
+    "plate": "GCV76E",
+    "sentAt": "2026-09-06T14:55:29.024Z",
+    "details": "vence en *5 día(s)* (Fecha: *2026-09-11*)"
+  },
+  {
+    "id": "REM-1788706529946",
+    "type": "RTM_EXPIRATION",
+    "phone": "573132307585",
+    "plate": "GCV76E",
+    "sentAt": "2026-09-06T14:55:29.946Z",
+    "details": "vence en *5 día(s)* (Fecha: *2026-09-11*)"
+  },
+  {
+    "id": "REM-1788706531901",
+    "type": "RTM_EXPIRATION",
+    "phone": "573218352436",
+    "plate": "MWN419",
+    "sentAt": "2026-09-06T14:55:31.901Z",
+    "details": "vence en *5 día(s)* (Fecha: *2026-09-11*)"
+  },
+  {
+    "id": "REM-1788706532893",
+    "type": "RTM_EXPIRATION",
+    "phone": "573114688918",
+    "plate": "KBP821",
+    "sentAt": "2026-09-06T14:55:32.893Z",
+    "details": "vence en *5 día(s)* (Fecha: *2026-09-11*)"
+  },
+  {
+    "id": "REM-1788706535244",
+    "type": "RTM_EXPIRATION",
+    "phone": "573007566229",
+    "plate": "FJM04C",
+    "sentAt": "2026-09-06T14:55:35.244Z",
+    "details": "vence en *5 día(s)* (Fecha: *2026-09-11*)"
+  },
+  {
+    "id": "REM-1788706536082",
+    "type": "RTM_EXPIRATION",
+    "phone": "573007566229",
+    "plate": "FJM04C",
+    "sentAt": "2026-09-06T14:55:36.082Z",
+    "details": "vence en *5 día(s)* (Fecha: *2026-09-11*)"
+  },
+  {
+    "id": "REM-1788706538125",
+    "type": "RTM_EXPIRATION",
+    "phone": "573135908420",
+    "plate": "RGQ051",
+    "sentAt": "2026-09-06T14:55:38.125Z",
+    "details": "vence en *5 día(s)* (Fecha: *2026-09-11*)"
+  },
+  {
+    "id": "REM-1788706539193",
+    "type": "RTM_EXPIRATION",
+    "phone": "573135908420",
+    "plate": "RGQ051",
+    "sentAt": "2026-09-06T14:55:39.193Z",
+    "details": "vence en *5 día(s)* (Fecha: *2026-09-11*)"
+  },
+  {
+    "id": "REM-1788706541932",
+    "type": "RTM_EXPIRATION",
+    "phone": "573103266228",
+    "plate": "CNU08F",
+    "sentAt": "2026-09-06T14:55:41.932Z",
+    "details": "vence en *6 día(s)* (Fecha: *2026-09-12*)"
+  },
+  {
+    "id": "REM-1788706543335",
+    "type": "RTM_EXPIRATION",
+    "phone": "573103266228",
+    "plate": "CNU08F",
+    "sentAt": "2026-09-06T14:55:43.335Z",
+    "details": "vence en *6 día(s)* (Fecha: *2026-09-12*)"
+  },
+  {
+    "id": "REM-1788706544935",
+    "type": "RTM_EXPIRATION",
+    "phone": "573218352436",
+    "plate": "BGS494",
+    "sentAt": "2026-09-06T14:55:44.935Z",
+    "details": "vence en *6 día(s)* (Fecha: *2026-09-12*)"
+  },
+  {
+    "id": "REM-1788706546229",
+    "type": "RTM_EXPIRATION",
+    "phone": "573006748790",
+    "plate": "JDP648",
+    "sentAt": "2026-09-06T14:55:46.229Z",
+    "details": "vence en *6 día(s)* (Fecha: *2026-09-12*)"
+  },
+  {
+    "id": "REM-1788706547809",
+    "type": "RTM_EXPIRATION",
+    "phone": "573144707895",
+    "plate": "VXI662",
+    "sentAt": "2026-09-06T14:55:47.809Z",
+    "details": "vence en *6 día(s)* (Fecha: *2026-09-12*)"
+  },
+  {
+    "id": "REM-1788706549115",
+    "type": "RTM_EXPIRATION",
+    "phone": "573112921555",
+    "plate": "UQP168",
+    "sentAt": "2026-09-06T14:55:49.115Z",
+    "details": "vence en *6 día(s)* (Fecha: *2026-09-12*)"
+  },
+  {
+    "id": "REM-1788706550699",
+    "type": "RTM_EXPIRATION",
+    "phone": "573203249029",
+    "plate": "DVM676",
+    "sentAt": "2026-09-06T14:55:50.699Z",
+    "details": "vence en *6 día(s)* (Fecha: *2026-09-12*)"
+  },
+  {
+    "id": "REM-1788706552012",
+    "type": "RTM_EXPIRATION",
+    "phone": "573229023586",
+    "plate": "WNQ425",
+    "sentAt": "2026-09-06T14:55:52.012Z",
+    "details": "vence en *6 día(s)* (Fecha: *2026-09-12*)"
+  },
+  {
+    "id": "REM-1788706553599",
+    "type": "RTM_EXPIRATION",
+    "phone": "573218352436",
+    "plate": "RCN966",
+    "sentAt": "2026-09-06T14:55:53.599Z",
+    "details": "vence en *6 día(s)* (Fecha: *2026-09-12*)"
+  },
+  {
+    "id": "REM-1788706554913",
+    "type": "RTM_EXPIRATION",
+    "phone": "573166237245",
+    "plate": "FJT91F",
+    "sentAt": "2026-09-06T14:55:54.913Z",
+    "details": "vence en *6 día(s)* (Fecha: *2026-09-12*)"
+  },
+  {
+    "id": "REM-1788706556480",
+    "type": "RTM_EXPIRATION",
+    "phone": "573145158915",
+    "plate": "XLD01F",
+    "sentAt": "2026-09-06T14:55:56.480Z",
+    "details": "vence en *6 día(s)* (Fecha: *2026-09-12*)"
+  },
+  {
+    "id": "REM-1788706557788",
+    "type": "RTM_EXPIRATION",
+    "phone": "573002091490",
+    "plate": "JBZ842",
+    "sentAt": "2026-09-06T14:55:57.788Z",
+    "details": "vence en *6 día(s)* (Fecha: *2026-09-12*)"
+  },
+  {
+    "id": "REM-1788706559302",
+    "type": "RTM_EXPIRATION",
+    "phone": "573183991909",
+    "plate": "JJJ07G",
+    "sentAt": "2026-09-06T14:55:59.302Z",
+    "details": "vence en *6 día(s)* (Fecha: *2026-09-12*)"
+  },
+  {
+    "id": "REM-1788706560764",
+    "type": "RTM_EXPIRATION",
+    "phone": "573218352436",
+    "plate": "FQZ301",
+    "sentAt": "2026-09-06T14:56:00.764Z",
+    "details": "vence en *6 día(s)* (Fecha: *2026-09-12*)"
+  },
+  {
+    "id": "REM-1788706562836",
+    "type": "RTM_EXPIRATION",
+    "phone": "573102301022",
+    "plate": "DXN603",
+    "sentAt": "2026-09-06T14:56:02.836Z",
+    "details": "vence en *6 día(s)* (Fecha: *2026-09-12*)"
+  },
+  {
+    "id": "REM-1788706564302",
+    "type": "RTM_EXPIRATION",
+    "phone": "573102301022",
+    "plate": "DXN603",
+    "sentAt": "2026-09-06T14:56:04.302Z",
+    "details": "vence en *6 día(s)* (Fecha: *2026-09-12*)"
+  },
+  {
+    "id": "REM-1788706566360",
+    "type": "RTM_EXPIRATION",
+    "phone": "573138760666",
+    "plate": "MVL437",
+    "sentAt": "2026-09-06T14:56:06.360Z",
+    "details": "vence en *6 día(s)* (Fecha: *2026-09-12*)"
+  },
+  {
+    "id": "REM-1788706567792",
+    "type": "RTM_EXPIRATION",
+    "phone": "573138760666",
+    "plate": "MVL437",
+    "sentAt": "2026-09-06T14:56:07.792Z",
+    "details": "vence en *6 día(s)* (Fecha: *2026-09-12*)"
+  },
+  {
+    "id": "REM-1788706569309",
+    "type": "RTM_EXPIRATION",
+    "phone": "573214986349",
+    "plate": "GRC476",
+    "sentAt": "2026-09-06T14:56:09.309Z",
+    "details": "vence en *6 día(s)* (Fecha: *2026-09-12*)"
+  },
+  {
+    "id": "REM-1788706570667",
+    "type": "RTM_EXPIRATION",
+    "phone": "573224182005",
+    "plate": "QZN38C",
+    "sentAt": "2026-09-06T14:56:10.667Z",
+    "details": "vence en *6 día(s)* (Fecha: *2026-09-12*)"
+  },
+  {
+    "id": "REM-1788706572317",
+    "type": "RTM_EXPIRATION",
+    "phone": "573112127998",
+    "plate": "SSH578",
+    "sentAt": "2026-09-06T14:56:12.317Z",
+    "details": "vence en *6 día(s)* (Fecha: *2026-09-12*)"
+  },
+  {
+    "id": "REM-1788706573521",
+    "type": "RTM_EXPIRATION",
+    "phone": "573229825790",
+    "plate": "VDD951",
+    "sentAt": "2026-09-06T14:56:13.521Z",
+    "details": "vence en *6 día(s)* (Fecha: *2026-09-12*)"
+  },
+  {
+    "id": "REM-1788706575189",
+    "type": "RTM_EXPIRATION",
+    "phone": "573152424934",
+    "plate": "SSX550",
+    "sentAt": "2026-09-06T14:56:15.189Z",
+    "details": "vence en *6 día(s)* (Fecha: *2026-09-12*)"
+  },
+  {
+    "id": "REM-1788706576406",
+    "type": "RTM_EXPIRATION",
+    "phone": "573123551932",
+    "plate": "DVM868",
+    "sentAt": "2026-09-06T14:56:16.406Z",
+    "details": "vence en *6 día(s)* (Fecha: *2026-09-12*)"
+  },
+  {
+    "id": "REM-1788706578825",
+    "type": "RTM_EXPIRATION",
+    "phone": "573143293408",
+    "plate": "BIU758",
+    "sentAt": "2026-09-06T14:56:18.825Z",
+    "details": "vence en *6 día(s)* (Fecha: *2026-09-12*)"
+  },
+  {
+    "id": "REM-1788706580262",
+    "type": "RTM_EXPIRATION",
+    "phone": "573143293408",
+    "plate": "BIU758",
+    "sentAt": "2026-09-06T14:56:20.262Z",
+    "details": "vence en *6 día(s)* (Fecha: *2026-09-12*)"
+  },
+  {
+    "id": "REM-1788706582001",
+    "type": "RTM_EXPIRATION",
+    "phone": "573123401979",
+    "plate": "SKY289",
+    "sentAt": "2026-09-06T14:56:22.001Z",
+    "details": "vence en *6 día(s)* (Fecha: *2026-09-12*)"
+  },
+  {
+    "id": "REM-1788706583218",
+    "type": "RTM_EXPIRATION",
+    "phone": "573122980600",
+    "plate": "SSW161",
+    "sentAt": "2026-09-06T14:56:23.218Z",
+    "details": "vence en *6 día(s)* (Fecha: *2026-09-12*)"
+  },
+  {
+    "id": "REM-1788706584937",
+    "type": "RTM_EXPIRATION",
+    "phone": "573209406046",
+    "plate": "BHA452",
+    "sentAt": "2026-09-06T14:56:24.937Z",
+    "details": "vence en *6 día(s)* (Fecha: *2026-09-12*)"
+  },
+  {
+    "id": "REM-1788706586077",
+    "type": "RTM_EXPIRATION",
+    "phone": "573154567390",
+    "plate": "SCH065",
+    "sentAt": "2026-09-06T14:56:26.077Z",
+    "details": "vence en *6 día(s)* (Fecha: *2026-09-12*)"
+  },
+  {
+    "id": "REM-1788706587946",
+    "type": "RTM_EXPIRATION",
+    "phone": "573142514428",
+    "plate": "SPT450",
+    "sentAt": "2026-09-06T14:56:27.946Z",
+    "details": "vence en *6 día(s)* (Fecha: *2026-09-12*)"
+  },
+  {
+    "id": "REM-1788706589034",
+    "type": "RTM_EXPIRATION",
+    "phone": "573112921555",
+    "plate": "SSH416",
+    "sentAt": "2026-09-06T14:56:29.034Z",
+    "details": "vence en *6 día(s)* (Fecha: *2026-09-12*)"
+  },
+  {
+    "id": "REM-1788706590830",
+    "type": "RTM_EXPIRATION",
+    "phone": "573123256202",
+    "plate": "JBZ796",
+    "sentAt": "2026-09-06T14:56:30.830Z",
+    "details": "vence en *6 día(s)* (Fecha: *2026-09-12*)"
+  },
+  {
+    "id": "REM-1788706592291",
+    "type": "RTM_EXPIRATION",
+    "phone": "573134215343",
+    "plate": "WCT09G",
+    "sentAt": "2026-09-06T14:56:32.291Z",
+    "details": "vence en *6 día(s)* (Fecha: *2026-09-12*)"
+  },
+  {
+    "id": "REM-1788706593931",
+    "type": "RTM_EXPIRATION",
+    "phone": "573185364267",
+    "plate": "WMK050",
+    "sentAt": "2026-09-06T14:56:33.931Z",
+    "details": "vence en *6 día(s)* (Fecha: *2026-09-12*)"
+  },
+  {
+    "id": "REM-1788706595372",
+    "type": "RTM_EXPIRATION",
+    "phone": "573102533178",
+    "plate": "GKZ275",
+    "sentAt": "2026-09-06T14:56:35.372Z",
+    "details": "vence en *6 día(s)* (Fecha: *2026-09-12*)"
+  },
+  {
+    "id": "REM-1788706596841",
+    "type": "RTM_EXPIRATION",
+    "phone": "573162228208",
+    "plate": "RBW235",
+    "sentAt": "2026-09-06T14:56:36.841Z",
+    "details": "vence en *6 día(s)* (Fecha: *2026-09-12*)"
+  },
+  {
+    "id": "REM-1788706599198",
+    "type": "RTM_EXPIRATION",
+    "phone": "573004027068",
+    "plate": "BJU495",
+    "sentAt": "2026-09-06T14:56:39.198Z",
+    "details": "vence en *6 día(s)* (Fecha: *2026-09-12*)"
+  },
+  {
+    "id": "REM-1788706600549",
+    "type": "RTM_EXPIRATION",
+    "phone": "573004027068",
+    "plate": "BJU495",
+    "sentAt": "2026-09-06T14:56:40.549Z",
+    "details": "vence en *6 día(s)* (Fecha: *2026-09-12*)"
+  },
+  {
+    "id": "REM-1788706602669",
+    "type": "RTM_EXPIRATION",
+    "phone": "573134590586",
+    "plate": "RHX337",
+    "sentAt": "2026-09-06T14:56:42.669Z",
+    "details": "vence en *6 día(s)* (Fecha: *2026-09-12*)"
+  },
+  {
+    "id": "REM-1788706604066",
+    "type": "RTM_EXPIRATION",
+    "phone": "573134590586",
+    "plate": "RHX337",
+    "sentAt": "2026-09-06T14:56:44.066Z",
+    "details": "vence en *6 día(s)* (Fecha: *2026-09-12*)"
+  },
+  {
+    "id": "REM-1788706605536",
+    "type": "RTM_EXPIRATION",
+    "phone": "573166237245",
+    "plate": "IKU616",
+    "sentAt": "2026-09-06T14:56:45.536Z",
+    "details": "vence en *6 día(s)* (Fecha: *2026-09-12*)"
+  },
+  {
+    "id": "REM-1788706608385",
+    "type": "RTM_EXPIRATION",
+    "phone": "573222612766",
+    "plate": "VEC140",
+    "sentAt": "2026-09-06T14:56:48.385Z",
+    "details": "vence en *6 día(s)* (Fecha: *2026-09-12*)"
+  },
+  {
+    "id": "REM-1788706609338",
+    "type": "RTM_EXPIRATION",
+    "phone": "573222612766",
+    "plate": "VEC140",
+    "sentAt": "2026-09-06T14:56:49.338Z",
+    "details": "vence en *6 día(s)* (Fecha: *2026-09-12*)"
+  },
+  {
+    "id": "REM-1788706611380",
+    "type": "RTM_EXPIRATION",
+    "phone": "573115589832",
+    "plate": "KMK723",
+    "sentAt": "2026-09-06T14:56:51.380Z",
+    "details": "vence en *6 día(s)* (Fecha: *2026-09-12*)"
+  },
+  {
+    "id": "REM-1788706612290",
+    "type": "RTM_EXPIRATION",
+    "phone": "573115589832",
+    "plate": "KMK723",
+    "sentAt": "2026-09-06T14:56:52.290Z",
+    "details": "vence en *6 día(s)* (Fecha: *2026-09-12*)"
+  },
+  {
+    "id": "REM-1788706614448",
+    "type": "RTM_EXPIRATION",
+    "phone": "573118864375",
+    "plate": "MBW375",
+    "sentAt": "2026-09-06T14:56:54.448Z",
+    "details": "vence en *6 día(s)* (Fecha: *2026-09-12*)"
+  },
+  {
+    "id": "REM-1788706615327",
+    "type": "RTM_EXPIRATION",
+    "phone": "573118864375",
+    "plate": "MBW375",
+    "sentAt": "2026-09-06T14:56:55.327Z",
+    "details": "vence en *6 día(s)* (Fecha: *2026-09-12*)"
+  },
+  {
+    "id": "REM-1788706617436",
+    "type": "RTM_EXPIRATION",
+    "phone": "573219040440",
+    "plate": "LAC471",
+    "sentAt": "2026-09-06T14:56:57.436Z",
+    "details": "vence en *6 día(s)* (Fecha: *2026-09-12*)"
+  },
+  {
+    "id": "REM-1788706618516",
+    "type": "RTM_EXPIRATION",
+    "phone": "573219040440",
+    "plate": "LAC471",
+    "sentAt": "2026-09-06T14:56:58.516Z",
+    "details": "vence en *6 día(s)* (Fecha: *2026-09-12*)"
+  },
+  {
+    "id": "REM-1788706620304",
+    "type": "RTM_EXPIRATION",
+    "phone": "573138975496",
+    "plate": "MKR219",
+    "sentAt": "2026-09-06T14:57:00.304Z",
+    "details": "vence en *6 día(s)* (Fecha: *2026-09-12*)"
+  },
+  {
+    "id": "REM-1788706621447",
+    "type": "RTM_EXPIRATION",
+    "phone": "573214254829",
+    "plate": "GCZ19E",
+    "sentAt": "2026-09-06T14:57:01.447Z",
+    "details": "vence en *6 día(s)* (Fecha: *2026-09-12*)"
+  },
+  {
+    "id": "REM-1788706623743",
+    "type": "RTM_EXPIRATION",
+    "phone": "573124671503",
+    "plate": "UUM59E",
+    "sentAt": "2026-09-06T14:57:03.743Z",
+    "details": "vence en *6 día(s)* (Fecha: *2026-09-12*)"
+  },
+  {
+    "id": "REM-1788706625301",
+    "type": "RTM_EXPIRATION",
+    "phone": "573124671503",
+    "plate": "UUM59E",
+    "sentAt": "2026-09-06T14:57:05.301Z",
+    "details": "vence en *6 día(s)* (Fecha: *2026-09-12*)"
+  },
+  {
+    "id": "REM-1788706626689",
+    "type": "RTM_EXPIRATION",
+    "phone": "573187075081",
+    "plate": "SZZ963",
+    "sentAt": "2026-09-06T14:57:06.689Z",
+    "details": "vence en *6 día(s)* (Fecha: *2026-09-12*)"
+  },
+  {
+    "id": "REM-1788706628804",
+    "type": "RTM_EXPIRATION",
+    "phone": "573103119747",
+    "plate": "BPS091",
+    "sentAt": "2026-09-06T14:57:08.804Z",
+    "details": "vence en *7 día(s)* (Fecha: *2026-09-13*)"
+  },
+  {
+    "id": "REM-1788706630148",
+    "type": "RTM_EXPIRATION",
+    "phone": "573103119747",
+    "plate": "BPS091",
+    "sentAt": "2026-09-06T14:57:10.148Z",
+    "details": "vence en *7 día(s)* (Fecha: *2026-09-13*)"
+  },
+  {
+    "id": "REM-1788706631676",
+    "type": "RTM_EXPIRATION",
+    "phone": "573023259080",
+    "plate": "INS43B",
+    "sentAt": "2026-09-06T14:57:11.676Z",
+    "details": "vence en *7 día(s)* (Fecha: *2026-09-13*)"
+  },
+  {
+    "id": "REM-1788706633016",
+    "type": "RTM_EXPIRATION",
+    "phone": "573195708253",
+    "plate": "OBB764",
+    "sentAt": "2026-09-06T14:57:13.016Z",
+    "details": "vence en *7 día(s)* (Fecha: *2026-09-13*)"
+  },
+  {
+    "id": "REM-1788706634618",
+    "type": "RTM_EXPIRATION",
+    "phone": "573144242373",
+    "plate": "SSI164",
+    "sentAt": "2026-09-06T14:57:14.618Z",
+    "details": "vence en *7 día(s)* (Fecha: *2026-09-13*)"
+  },
+  {
+    "id": "REM-1788706635994",
+    "type": "RTM_EXPIRATION",
+    "phone": "573144886512",
+    "plate": "IVB67F",
+    "sentAt": "2026-09-06T14:57:15.994Z",
+    "details": "vence en *7 día(s)* (Fecha: *2026-09-13*)"
+  },
+  {
+    "id": "REM-1788706638139",
+    "type": "RTM_EXPIRATION",
+    "phone": "573202250238",
+    "plate": "FJW85F",
+    "sentAt": "2026-09-06T14:57:18.139Z",
+    "details": "vence en *7 día(s)* (Fecha: *2026-09-13*)"
+  },
+  {
+    "id": "REM-1788706639793",
+    "type": "RTM_EXPIRATION",
+    "phone": "573202250238",
+    "plate": "FJW85F",
+    "sentAt": "2026-09-06T14:57:19.793Z",
+    "details": "vence en *7 día(s)* (Fecha: *2026-09-13*)"
+  },
+  {
+    "id": "REM-1788706641053",
+    "type": "RTM_EXPIRATION",
+    "phone": "573112706420",
+    "plate": "WJF86D",
+    "sentAt": "2026-09-06T14:57:21.053Z",
+    "details": "vence en *7 día(s)* (Fecha: *2026-09-13*)"
+  },
+  {
+    "id": "REM-1788706642686",
+    "type": "RTM_EXPIRATION",
+    "phone": "573112320698",
+    "plate": "DJK001",
+    "sentAt": "2026-09-06T14:57:22.686Z",
+    "details": "vence en *7 día(s)* (Fecha: *2026-09-13*)"
+  },
+  {
+    "id": "REM-1788706644106",
+    "type": "RTM_EXPIRATION",
+    "phone": "573202069741",
+    "plate": "SCK295",
+    "sentAt": "2026-09-06T14:57:24.106Z",
+    "details": "vence en *7 día(s)* (Fecha: *2026-09-13*)"
+  },
+  {
+    "id": "REM-1788706645864",
+    "type": "RTM_EXPIRATION",
+    "phone": "573218658449",
+    "plate": "TLN426",
+    "sentAt": "2026-09-06T14:57:25.864Z",
+    "details": "vence en *7 día(s)* (Fecha: *2026-09-13*)"
+  },
+  {
+    "id": "REM-1788706647026",
+    "type": "RTM_EXPIRATION",
+    "phone": "573194162270",
+    "plate": "EXX420",
+    "sentAt": "2026-09-06T14:57:27.026Z",
+    "details": "vence en *7 día(s)* (Fecha: *2026-09-13*)"
+  },
+  {
+    "id": "REM-1788706649268",
+    "type": "RTM_EXPIRATION",
+    "phone": "573143835353",
+    "plate": "RJK913",
+    "sentAt": "2026-09-06T14:57:29.268Z",
+    "details": "vence en *7 día(s)* (Fecha: *2026-09-13*)"
+  },
+  {
+    "id": "REM-1788706650711",
+    "type": "RTM_EXPIRATION",
+    "phone": "573143835353",
+    "plate": "RJK913",
+    "sentAt": "2026-09-06T14:57:30.711Z",
+    "details": "vence en *7 día(s)* (Fecha: *2026-09-13*)"
+  },
+  {
+    "id": "REM-1788706652195",
+    "type": "RTM_EXPIRATION",
+    "phone": "573112725432",
+    "plate": "EJD546",
+    "sentAt": "2026-09-06T14:57:32.195Z",
+    "details": "vence en *7 día(s)* (Fecha: *2026-09-13*)"
+  },
+  {
+    "id": "REM-1788706653637",
+    "type": "RTM_EXPIRATION",
+    "phone": "573165794722",
+    "plate": "CXJ023",
+    "sentAt": "2026-09-06T14:57:33.637Z",
+    "details": "vence en *7 día(s)* (Fecha: *2026-09-13*)"
+  },
+  {
+    "id": "REM-1788706655631",
+    "type": "RTM_EXPIRATION",
+    "phone": "573124801434",
+    "plate": "MFT130",
+    "sentAt": "2026-09-06T14:57:35.631Z",
+    "details": "vence en *7 día(s)* (Fecha: *2026-09-13*)"
+  },
+  {
+    "id": "REM-1788706656544",
+    "type": "RTM_EXPIRATION",
+    "phone": "573208037873",
+    "plate": "CIN171",
+    "sentAt": "2026-09-06T14:57:36.544Z",
+    "details": "vence en *7 día(s)* (Fecha: *2026-09-13*)"
+  },
+  {
+    "id": "REM-1788706659065",
+    "type": "RTM_EXPIRATION",
+    "phone": "573108751714",
+    "plate": "UEW355",
+    "sentAt": "2026-09-06T14:57:39.065Z",
+    "details": "vence en *7 día(s)* (Fecha: *2026-09-13*)"
+  },
+  {
+    "id": "REM-1788706660484",
+    "type": "RTM_EXPIRATION",
+    "phone": "573108751714",
+    "plate": "UEW355",
+    "sentAt": "2026-09-06T14:57:40.484Z",
+    "details": "vence en *7 día(s)* (Fecha: *2026-09-13*)"
+  },
+  {
+    "id": "REM-1788706661920",
+    "type": "RTM_EXPIRATION",
+    "phone": "573138508152",
+    "plate": "MRD93D",
+    "sentAt": "2026-09-06T14:57:41.920Z",
+    "details": "vence en *7 día(s)* (Fecha: *2026-09-13*)"
+  },
+  {
+    "id": "REM-1788706663308",
+    "type": "RTM_EXPIRATION",
+    "phone": "573443043716",
+    "plate": "PRB09A",
+    "sentAt": "2026-09-06T14:57:43.308Z",
+    "details": "vence en *7 día(s)* (Fecha: *2026-09-13*)"
+  },
+  {
+    "id": "REM-1788706664800",
+    "type": "RTM_EXPIRATION",
+    "phone": "573218352436",
+    "plate": "HJN264",
+    "sentAt": "2026-09-06T14:57:44.800Z",
+    "details": "vence en *7 día(s)* (Fecha: *2026-09-13*)"
+  },
+  {
+    "id": "REM-1788706666316",
+    "type": "RTM_EXPIRATION",
+    "phone": "573107789679",
+    "plate": "DZV496",
+    "sentAt": "2026-09-06T14:57:46.316Z",
+    "details": "vence en *7 día(s)* (Fecha: *2026-09-13*)"
+  },
+  {
+    "id": "REM-1788706667767",
+    "type": "RTM_EXPIRATION",
+    "phone": "573218352436",
+    "plate": "BTB773",
+    "sentAt": "2026-09-06T14:57:47.767Z",
+    "details": "vence en *7 día(s)* (Fecha: *2026-09-13*)"
+  },
+  {
+    "id": "REM-1788706669172",
+    "type": "RTM_EXPIRATION",
+    "phone": "573107711753",
+    "plate": "IXZ014",
+    "sentAt": "2026-09-06T14:57:49.172Z",
+    "details": "vence en *7 día(s)* (Fecha: *2026-09-13*)"
+  },
+  {
+    "id": "REM-1788706670734",
+    "type": "RTM_EXPIRATION",
+    "phone": "573013399899",
+    "plate": "RQF53E",
+    "sentAt": "2026-09-06T14:57:50.734Z",
+    "details": "vence en *7 día(s)* (Fecha: *2026-09-13*)"
+  },
+  {
+    "id": "REM-1788706672059",
+    "type": "RTM_EXPIRATION",
+    "phone": "573123687208",
+    "plate": "LUD079",
+    "sentAt": "2026-09-06T14:57:52.059Z",
+    "details": "vence en *7 día(s)* (Fecha: *2026-09-13*)"
+  },
+  {
+    "id": "REM-1788706673749",
+    "type": "RTM_EXPIRATION",
+    "phone": "573208671310",
+    "plate": "LUH43C",
+    "sentAt": "2026-09-06T14:57:53.749Z",
+    "details": "vence en *7 día(s)* (Fecha: *2026-09-13*)"
+  },
+  {
+    "id": "REM-1788706674980",
+    "type": "RTM_EXPIRATION",
+    "phone": "573218352436",
+    "plate": "CZO726",
+    "sentAt": "2026-09-06T14:57:54.980Z",
+    "details": "vence en *7 día(s)* (Fecha: *2026-09-13*)"
+  },
+  {
+    "id": "REM-1788706677206",
+    "type": "RTM_EXPIRATION",
+    "phone": "573212349251",
+    "plate": "WOX577",
+    "sentAt": "2026-09-06T14:57:57.206Z",
+    "details": "vence en *7 día(s)* (Fecha: *2026-09-13*)"
+  },
+  {
+    "id": "REM-1788706680062",
+    "type": "RTM_EXPIRATION",
+    "phone": "573212349251",
+    "plate": "WOX577",
+    "sentAt": "2026-09-06T14:58:00.062Z",
+    "details": "vence en *7 día(s)* (Fecha: *2026-09-13*)"
+  },
+  {
+    "id": "REM-1788706680991",
+    "type": "RTM_EXPIRATION",
+    "phone": "573146159458",
+    "plate": "JUY325",
+    "sentAt": "2026-09-06T14:58:00.991Z",
+    "details": "vence en *7 día(s)* (Fecha: *2026-09-13*)"
+  },
+  {
+    "id": "REM-1788706684725",
+    "type": "RTM_EXPIRATION",
+    "phone": "573206036637",
+    "plate": "MCN129",
+    "sentAt": "2026-09-06T14:58:04.725Z",
+    "details": "vence en *7 día(s)* (Fecha: *2026-09-13*)"
+  },
+  {
+    "id": "REM-1788706686123",
+    "type": "RTM_EXPIRATION",
+    "phone": "573206036637",
+    "plate": "MCN129",
+    "sentAt": "2026-09-06T14:58:06.123Z",
+    "details": "vence en *7 día(s)* (Fecha: *2026-09-13*)"
+  },
+  {
+    "id": "REM-1788706688415",
+    "type": "RTM_EXPIRATION",
+    "phone": "573113347097",
+    "plate": "FJV04F",
+    "sentAt": "2026-09-06T14:58:08.415Z",
+    "details": "vence en *7 día(s)* (Fecha: *2026-09-13*)"
+  },
+  {
+    "id": "REM-1788706689887",
+    "type": "RTM_EXPIRATION",
+    "phone": "573113347097",
+    "plate": "FJV04F",
+    "sentAt": "2026-09-06T14:58:09.887Z",
+    "details": "vence en *7 día(s)* (Fecha: *2026-09-13*)"
+  },
+  {
+    "id": "REM-1788706691321",
+    "type": "RTM_EXPIRATION",
+    "phone": "573115880814",
+    "plate": "VEX145",
+    "sentAt": "2026-09-06T14:58:11.321Z",
+    "details": "vence en *7 día(s)* (Fecha: *2026-09-13*)"
+  },
+  {
+    "id": "REM-1788706694533",
+    "type": "RTM_EXPIRATION",
+    "phone": "573015163326",
+    "plate": "MZL01G",
+    "sentAt": "2026-09-06T14:58:14.533Z",
+    "details": "vence en *7 día(s)* (Fecha: *2026-09-13*)"
+  },
+  {
+    "id": "REM-1788706695903",
+    "type": "RTM_EXPIRATION",
+    "phone": "573015163326",
+    "plate": "MZL01G",
+    "sentAt": "2026-09-06T14:58:15.903Z",
+    "details": "vence en *7 día(s)* (Fecha: *2026-09-13*)"
+  },
+  {
+    "id": "REM-1788706698037",
+    "type": "RTM_EXPIRATION",
+    "phone": "573123260070",
+    "plate": "HMF820",
+    "sentAt": "2026-09-06T14:58:18.037Z",
+    "details": "vence en *7 día(s)* (Fecha: *2026-09-13*)"
+  },
+  {
+    "id": "REM-1788706699381",
+    "type": "RTM_EXPIRATION",
+    "phone": "573123260070",
+    "plate": "HMF820",
+    "sentAt": "2026-09-06T14:58:19.381Z",
+    "details": "vence en *7 día(s)* (Fecha: *2026-09-13*)"
+  },
+  {
+    "id": "REM-1788706701130",
+    "type": "RTM_EXPIRATION",
+    "phone": "573213122186",
+    "plate": "MCW84F",
+    "sentAt": "2026-09-06T14:58:21.130Z",
+    "details": "vence en *7 día(s)* (Fecha: *2026-09-13*)"
+  },
+  {
+    "id": "REM-1788706702260",
+    "type": "RTM_EXPIRATION",
+    "phone": "573218352436",
+    "plate": "TZT367",
+    "sentAt": "2026-09-06T14:58:22.260Z",
+    "details": "vence en *7 día(s)* (Fecha: *2026-09-13*)"
+  },
+  {
+    "id": "REM-1788706704835",
+    "type": "RTM_EXPIRATION",
+    "phone": "573203386939",
+    "plate": "SOA720",
+    "sentAt": "2026-09-06T14:58:24.835Z",
+    "details": "vence en *8 día(s)* (Fecha: *2026-09-14*)"
+  },
+  {
+    "id": "REM-1788706706722",
+    "type": "RTM_EXPIRATION",
+    "phone": "573203386939",
+    "plate": "SOA720",
+    "sentAt": "2026-09-06T14:58:26.722Z",
+    "details": "vence en *8 día(s)* (Fecha: *2026-09-14*)"
+  },
+  {
+    "id": "REM-1788706708863",
+    "type": "RTM_EXPIRATION",
+    "phone": "573108546836",
+    "plate": "WNU430",
+    "sentAt": "2026-09-06T14:58:28.863Z",
+    "details": "vence en *8 día(s)* (Fecha: *2026-09-14*)"
+  },
+  {
+    "id": "REM-1788706710906",
+    "type": "RTM_EXPIRATION",
+    "phone": "573108546836",
+    "plate": "WNU430",
+    "sentAt": "2026-09-06T14:58:30.906Z",
+    "details": "vence en *8 día(s)* (Fecha: *2026-09-14*)"
+  },
+  {
+    "id": "REM-1788706712427",
+    "type": "RTM_EXPIRATION",
+    "phone": "573218352436",
+    "plate": "ERK840",
+    "sentAt": "2026-09-06T14:58:32.427Z",
+    "details": "vence en *8 día(s)* (Fecha: *2026-09-14*)"
+  },
+  {
+    "id": "REM-1788706716213",
+    "type": "RTM_EXPIRATION",
+    "phone": "573504629391",
+    "plate": "EMH57E",
+    "sentAt": "2026-09-06T14:58:36.213Z",
+    "details": "vence en *8 día(s)* (Fecha: *2026-09-14*)"
+  },
+  {
+    "id": "REM-1788706717749",
+    "type": "RTM_EXPIRATION",
+    "phone": "573504629391",
+    "plate": "EMH57E",
+    "sentAt": "2026-09-06T14:58:37.749Z",
+    "details": "vence en *8 día(s)* (Fecha: *2026-09-14*)"
+  },
+  {
+    "id": "REM-1788706719606",
+    "type": "RTM_EXPIRATION",
+    "phone": "573134237868",
+    "plate": "NAN14G",
+    "sentAt": "2026-09-06T14:58:39.606Z",
+    "details": "vence en *8 día(s)* (Fecha: *2026-09-14*)"
+  },
+  {
+    "id": "REM-1788706721208",
+    "type": "RTM_EXPIRATION",
+    "phone": "573177674092",
+    "plate": "IBC682",
+    "sentAt": "2026-09-06T14:58:41.208Z",
+    "details": "vence en *8 día(s)* (Fecha: *2026-09-14*)"
+  },
+  {
+    "id": "REM-1788706723043",
+    "type": "RTM_EXPIRATION",
+    "phone": "573223077618",
+    "plate": "PFR335",
+    "sentAt": "2026-09-06T14:58:43.043Z",
+    "details": "vence en *8 día(s)* (Fecha: *2026-09-14*)"
+  },
+  {
+    "id": "REM-1788706724112",
+    "type": "RTM_EXPIRATION",
+    "phone": "573105780842",
+    "plate": "BKO617",
+    "sentAt": "2026-09-06T14:58:44.112Z",
+    "details": "vence en *8 día(s)* (Fecha: *2026-09-14*)"
+  },
+  {
+    "id": "REM-1788706726596",
+    "type": "RTM_EXPIRATION",
+    "phone": "573004127503",
+    "plate": "TML20G",
+    "sentAt": "2026-09-06T14:58:46.596Z",
+    "details": "vence en *8 día(s)* (Fecha: *2026-09-14*)"
+  },
+  {
+    "id": "REM-1788706727931",
+    "type": "RTM_EXPIRATION",
+    "phone": "573004127503",
+    "plate": "TML20G",
+    "sentAt": "2026-09-06T14:58:47.931Z",
+    "details": "vence en *8 día(s)* (Fecha: *2026-09-14*)"
+  },
+  {
+    "id": "REM-1788706730613",
+    "type": "RTM_EXPIRATION",
+    "phone": "573008850448",
+    "plate": "FJZ12F",
+    "sentAt": "2026-09-06T14:58:50.613Z",
+    "details": "vence en *8 día(s)* (Fecha: *2026-09-14*)"
+  },
+  {
+    "id": "REM-1788706732609",
+    "type": "RTM_EXPIRATION",
+    "phone": "573008850448",
+    "plate": "FJZ12F",
+    "sentAt": "2026-09-06T14:58:52.609Z",
+    "details": "vence en *8 día(s)* (Fecha: *2026-09-14*)"
+  },
+  {
+    "id": "REM-1788706733826",
+    "type": "RTM_EXPIRATION",
+    "phone": "573138168137",
+    "plate": "CVD335",
+    "sentAt": "2026-09-06T14:58:53.826Z",
+    "details": "vence en *8 día(s)* (Fecha: *2026-09-14*)"
+  },
+  {
+    "id": "REM-1788706735722",
+    "type": "RTM_EXPIRATION",
+    "phone": "573212262971",
+    "plate": "FJW28F",
+    "sentAt": "2026-09-06T14:58:55.722Z",
+    "details": "vence en *8 día(s)* (Fecha: *2026-09-14*)"
+  },
+  {
+    "id": "REM-1788706737256",
+    "type": "RTM_EXPIRATION",
+    "phone": "573203718346",
+    "plate": "JBY961",
+    "sentAt": "2026-09-06T14:58:57.256Z",
+    "details": "vence en *8 día(s)* (Fecha: *2026-09-14*)"
+  },
+  {
+    "id": "REM-1788706738685",
+    "type": "RTM_EXPIRATION",
+    "phone": "573203459331",
+    "plate": "TMA782",
+    "sentAt": "2026-09-06T14:58:58.685Z",
+    "details": "vence en *9 día(s)* (Fecha: *2026-09-15*)"
+  },
+  {
+    "id": "REM-1788706741185",
+    "type": "RTM_EXPIRATION",
+    "phone": "573158490107",
+    "plate": "GCE06E",
+    "sentAt": "2026-09-06T14:59:01.185Z",
+    "details": "vence en *9 día(s)* (Fecha: *2026-09-15*)"
+  },
+  {
+    "id": "REM-1788706742638",
+    "type": "RTM_EXPIRATION",
+    "phone": "573158490107",
+    "plate": "GCE06E",
+    "sentAt": "2026-09-06T14:59:02.638Z",
+    "details": "vence en *9 día(s)* (Fecha: *2026-09-15*)"
+  },
+  {
+    "id": "REM-1788706744112",
+    "type": "RTM_EXPIRATION",
+    "phone": "573195815438",
+    "plate": "HXK008",
+    "sentAt": "2026-09-06T14:59:04.112Z",
+    "details": "vence en *9 día(s)* (Fecha: *2026-09-15*)"
+  },
+  {
+    "id": "REM-1788706745993",
+    "type": "RTM_EXPIRATION",
+    "phone": "573188095387",
+    "plate": "GIL911",
+    "sentAt": "2026-09-06T14:59:05.993Z",
+    "details": "vence en *9 día(s)* (Fecha: *2026-09-15*)"
+  },
+  {
+    "id": "REM-1788706747186",
+    "type": "RTM_EXPIRATION",
+    "phone": "573186601390",
+    "plate": "ZYW746",
+    "sentAt": "2026-09-06T14:59:07.186Z",
+    "details": "vence en *9 día(s)* (Fecha: *2026-09-15*)"
+  },
+  {
+    "id": "REM-1788706749163",
+    "type": "RTM_EXPIRATION",
+    "phone": "573213946121",
+    "plate": "MBK35F",
+    "sentAt": "2026-09-06T14:59:09.163Z",
+    "details": "vence en *9 día(s)* (Fecha: *2026-09-15*)"
+  },
+  {
+    "id": "REM-1788706751025",
+    "type": "RTM_EXPIRATION",
+    "phone": "573133281791",
+    "plate": "CLV767",
+    "sentAt": "2026-09-06T14:59:11.025Z",
+    "details": "vence en *9 día(s)* (Fecha: *2026-09-15*)"
+  },
+  {
+    "id": "REM-1788706753103",
+    "type": "RTM_EXPIRATION",
+    "phone": "573123761090",
+    "plate": "BUU736",
+    "sentAt": "2026-09-06T14:59:13.103Z",
+    "details": "vence en *9 día(s)* (Fecha: *2026-09-15*)"
+  },
+  {
+    "id": "REM-1788706754725",
+    "type": "RTM_EXPIRATION",
+    "phone": "573123761090",
+    "plate": "BUU736",
+    "sentAt": "2026-09-06T14:59:14.725Z",
+    "details": "vence en *9 día(s)* (Fecha: *2026-09-15*)"
+  },
+  {
+    "id": "REM-1788706756706",
+    "type": "RTM_EXPIRATION",
+    "phone": "573214339868",
+    "plate": "JJM98G",
+    "sentAt": "2026-09-06T14:59:16.706Z",
+    "details": "vence en *9 día(s)* (Fecha: *2026-09-15*)"
+  },
+  {
+    "id": "REM-1788706759215",
+    "type": "RTM_EXPIRATION",
+    "phone": "573103092362",
+    "plate": "HJY320",
+    "sentAt": "2026-09-06T14:59:19.215Z",
+    "details": "vence en *9 día(s)* (Fecha: *2026-09-15*)"
+  },
+  {
+    "id": "REM-1788706761127",
+    "type": "RTM_EXPIRATION",
+    "phone": "573103092362",
+    "plate": "HJY320",
+    "sentAt": "2026-09-06T14:59:21.127Z",
+    "details": "vence en *9 día(s)* (Fecha: *2026-09-15*)"
+  },
+  {
+    "id": "REM-1788706763927",
+    "type": "RTM_EXPIRATION",
+    "phone": "573123081557",
+    "plate": "SSH354",
+    "sentAt": "2026-09-06T14:59:23.927Z",
+    "details": "vence en *9 día(s)* (Fecha: *2026-09-15*)"
+  },
+  {
+    "id": "REM-1788706765220",
+    "type": "RTM_EXPIRATION",
+    "phone": "573123081557",
+    "plate": "SSH354",
+    "sentAt": "2026-09-06T14:59:25.220Z",
+    "details": "vence en *9 día(s)* (Fecha: *2026-09-15*)"
+  }
+]
