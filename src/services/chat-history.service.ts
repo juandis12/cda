@@ -1,6 +1,7 @@
 import fs from 'fs';
 import path from 'path';
 import { getPauseStatus } from './pause.service.js';
+import { getAllCustomers } from './customers.service.js';
 
 export interface ChatMessage {
   id: string;
@@ -219,6 +220,19 @@ export const addMessage = (msg: Omit<ChatMessage, 'id' | 'timestamp'>): ChatMess
     }
   }
 
+  // Buscar en la base de datos de clientes si sigue sin nombre o placa
+  if (!name || !plate || name === 'Cliente') {
+    const customers = getAllCustomers();
+    const match = customers.find((c) => {
+      const cPhone = normalizePhoneNumber(c.phone);
+      return cPhone && (cPhone === cleanPhone || cleanPhone.endsWith(cPhone) || cPhone.endsWith(cleanPhone));
+    });
+    if (match) {
+      if (!name || name === 'Cliente') name = match.name;
+      if (!plate) plate = match.plate;
+    }
+  }
+
   // Nombres de contactos administrativos o excluidos
   if (!name || name === 'Cliente') {
     if (cleanPhone.endsWith('3112921709')) name = 'Revicar SAS SOAT';
@@ -227,6 +241,8 @@ export const addMessage = (msg: Omit<ChatMessage, 'id' | 'timestamp'>): ChatMess
     else if (cleanPhone.endsWith('3025897192')) name = 'Juan Diego Ruiz';
     else if (cleanPhone.endsWith('3508496417')) name = 'Juan Pablo Copete';
     else if (cleanPhone.endsWith('3209703695')) name = 'Deyanira';
+    else if (plate) name = `Vehículo ${plate.toUpperCase()}`;
+    else name = `+${cleanPhone}`;
   }
 
   const newMsg: ChatMessage = {
@@ -257,16 +273,35 @@ export const getAllConversations = (): ConversationSummary[] => {
   initChatStorage();
   const map = new Map<string, ConversationSummary>();
 
+  const customers = getAllCustomers();
+  const customerByPhone = new Map<string, any>();
+  for (const c of customers) {
+    const p = normalizePhoneNumber(c.phone);
+    if (p && !customerByPhone.has(p)) {
+      customerByPhone.set(p, c);
+    }
+  }
+
   for (const m of messagesCache) {
     const cleanPhone = normalizePhoneNumber(m.from);
     if (!cleanPhone) continue;
 
     const existing = map.get(cleanPhone);
+    const matched = customerByPhone.get(cleanPhone);
+
+    let plate = m.plate || existing?.plate || matched?.plate || '';
     let name = m.name;
-    if (!name || name === 'Cliente') {
-      name = existing?.name || `Cliente (${cleanPhone.slice(-4)})`;
+
+    if (matched) {
+      name = matched.name;
+      plate = matched.plate;
+    } else if (!name || name === 'Cliente' || name.startsWith('Cliente (')) {
+      if (plate) {
+        name = `Vehículo ${plate.toUpperCase()}`;
+      } else {
+        name = `+${cleanPhone}`;
+      }
     }
-    const plate = m.plate || existing?.plate;
 
     map.set(cleanPhone, {
       phone: cleanPhone,
