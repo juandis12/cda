@@ -20,7 +20,8 @@ import { initReminderCronJob, sendRtmExpirationReminders, sendTomorrowAppointmen
 import { resumePendingConversations } from './services/recovery.service.js';
 import { getAiResponse } from './services/ai.service.js';
 import { getAllCustomers } from './services/customers.service.js';
-import { addMessage, getConversation, getAllConversations } from './services/chat-history.service.js';
+import { addMessage, getConversation, getAllConversations, normalizePhoneNumber } from './services/chat-history.service.js';
+import { pauseBotForPhone } from './services/pause.service.js';
 
 const PORT = parseInt(process.env.PORT || '3008', 10);
 const DASHBOARD_HTML_PATH = path.resolve(process.cwd(), 'src', 'views', 'dashboard.html');
@@ -203,6 +204,60 @@ const main = async () => {
     }
   });
 
+  // 5. Captura en tiempo real de Mensajes ENVIADOS DESDE EL CELULAR (Asesor Humano)
+  let isHookAttached = false;
+  const hookPhoneOutgoingMessages = () => {
+    if (isHookAttached) return;
+    try {
+      const vendor = (adapterProvider as any).vendor;
+      if (vendor?.ev) {
+        isHookAttached = true;
+        vendor.ev.on('messages.upsert', async (data: any) => {
+          const { messages } = data || {};
+          if (!Array.isArray(messages)) return;
+          for (const msg of messages) {
+            // Solo capturar mensajes salientes desde el teléfono (fromMe = true)
+            if (!msg?.key?.fromMe) continue;
+
+            const remoteJid = msg.key?.remoteJid || '';
+            if (!remoteJid || remoteJid.includes('@broadcast') || remoteJid.includes('@g.us')) continue;
+
+            const cleanPhone = normalizePhoneNumber(remoteJid);
+            if (!cleanPhone || cleanPhone === connectedUser) continue;
+
+            const text = msg.message?.conversation ||
+                         msg.message?.extendedTextMessage?.text ||
+                         msg.message?.imageMessage?.caption ||
+                         msg.message?.videoMessage?.caption ||
+                         msg.message?.documentMessage?.caption ||
+                         '';
+
+            if (text && text.trim()) {
+              // Pausar el bot para este cliente por 3 horas para que el asesor pueda atender sin que el bot interrumpa
+              pauseBotForPhone(cleanPhone, 3);
+
+              addMessage({
+                from: cleanPhone,
+                text: text.trim(),
+                sender: 'AGENT',
+              });
+              console.log(`📱 [Asesor desde Celular a +${cleanPhone}]: ${text.trim().slice(0, 60)}...`);
+            }
+          }
+        });
+        console.log('📱 [Monitor Celular] Captura de mensajes del asesor desde WhatsApp móvil activa.');
+      }
+    } catch (err) {
+      console.warn('No se pudo enganchar vendor.ev messages.upsert:', err);
+    }
+  };
+
+  // Enganchar captura al iniciar y cuando el proveedor esté listo
+  setTimeout(hookPhoneOutgoingMessages, 3000);
+  adapterProvider.on('ready', () => {
+    setTimeout(hookPhoneOutgoingMessages, 1500);
+  });
+
   // Helper para leer el body JSON de las peticiones POST en Polka
   const parseJsonBody = (req: any): Promise<any> => {
     return new Promise((resolve) => {
@@ -290,12 +345,7 @@ const main = async () => {
         const { phone, message } = body || {};
         if (phone && message) {
           const cleanPhone = phone.replace(/[^0-9]/g, '');
-          await rawSendMessage(cleanPhone, message, {});
-          addMessage({
-            from: cleanPhone,
-            text: message,
-            sender: 'AGENT',
-          });
+          await adapterProvider.sendMessage(cleanPhone, message, {});
           res.writeHead(200, { 'Content-Type': 'application/json' });
           res.end(JSON.stringify({ success: true }));
           return;
