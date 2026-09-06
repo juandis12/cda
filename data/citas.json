@@ -90,24 +90,6 @@
     "status": "CONFIRMED"
   },
   {
-    "id": "CITA-181761",
-    "phone": "573105780842",
-    "name": "JAVIER RAMOS",
-    "plate": "BKO617",
-    "vehicleType": "Liviano",
-    "fuelType": "GASOLINA",
-    "brand": "VOLKSWAGEN",
-    "model": "GOL MI (1998)",
-    "date": "2026-09-06",
-    "timeSlot": "10:00 AM",
-    "isoStart": "2026-09-06T15:00:00.000Z",
-    "isoEnd": "2026-09-06T15:30:00.000Z",
-    "googleEventId": "7kskjei833er0818pjt1kke034",
-    "googleHtmlLink": "https://www.google.com/calendar/event?eid=N2tza2plaTgzM2VyMDgxOHBqdDFra2UwMzQgY2FqYWNkYWdpcmFyZG90QG0",
-    "createdAt": "2026-09-06T15:06:21.761Z",
-    "status": "CONFIRMED"
-  },
-  {
     "id": "CITA-GCAL-5p7hgc",
     "phone": "573202843583",
     "name": "HECTOR HERNNDEZ BARBOSA",

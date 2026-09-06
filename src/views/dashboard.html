@@ -1419,49 +1419,70 @@
     }
 
     function getBookingStatus(b) {
-      const now = new Date();
-      let isPast = false;
-      let isToday = false;
-
-      if (b.isoEnd) {
-        const end = new Date(b.isoEnd);
-        if (end < now) isPast = true;
-      } else if (b.date) {
-        const todayStr = now.toISOString().split('T')[0];
-        if (b.date < todayStr) {
-          isPast = true;
-        } else if (b.date === todayStr) {
-          isToday = true;
-          if (b.timeSlot) {
-            try {
-              const parts = b.date.split('-');
-              let [time, modifier] = b.timeSlot.split(' ');
-              let [hours, minutes] = time.split(':').map(Number);
-              if (modifier === 'PM' && hours < 12) hours += 12;
-              if (modifier === 'AM' && hours === 12) hours = 0;
-              const slotDate = new Date(Number(parts[0]), Number(parts[1]) - 1, Number(parts[2]), hours, minutes || 0);
-              slotDate.setMinutes(slotDate.getMinutes() + 30);
-              if (slotDate < now) isPast = true;
-            } catch {}
-          }
-        }
+      if (b.status === 'CANCELLED') {
+        return {
+          status: 'CANCELLED',
+          badge: '<span class="table-badge" style="background: rgba(239, 68, 68, 0.18); color: #f87171; border: 1px solid rgba(239, 68, 68, 0.35);">❌ Cancelada</span>'
+        };
       }
 
-      if (isPast) {
+      const now = new Date();
+      // Fecha actual en hora Colombia (YYYY-MM-DD)
+      const colTodayStr = new Intl.DateTimeFormat('en-CA', { timeZone: 'America/Bogota' }).format(now);
+      const bookingDate = b.date || (b.isoStart ? b.isoStart.split('T')[0] : '');
+
+      if (!bookingDate) {
+        return {
+          status: 'SCHEDULED',
+          badge: '<span class="table-badge" style="background: rgba(59, 130, 246, 0.18); color: #93c5fd; border: 1px solid rgba(59, 130, 246, 0.35);">📅 Programada</span>'
+        };
+      }
+
+      // Si la fecha es posterior a hoy -> SIEMPRE PROGRAMADA
+      if (bookingDate > colTodayStr) {
+        return {
+          status: 'SCHEDULED',
+          badge: '<span class="table-badge" style="background: rgba(59, 130, 246, 0.18); color: #93c5fd; border: 1px solid rgba(59, 130, 246, 0.35);">📅 Programada</span>'
+        };
+      }
+
+      // Si la fecha fue anterior a hoy -> REALIZADA
+      if (bookingDate < colTodayStr) {
         return {
           status: 'COMPLETED',
           badge: '<span class="table-badge" style="background: rgba(16, 185, 129, 0.18); color: #34d399; border: 1px solid rgba(16, 185, 129, 0.35);">✅ Realizada / Atendida</span>'
         };
       }
-      if (isToday) {
-        return {
-          status: 'TODAY',
-          badge: '<span class="table-badge" style="background: rgba(245, 158, 11, 0.18); color: #fbbf24; border: 1px solid rgba(245, 158, 11, 0.35);">⏳ Hoy (Pendiente)</span>'
-        };
+
+      // Si la cita es HOY (colTodayStr):
+      if (b.isoEnd) {
+        const endDt = new Date(b.isoEnd);
+        if (endDt < now) {
+          return {
+            status: 'COMPLETED',
+            badge: '<span class="table-badge" style="background: rgba(16, 185, 129, 0.18); color: #34d399; border: 1px solid rgba(16, 185, 129, 0.35);">✅ Realizada / Atendida</span>'
+          };
+        }
+      } else if (b.timeSlot) {
+        try {
+          const parts = bookingDate.split('-');
+          let [time, modifier] = b.timeSlot.trim().split(' ');
+          let [hours, minutes] = time.split(':').map(Number);
+          if (modifier?.toUpperCase() === 'PM' && hours < 12) hours += 12;
+          if (modifier?.toUpperCase() === 'AM' && hours === 12) hours = 0;
+          const slotEnd = new Date(Number(parts[0]), Number(parts[1]) - 1, Number(parts[2]), hours, (minutes || 0) + 30);
+          if (slotEnd < now) {
+            return {
+              status: 'COMPLETED',
+              badge: '<span class="table-badge" style="background: rgba(16, 185, 129, 0.18); color: #34d399; border: 1px solid rgba(16, 185, 129, 0.35);">✅ Realizada / Atendida</span>'
+            };
+          }
+        } catch {}
       }
+
       return {
-        status: 'SCHEDULED',
-        badge: '<span class="table-badge" style="background: rgba(59, 130, 246, 0.18); color: #93c5fd; border: 1px solid rgba(59, 130, 246, 0.35);">📅 Programada</span>'
+        status: 'TODAY',
+        badge: '<span class="table-badge" style="background: rgba(245, 158, 11, 0.18); color: #fbbf24; border: 1px solid rgba(245, 158, 11, 0.35);">⏳ Hoy (Pendiente)</span>'
       };
     }
 
