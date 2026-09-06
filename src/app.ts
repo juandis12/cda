@@ -163,21 +163,29 @@ const main = async () => {
   // y BLOQUEAR automáticamente cualquier respuesta a contactos excluidos (Jefes, Revicar)
   const rawSendMessage = adapterProvider.sendMessage.bind(adapterProvider);
   adapterProvider.sendMessage = async (numberIn: string, message: any, options: any) => {
-    const cleanPhone = (numberIn || '').replace(/[^0-9]/g, '');
+    const cleanPhone = normalizePhoneNumber(numberIn || '');
+    if (!cleanPhone) return null;
+
     if (isBlacklisted(cleanPhone)) {
       console.log(`🔇 [Envío Cancelado] El número +${cleanPhone} está en la Lista de Exclusión. No se enviará mensaje automático.`);
       return null;
     }
-    const res = await rawSendMessage(numberIn, message, options);
-    const text = typeof message === 'string' ? message : (message?.text || message?.caption || '');
-    if (cleanPhone && text) {
-      addMessage({
-        from: cleanPhone,
-        text,
-        sender: 'BOT',
-      });
+
+    try {
+      const res = await rawSendMessage(cleanPhone, message, options);
+      const text = typeof message === 'string' ? message : (message?.text || message?.caption || '');
+      if (cleanPhone && text) {
+        addMessage({
+          from: cleanPhone,
+          text,
+          sender: 'BOT',
+        });
+      }
+      return res;
+    } catch (err: any) {
+      console.error(`❌ [Error Enviando Mensaje WhatsApp a +${cleanPhone}]:`, err?.message || err);
+      return null;
     }
-    return res;
   };
 
   // 3. Captura en tiempo real de Mensajes ENTRANTES de clientes
@@ -289,22 +297,57 @@ const main = async () => {
     });
   };
 
+  // Caché en memoria del Dashboard HTML y Favicon para respuestas ultra-rápidas (< 5ms)
+  let cachedDashboardHtml = '';
+  let cachedFaviconBuffer: Buffer | null = null;
+  try {
+    if (fs.existsSync(DASHBOARD_HTML_PATH)) {
+      cachedDashboardHtml = fs.readFileSync(DASHBOARD_HTML_PATH, 'utf-8');
+    }
+    const favPath = path.resolve(process.cwd(), 'public', 'favicon.png');
+    if (fs.existsSync(favPath)) {
+      cachedFaviconBuffer = fs.readFileSync(favPath);
+    }
+  } catch {}
+
   // 5. Middleware global en el servidor Polka para interceptar la web y las APIs
   adapterProvider.server.use(async (req: any, res: any, next: any) => {
+    // Permitir CORS y headers de respuesta rápida
+    res.setHeader('Access-Control-Allow-Origin', '*');
+    res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS');
+    res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
+
+    if (req.method === 'OPTIONS') {
+      res.writeHead(204);
+      res.end();
+      return;
+    }
+
     const url = req.url.split('?')[0];
+
+    // Favicon handler oficial
+    if (url === '/favicon.ico' || url === '/favicon.png') {
+      if (cachedFaviconBuffer) {
+        res.writeHead(200, { 'Content-Type': 'image/png', 'Cache-Control': 'public, max-age=86400' });
+        res.end(cachedFaviconBuffer);
+      } else {
+        res.writeHead(204);
+        res.end();
+      }
+      return;
+    }
 
     // Ruta Principal: Servir el Panel de Control Web
     if (url === '/' || url === '/index.html') {
-      try {
-        if (fs.existsSync(DASHBOARD_HTML_PATH)) {
-          const html = fs.readFileSync(DASHBOARD_HTML_PATH, 'utf-8');
-          res.writeHead(200, { 'Content-Type': 'text/html; charset=utf-8' });
-          res.end(html);
-          return;
-        }
-      } catch {}
+      if (!cachedDashboardHtml) {
+        try {
+          if (fs.existsSync(DASHBOARD_HTML_PATH)) {
+            cachedDashboardHtml = fs.readFileSync(DASHBOARD_HTML_PATH, 'utf-8');
+          }
+        } catch {}
+      }
       res.writeHead(200, { 'Content-Type': 'text/html; charset=utf-8' });
-      res.end('<h2>Cargando panel de control...</h2>');
+      res.end(cachedDashboardHtml || '<h2>Control Autos De Girardot</h2>');
       return;
     }
 

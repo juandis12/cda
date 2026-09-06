@@ -30,6 +30,34 @@ const SESSIONS_DIR = path.resolve(process.cwd(), 'bot_sessions');
 
 const messagesCache: ChatMessage[] = [];
 
+let lidCacheMap: Record<string, string> = {};
+let lastLidCacheRead = 0;
+
+const loadLidCache = () => {
+  const now = Date.now();
+  if (now - lastLidCacheRead < 30000 && Object.keys(lidCacheMap).length > 0) {
+    return lidCacheMap;
+  }
+  try {
+    const lidCachePath = path.join(SESSIONS_DIR, 'lid-cache.json');
+    if (fs.existsSync(lidCachePath)) {
+      const lidCache = JSON.parse(fs.readFileSync(lidCachePath, 'utf-8'));
+      const entries = lidCache.entries || {};
+      const newMap: Record<string, string> = {};
+      for (const [lidKey, val] of Object.entries<any>(entries)) {
+        const cleanLid = lidKey.replace(/[^0-9]/g, '');
+        const pn = (val?.pn || '').replace(/[^0-9]/g, '');
+        if (cleanLid && pn) {
+          newMap[cleanLid] = pn;
+        }
+      }
+      lidCacheMap = newMap;
+      lastLidCacheRead = now;
+    }
+  } catch {}
+  return lidCacheMap;
+};
+
 /**
  * Normaliza cualquier LID o número de teléfono a formato estándar colombiano 573XXXXXXXXX
  */
@@ -38,21 +66,11 @@ export const normalizePhoneNumber = (raw: string): string => {
   let clean = raw.replace(/[^0-9]/g, '');
   if (!clean) return '';
 
-  // 1. Revisar en bot_sessions/lid-cache.json
-  try {
-    const lidCachePath = path.join(SESSIONS_DIR, 'lid-cache.json');
-    if (fs.existsSync(lidCachePath)) {
-      const lidCache = JSON.parse(fs.readFileSync(lidCachePath, 'utf-8'));
-      const entries = lidCache.entries || {};
-      for (const [lidKey, val] of Object.entries<any>(entries)) {
-        const cleanLid = lidKey.replace(/[^0-9]/g, '');
-        if (clean === cleanLid) {
-          const pn = (val?.pn || '').replace(/[^0-9]/g, '');
-          if (pn) return pn;
-        }
-      }
-    }
-  } catch {}
+  // 1. Revisar en caché en memoria de LIDs
+  const lids = loadLidCache();
+  if (lids[clean]) {
+    return lids[clean];
+  }
 
   // 2. Mapeos conocidos de LIDs
   if (clean === '191878267973683') return '573025897192'; // Juan Diego Ruiz
@@ -106,8 +124,11 @@ export const formatFriendlyMediaText = (raw: string): string => {
   return text;
 };
 
+let isInitialized = false;
+
 // Inicializar almacenamiento
 export const initChatStorage = () => {
+  if (isInitialized) return;
   if (!fs.existsSync(DATA_DIR)) {
     fs.mkdirSync(DATA_DIR, { recursive: true });
   }
@@ -118,7 +139,6 @@ export const initChatStorage = () => {
       const raw = fs.readFileSync(CHAT_FILE, 'utf-8');
       const parsed: ChatMessage[] = JSON.parse(raw || '[]');
       
-      // Normalizar teléfonos y textos en caché cargado
       for (const msg of parsed) {
         msg.from = normalizePhoneNumber(msg.from);
         msg.text = formatFriendlyMediaText(msg.text);
@@ -138,15 +158,20 @@ export const initChatStorage = () => {
       // Ignorar
     }
   }
+  isInitialized = true;
 };
 
+let saveTimer: NodeJS.Timeout | null = null;
 const persistMessages = () => {
-  try {
-    initChatStorage();
-    fs.writeFileSync(CHAT_FILE, JSON.stringify(messagesCache.slice(-2000), null, 2), 'utf-8');
-  } catch (err) {
-    console.error('Error guardando historial de chat:', err);
-  }
+  if (saveTimer) return;
+  saveTimer = setTimeout(() => {
+    saveTimer = null;
+    try {
+      fs.writeFileSync(CHAT_FILE, JSON.stringify(messagesCache.slice(-2000), null, 2), 'utf-8');
+    } catch (err) {
+      console.error('Error guardando historial de chat:', err);
+    }
+  }, 300);
 };
 
 export const addMessage = (msg: Omit<ChatMessage, 'id' | 'timestamp'>): ChatMessage => {
@@ -192,22 +217,6 @@ export const addMessage = (msg: Omit<ChatMessage, 'id' | 'timestamp'>): ChatMess
         if (name && plate) break;
       }
     }
-  }
-
-  // Buscar también en clientes.json si sigue sin nombre/placa
-  if (!name || !plate) {
-    try {
-      const clientesRaw = fs.readFileSync(path.join(DATA_DIR, 'clientes.json'), 'utf-8');
-      const clientes = JSON.parse(clientesRaw || '[]');
-      const match = clientes.find((c: any) => {
-        const cPhone = normalizePhoneNumber(c.phone || '');
-        return cPhone && (cPhone === cleanPhone || cleanPhone.endsWith(cPhone) || cPhone.endsWith(cleanPhone));
-      });
-      if (match) {
-        if (!name || name === 'Cliente') name = match.name;
-        if (!plate) plate = match.plate;
-      }
-    } catch {}
   }
 
   // Nombres de contactos administrativos o excluidos

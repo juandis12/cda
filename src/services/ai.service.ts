@@ -58,6 +58,7 @@ Si SÍ hay fecha y hora confirmada, responde ÚNICAMENTE con este JSON (sin mark
         Authorization: `Bearer ${OPENROUTER_API_KEY}`,
         'Content-Type': 'application/json',
       },
+      signal: AbortSignal.timeout(8000),
       body: JSON.stringify({
         model: 'openai/gpt-4o-mini',
         messages: [{ role: 'user', content: prompt }],
@@ -204,6 +205,7 @@ INSTRUCCIONES CLAVE DE RESPUESTA:
         Authorization: `Bearer ${OPENROUTER_API_KEY}`,
         'Content-Type': 'application/json',
       },
+      signal: AbortSignal.timeout(8000),
       body: JSON.stringify({
         model: AI_MODEL,
         messages,

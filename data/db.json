@@ -7278,5 +7278,139 @@
     },
     "from": "573112921709",
     "refSerialize": "a07e48655d1eb1adf63c1b74c6ee668e"
+  },
+  {
+    "ref": "9d01b43b-d924-4803-8c0f-e1599f325e96",
+    "keyword": "1fafb25f347814cc1adf750474372979",
+    "answer": "👋 ¡Hola Don Edgar Humberto! Te saludamos de Control Autos De Girardot 🚗🏍️. Vemos que estás interesado en agendar tu turno para la Revisión Técnico-Mecánica de tu vehículo WOX954 (JAC HFC1042KN - Pesado Público). Tarifa oficial: $562.084, duración 30 minutos, SOAT no obligatorio. ¿Para qué fecha y hora te gustaría agendar tu cita?",
+    "options": {},
+    "from": "191878267973683@lid",
+    "refSerialize": "36fef315f1a30829aed69ce7af7914bf"
+  },
+  {
+    "ref": "ans_27be0555-2fa9-42ff-9f02-6312badbcdca",
+    "keyword": "key_c00662be-6096-4816-aedb-9ee158716691",
+    "answer": "__call_action__",
+    "options": {
+      "buttons": [],
+      "capture": false,
+      "delay": 0,
+      "nested": [],
+      "keyword": {},
+      "callback": true
+    },
+    "refSerialize": "d6ef12c16595aee22bfc06cda2db9f65",
+    "from": "191878267973683@lid"
+  },
+  {
+    "ref": "ans_eb1ed668-87da-4a53-804e-a56c75188dec",
+    "keyword": "ans_27be0555-2fa9-42ff-9f02-6312badbcdca",
+    "answer": "💰 *CONSULTA DE TARIFA OFICIAL - CONTROL AUTOS GIRARDOT*\nPara darte el valor exacto de tu Revisión Técnico-Mecánica:\n\n👉 *Paso 1:* Por favor escribe la *PLACA* de tu vehículo (Ej: *ABC123* o *ABC12D*):",
+    "options": {
+      "buttons": [],
+      "capture": false,
+      "delay": 0,
+      "nested": [],
+      "keyword": {},
+      "callback": false
+    },
+    "refSerialize": "efe6817bf46fccd70edc552dbb891e79",
+    "from": "191878267973683@lid"
+  },
+  {
+    "ref": "ans_9b516733-fa09-4e26-a466-4b856b78e9e0",
+    "keyword": "ans_eb1ed668-87da-4a53-804e-a56c75188dec",
+    "answer": "__capture_only_intended__",
+    "options": {
+      "buttons": [],
+      "capture": true,
+      "delay": 0,
+      "nested": [],
+      "keyword": {},
+      "callback": true
+    },
+    "refSerialize": "fdb78b94698014d3fc725a37a15b0f73",
+    "from": "191878267973683@lid"
+  },
+  {
+    "ref": "ans_7ac181ea-1988-469a-ba34-8062b8342c78",
+    "keyword": "key_be484828-3981-45bc-a736-322e9322f3ac",
+    "answer": "__call_action__",
+    "options": {
+      "buttons": [],
+      "capture": false,
+      "delay": 0,
+      "nested": [],
+      "keyword": {},
+      "callback": true
+    },
+    "refSerialize": "74fc0d3490ac8827c0dbb64c812fd9f2",
+    "from": "115569265213641@lid"
+  },
+  {
+    "ref": "e04c5d5a-8653-40f0-b0f7-8d2776389dde",
+    "keyword": null,
+    "answer": "¡Con gusto! Si necesitas más información o ayuda, no dudes en decírmelo. Estoy aquí para servirte. 😊",
+    "options": {
+      "media": null,
+      "buttons": [],
+      "capture": false,
+      "delay": 0
+    },
+    "from": "115569265213641@lid",
+    "refSerialize": "a28aeece4a8cc141e44c4afe4faff3b8"
+  },
+  {
+    "ref": "ans_2f60b3e8-8cb5-4784-9324-fdcd57a51787",
+    "keyword": "key_d4441f02-a35c-4ac6-ba7a-1375c00c31d0",
+    "answer": "__call_action__",
+    "options": {
+      "buttons": [],
+      "capture": false,
+      "delay": 0,
+      "nested": [],
+      "keyword": {},
+      "callback": true
+    },
+    "refSerialize": "dafb14be2c5155205d534041bc15c079",
+    "from": "573232301814"
+  },
+  {
+    "ref": "ans_feca139e-e9f8-4122-8da2-84ff9d1cbff4",
+    "keyword": "ans_2f60b3e8-8cb5-4784-9324-fdcd57a51787",
+    "answer": "📅 *AGENDAMIENTO DE CITA EN GOOGLE CALENDAR - CONTROL AUTOS GIRARDOT*\nAgenda tu revisión de 30 minutos con verificación de disponibilidad en tiempo real.\n\n👉 *Paso 1 de 5:* Por favor escribe la *PLACA* de tu vehículo (Ej: *ABC123* o *ABC12D*):",
+    "options": {
+      "buttons": [],
+      "capture": false,
+      "delay": 0,
+      "nested": [],
+      "keyword": {},
+      "callback": false
+    },
+    "refSerialize": "014559e38ad2477fd1d685f1b9c7c66a",
+    "from": "573232301814"
+  },
+  {
+    "ref": "ans_9a39db8c-b630-4862-a6b2-6d746f9bddd9",
+    "keyword": "ans_feca139e-e9f8-4122-8da2-84ff9d1cbff4",
+    "answer": "__capture_only_intended__",
+    "options": {
+      "buttons": [],
+      "capture": true,
+      "delay": 0,
+      "nested": [],
+      "keyword": {},
+      "callback": true
+    },
+    "refSerialize": "8b07278e4507676aab46980a3f99e496",
+    "from": "573232301814"
+  },
+  {
+    "ref": "228210cb-76db-492f-9999-ac51c8a0009a",
+    "keyword": "fdb78b94698014d3fc725a37a15b0f73",
+    "answer": "hola",
+    "options": {},
+    "from": "191878267973683@lid",
+    "refSerialize": "79e7fc16f7fb85373fd25a99390f44c0"
   }
 ]
