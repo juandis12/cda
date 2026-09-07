@@ -7412,5 +7412,1649 @@
     "options": {},
     "from": "191878267973683@lid",
     "refSerialize": "79e7fc16f7fb85373fd25a99390f44c0"
+  },
+  {
+    "ref": "b985b50b-a83a-4b90-ae3f-5febc136f054",
+    "keyword": "6dc58bacfad9ebfe724cce599daaed1e",
+    "answer": "Hola buenas tardes",
+    "options": {},
+    "from": "573209703695",
+    "refSerialize": "6625a0751fff11b095e2294461923bcd"
+  },
+  {
+    "ref": "ans_472c7c3d-4197-4f41-baa9-bc36b7f8d48d",
+    "keyword": "key_14e7c0fb-a86d-4cfe-9b74-72f9e5ffb36e",
+    "answer": "__call_action__",
+    "options": {
+      "buttons": [],
+      "capture": false,
+      "delay": 0,
+      "nested": [],
+      "keyword": {},
+      "callback": true
+    },
+    "refSerialize": "09344ead02d7c609667045395f5e322c",
+    "from": "573209703695"
+  },
+  {
+    "ref": "3225237c-61c2-4dd4-8fdb-ca846b4c4d58",
+    "keyword": null,
+    "answer": "¡Hola! Buenas tardes, Sra. Blanca Deyanira. ¿En qué puedo ayudarte hoy? 😊",
+    "options": {
+      "media": null,
+      "buttons": [],
+      "capture": false,
+      "delay": 0
+    },
+    "from": "573209703695",
+    "refSerialize": "4ec5ed105dc99f12e822c5cec27c083b"
+  },
+  {
+    "ref": "ans_7eb8850a-f0ce-4b52-926e-7cb5ffabf62f",
+    "keyword": "key_e919430d-b4ad-4f59-bae9-729e12ae91ad",
+    "answer": "__call_action__",
+    "options": {
+      "buttons": [],
+      "capture": false,
+      "delay": 0,
+      "nested": [],
+      "keyword": {},
+      "callback": true
+    },
+    "refSerialize": "180ac6c51c1d00823345f889bbdb66de",
+    "from": "278773576532132@lid"
+  },
+  {
+    "ref": "ans_1cde56f4-cbe1-4b96-afbd-ceb9a9e96af5",
+    "keyword": "ans_7eb8850a-f0ce-4b52-926e-7cb5ffabf62f",
+    "answer": "👨‍💼 *ATENCIÓN CON ASESOR* 👨‍💼\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n¡Con gusto! En breve uno de nuestros asesores de *Control Autos De Girardot* se comunicará contigo para colaborarte.\n\n📞 Teléfono directo: *+57 318 456 1999*",
+    "options": {
+      "buttons": [],
+      "capture": false,
+      "delay": 0,
+      "nested": [],
+      "keyword": {},
+      "callback": false
+    },
+    "refSerialize": "8002563d8faaa811a223a3af12f3291f",
+    "from": "278773576532132@lid"
+  },
+  {
+    "ref": "ans_60ac7859-7983-4417-beb8-2cd26e4b0107",
+    "keyword": "ans_1cde56f4-cbe1-4b96-afbd-ceb9a9e96af5",
+    "answer": "__call_action__",
+    "options": {
+      "buttons": [],
+      "capture": false,
+      "delay": 0,
+      "nested": [],
+      "keyword": {},
+      "callback": true
+    },
+    "refSerialize": "2a3c7f141fb1073ffbd7b18037497038",
+    "from": "278773576532132@lid"
+  },
+  {
+    "ref": "ans_472c7c3d-4197-4f41-baa9-bc36b7f8d48d",
+    "keyword": "key_14e7c0fb-a86d-4cfe-9b74-72f9e5ffb36e",
+    "answer": "__call_action__",
+    "options": {
+      "buttons": [],
+      "capture": false,
+      "delay": 0,
+      "nested": [],
+      "keyword": {},
+      "callback": true
+    },
+    "refSerialize": "09344ead02d7c609667045395f5e322c",
+    "from": "573213570421"
+  },
+  {
+    "ref": "9c0b80f5-a1d4-4cc7-99a5-219cea558af3",
+    "keyword": null,
+    "answer": "¡Hola, ALEJANDRO! 😊 Si tienes alguna pregunta o necesitas información adicional sobre la revisión técnico-mecánica, aquí estoy para ayudarte. ¿Hay algo específico en lo que pueda asistirte hoy?",
+    "options": {
+      "media": null,
+      "buttons": [],
+      "capture": false,
+      "delay": 0
+    },
+    "from": "573213570421",
+    "refSerialize": "bdf8e36d1fd796e0f7646cdd8946884a"
+  },
+  {
+    "ref": "ans_a78a147e-b395-4529-8884-e83d70b324a4",
+    "keyword": "key_15e690f5-85bf-4773-952d-c47902ea60c8",
+    "answer": "__call_action__",
+    "options": {
+      "buttons": [],
+      "capture": false,
+      "delay": 0,
+      "nested": [],
+      "keyword": {},
+      "callback": true
+    },
+    "refSerialize": "af037f3110e09d74ebd8542ec25f46bf",
+    "from": "573112382048"
+  },
+  {
+    "ref": "ans_2211cdbb-b698-4887-9252-92dc24e3cfb4",
+    "keyword": "ans_a78a147e-b395-4529-8884-e83d70b324a4",
+    "answer": "📍 *SEDE, HORARIOS Y LÍNEAS DE REVISIÓN* 📍\n🏢 *Control Autos De Girardot*\nNIT: 900.554.151-6\n\n🗺️ *Dirección:* Girardot, Cundinamarca\n📞 *Teléfono / WhatsApp:* +57 318 456 1999\n\n⏰ *Horarios de Atención:*\n• Lunes a Viernes: 7:00 AM a 7:00 PM (Jornada continua)\n• Sábados: 7:00 AM a 7:00 PM (Jornada continua)\n• Domingos y Festivos: 8:00 AM a 1:00 PM (Medio día)\n\n🚗 *Líneas de Inspección Disponibles:*\n• 🏍️ Motos 4T (4 Tiempos)\n• 🚗 Vehículos Livianos: Diésel, Gasolina y Gas\n• 🚛 Vehículos Pesados: Diésel\n⏱️ *Tiempo de revisión en pista:* 30 minutos por vehículo\n\n🗺️ *¿Cómo llegar?*\n• Google Maps: https://maps.app.goo.gl/1NCPcLwNEUKWadjQ6\n• Waze: https://waze.com/ul\n\nEscribe *AGENDAR* para reservar tu cupo o *MENU* para volver al inicio.",
+    "options": {
+      "buttons": [],
+      "capture": false,
+      "delay": 0,
+      "nested": [],
+      "keyword": {},
+      "callback": false
+    },
+    "refSerialize": "ef1dceef29dfd18586ddb4fd7f6868b7",
+    "from": "573112382048"
+  },
+  {
+    "ref": "ans_629aaf8d-2a2a-4ccf-83bf-721aa514e4de",
+    "keyword": "ans_2211cdbb-b698-4887-9252-92dc24e3cfb4",
+    "answer": "__call_action__",
+    "options": {
+      "buttons": [],
+      "capture": false,
+      "delay": 0,
+      "nested": [],
+      "keyword": {},
+      "callback": true
+    },
+    "refSerialize": "949ee42b8a3d6faff8539268c2c4db37",
+    "from": "573112382048"
+  },
+  {
+    "ref": "ans_e3ad1c49-e2af-4f2e-8f32-1c17166a1601",
+    "keyword": "key_26b3b25e-cdb2-4ab4-ba4e-698d1e6c3a60",
+    "answer": "__call_action__",
+    "options": {
+      "buttons": [],
+      "capture": false,
+      "delay": 0,
+      "nested": [],
+      "keyword": {},
+      "callback": true
+    },
+    "refSerialize": "2085737a9a99921edf395a9b56b61351",
+    "from": "573123081557"
+  },
+  {
+    "ref": "ans_ce643512-b36b-46f2-b10e-2a40bdd0056e",
+    "keyword": "ans_e3ad1c49-e2af-4f2e-8f32-1c17166a1601",
+    "answer": "📅 *AGENDAMIENTO DE CITA EN GOOGLE CALENDAR - CONTROL AUTOS GIRARDOT*\nAgenda tu revisión de 30 minutos con verificación de disponibilidad en tiempo real.\n\n👉 *Paso 1 de 5:* Por favor escribe la *PLACA* de tu vehículo (Ej: *ABC123* o *ABC12D*):",
+    "options": {
+      "buttons": [],
+      "capture": false,
+      "delay": 0,
+      "nested": [],
+      "keyword": {},
+      "callback": false
+    },
+    "refSerialize": "4a59b97efbd2fde7f06c22cccbd0bcce",
+    "from": "573123081557"
+  },
+  {
+    "ref": "ans_fab92611-d02c-44d0-b18e-9d02d557c021",
+    "keyword": "ans_ce643512-b36b-46f2-b10e-2a40bdd0056e",
+    "answer": "__capture_only_intended__",
+    "options": {
+      "buttons": [],
+      "capture": true,
+      "delay": 0,
+      "nested": [],
+      "keyword": {},
+      "callback": true
+    },
+    "refSerialize": "c768b9361168a420dfce378179c1c5df",
+    "from": "573123081557"
+  },
+  {
+    "ref": "ans_472c7c3d-4197-4f41-baa9-bc36b7f8d48d",
+    "keyword": "key_14e7c0fb-a86d-4cfe-9b74-72f9e5ffb36e",
+    "answer": "__call_action__",
+    "options": {
+      "buttons": [],
+      "capture": false,
+      "delay": 0,
+      "nested": [],
+      "keyword": {},
+      "callback": true
+    },
+    "refSerialize": "09344ead02d7c609667045395f5e322c",
+    "from": "573123687760"
+  },
+  {
+    "ref": "efe208b8-6fd9-450f-a8a9-9df3f892c9b0",
+    "keyword": null,
+    "answer": "¡Hola! Buenas tardes. ¿En qué puedo ayudarte hoy?",
+    "options": {
+      "media": null,
+      "buttons": [],
+      "capture": false,
+      "delay": 0
+    },
+    "from": "573123687760",
+    "refSerialize": "d9569a0b9148a0d067ac3a592ee903cb"
+  },
+  {
+    "ref": "f46ce94a-e02c-445e-89ee-b9622f14ebac",
+    "keyword": "09344ead02d7c609667045395f5e322c",
+    "answer": "Una pregunta para sacar la tecnomecanica de mi nkd 125 hay algún problema por tenerla repotenciada al 150?",
+    "options": {},
+    "from": "573123687760",
+    "refSerialize": "ccc12cb611617f50eb71b01c426bf359"
+  },
+  {
+    "ref": "ans_6e97c4f0-ecbf-42b1-8f7f-d2efeb43747c",
+    "keyword": "key_382d369e-54f3-4374-a2b1-2b18431fe03e",
+    "answer": "__call_action__",
+    "options": {
+      "buttons": [],
+      "capture": false,
+      "delay": 0,
+      "nested": [],
+      "keyword": {},
+      "callback": true
+    },
+    "refSerialize": "9ab4ba99028682c001103cfe145036d6",
+    "from": "573123687760"
+  },
+  {
+    "ref": "ans_e51e375c-4913-421d-abe1-bbf3bfe9fcca",
+    "keyword": "ans_6e97c4f0-ecbf-42b1-8f7f-d2efeb43747c",
+    "answer": "💰 *CONSULTA DE TARIFA OFICIAL - CONTROL AUTOS GIRARDOT*\nPara darte el valor exacto de tu Revisión Técnico-Mecánica:\n\n👉 *Paso 1:* Por favor escribe la *PLACA* de tu vehículo (Ej: *ABC123* o *ABC12D*):",
+    "options": {
+      "buttons": [],
+      "capture": false,
+      "delay": 0,
+      "nested": [],
+      "keyword": {},
+      "callback": false
+    },
+    "refSerialize": "614cb27600f97a551e417e6e3bf2b430",
+    "from": "573123687760"
+  },
+  {
+    "ref": "ans_4327ada4-0421-442c-b78b-26cb4935fd3b",
+    "keyword": "ans_e51e375c-4913-421d-abe1-bbf3bfe9fcca",
+    "answer": "__capture_only_intended__",
+    "options": {
+      "buttons": [],
+      "capture": true,
+      "delay": 0,
+      "nested": [],
+      "keyword": {},
+      "callback": true
+    },
+    "refSerialize": "833d97477509427f4a3e9ac3cda7fdef",
+    "from": "573123687760"
+  },
+  {
+    "ref": "ac1a3969-48ed-4d32-8253-31854d97dcc8",
+    "keyword": "833d97477509427f4a3e9ac3cda7fdef",
+    "answer": "LSN52G",
+    "options": {},
+    "from": "573123687760",
+    "refSerialize": "0f88a9c332fff7a3d450f5d6e0eee9e8"
+  },
+  {
+    "ref": "ans_a9a30430-d40e-4108-b95c-cb1d17d21767",
+    "keyword": "ans_4327ada4-0421-442c-b78b-26cb4935fd3b",
+    "answer": "👉 *Paso 2:* Escribe el *MODELO / AÑO* de tu vehículo:\n_(Ejemplo: 2018, 2022, 2015)_",
+    "options": {
+      "buttons": [],
+      "capture": false,
+      "delay": 0,
+      "nested": [],
+      "keyword": {},
+      "callback": false
+    },
+    "refSerialize": "11c6afa0e7bae83c71a1528288109913",
+    "from": "573123687760"
+  },
+  {
+    "ref": "ans_43b0733a-1e4a-4276-a0f3-275cb3c23dae",
+    "keyword": "ans_a9a30430-d40e-4108-b95c-cb1d17d21767",
+    "answer": "__capture_only_intended__",
+    "options": {
+      "buttons": [],
+      "capture": true,
+      "delay": 0,
+      "nested": [],
+      "keyword": {},
+      "callback": true
+    },
+    "refSerialize": "a6f4aac3b5e49662db7cb1ddf359ce28",
+    "from": "573123687760"
+  },
+  {
+    "ref": "6b8a3fdd-1ba0-445a-aa80-d5e16f4e2115",
+    "keyword": "a6f4aac3b5e49662db7cb1ddf359ce28",
+    "answer": "2023",
+    "options": {},
+    "from": "573123687760",
+    "refSerialize": "29b5897dbe79290f0802237cfaa19055"
+  },
+  {
+    "ref": "ans_0849b2c3-4daf-491e-9b5c-7c29ef0fde35",
+    "keyword": "ans_43b0733a-1e4a-4276-a0f3-275cb3c23dae",
+    "answer": "👉 *Paso 3:* Selecciona el *TIPO DE VEHÍCULO*:\n1. 🏍️ Moto (4 Tiempos)\n2. 🚗 Liviano Particular (Automóvil, Campero, Camioneta)\n3. 🚕 Liviano Público (Taxi, Servicio Especial, Van)\n4. 🚛 Pesado Particular (Camión, Furgón Diésel)\n5. 🚌 Pesado Público (Bus, Volqueta, Camión Diésel)\n\nEscribe el número (*1 al 5*):",
+    "options": {
+      "buttons": [],
+      "capture": false,
+      "delay": 0,
+      "nested": [],
+      "keyword": {},
+      "callback": false
+    },
+    "refSerialize": "252f1a56decaf89f940537a363c1cba7",
+    "from": "573123687760"
+  },
+  {
+    "ref": "ans_61dd7eeb-9724-417b-9d4d-a3b9c8add20c",
+    "keyword": "ans_0849b2c3-4daf-491e-9b5c-7c29ef0fde35",
+    "answer": "__capture_only_intended__",
+    "options": {
+      "buttons": [],
+      "capture": true,
+      "delay": 0,
+      "nested": [],
+      "keyword": {},
+      "callback": true
+    },
+    "refSerialize": "983e47f8a93d6f639a596d440c234f89",
+    "from": "573123687760"
+  },
+  {
+    "ref": "25b30162-44b3-4d0d-a133-e3ab26627405",
+    "keyword": "983e47f8a93d6f639a596d440c234f89",
+    "answer": "1",
+    "options": {},
+    "from": "573123687760",
+    "refSerialize": "290236b1d481a790a200ea6e94b2122a"
+  },
+  {
+    "ref": "370742c6-67f5-4027-ba76-329bcc3209be",
+    "keyword": null,
+    "answer": "✅ *TARIFA REVISIÓN TÉCNICO-MECÁNICA 2026*\n🏢 *Control Autos De Girardot*\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n🚘 *Placa:* LSN52G\n🚗 *Tipo:* Moto 4T (Modelo 2023)\n💵 *Valor Oficial:* *$247.274*\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n⏱️ *¡La revisión se realiza en solo 30 minutos!*\n🟢 *El SOAT vigente NO es obligatorio para la inspección.*\n\n¿Deseas agendar tu turno ahora? Escribe *AGENDAR* o escribe *MENU* para volver al inicio.",
+    "options": {
+      "media": null,
+      "buttons": [],
+      "capture": false,
+      "delay": 0
+    },
+    "from": "573123687760",
+    "refSerialize": "0e03a95be0a70d04455b57db12a0fdb1"
+  },
+  {
+    "ref": "ans_472c7c3d-4197-4f41-baa9-bc36b7f8d48d",
+    "keyword": "key_14e7c0fb-a86d-4cfe-9b74-72f9e5ffb36e",
+    "answer": "__call_action__",
+    "options": {
+      "buttons": [],
+      "capture": false,
+      "delay": 0,
+      "nested": [],
+      "keyword": {},
+      "callback": true
+    },
+    "refSerialize": "09344ead02d7c609667045395f5e322c",
+    "from": "573112127998"
+  },
+  {
+    "ref": "37b11473-0331-4f11-b254-19a0add48971",
+    "keyword": null,
+    "answer": "¡Buenas noches, ROZO TRUJILLO CARLOS! 🌙\n\nGracias por la actualización. Tomamos nota de que ya no eres dueño de ningún vehículo. Si en el futuro necesitas alguna información o asistencia, no dudes en contactarnos. ¡Te deseamos un excelente día! 😊",
+    "options": {
+      "media": null,
+      "buttons": [],
+      "capture": false,
+      "delay": 0
+    },
+    "from": "573112127998",
+    "refSerialize": "cc058ed80f732c6b7f8090ca3586eab9"
+  },
+  {
+    "ref": "ans_e3ad1c49-e2af-4f2e-8f32-1c17166a1601",
+    "keyword": "key_26b3b25e-cdb2-4ab4-ba4e-698d1e6c3a60",
+    "answer": "__call_action__",
+    "options": {
+      "buttons": [],
+      "capture": false,
+      "delay": 0,
+      "nested": [],
+      "keyword": {},
+      "callback": true
+    },
+    "refSerialize": "2085737a9a99921edf395a9b56b61351",
+    "from": "573214254829"
+  },
+  {
+    "ref": "ans_ce643512-b36b-46f2-b10e-2a40bdd0056e",
+    "keyword": "ans_e3ad1c49-e2af-4f2e-8f32-1c17166a1601",
+    "answer": "📅 *AGENDAMIENTO DE CITA EN GOOGLE CALENDAR - CONTROL AUTOS GIRARDOT*\nAgenda tu revisión de 30 minutos con verificación de disponibilidad en tiempo real.\n\n👉 *Paso 1 de 5:* Por favor escribe la *PLACA* de tu vehículo (Ej: *ABC123* o *ABC12D*):",
+    "options": {
+      "buttons": [],
+      "capture": false,
+      "delay": 0,
+      "nested": [],
+      "keyword": {},
+      "callback": false
+    },
+    "refSerialize": "4a59b97efbd2fde7f06c22cccbd0bcce",
+    "from": "573214254829"
+  },
+  {
+    "ref": "ans_fab92611-d02c-44d0-b18e-9d02d557c021",
+    "keyword": "ans_ce643512-b36b-46f2-b10e-2a40bdd0056e",
+    "answer": "__capture_only_intended__",
+    "options": {
+      "buttons": [],
+      "capture": true,
+      "delay": 0,
+      "nested": [],
+      "keyword": {},
+      "callback": true
+    },
+    "refSerialize": "c768b9361168a420dfce378179c1c5df",
+    "from": "573214254829"
+  },
+  {
+    "ref": "2992f32a-291f-4990-addd-d90f62440def",
+    "keyword": "c768b9361168a420dfce378179c1c5df",
+    "answer": "Vierned",
+    "options": {},
+    "from": "573214254829",
+    "refSerialize": "76b930b47f0d8164b98facb5b1b68512"
+  },
+  {
+    "ref": "ans_c4c30188-2958-4530-96a5-4690dcbba4ef",
+    "keyword": "ans_fab92611-d02c-44d0-b18e-9d02d557c021",
+    "answer": "👉 *Paso 2 de 5:* Selecciona el *TIPO DE VEHÍCULO Y COMBUSTIBLE*:\n1. 🏍️ Moto 4T (4 Tiempos)\n2. 🚗 Liviano - Gasolina\n3. 🚗 Liviano - Diésel\n4. 🚗 Liviano - Gas vehicular\n5. 🚛 Pesado - Diésel\n\nEscribe el número correspondiente (*1 al 5*):",
+    "options": {
+      "buttons": [],
+      "capture": false,
+      "delay": 0,
+      "nested": [],
+      "keyword": {},
+      "callback": false
+    },
+    "refSerialize": "fcf18582bb3db6f18a5d73aeacf6a915",
+    "from": "573214254829"
+  },
+  {
+    "ref": "ans_8abebb80-7776-480b-a03c-197f30e85bcc",
+    "keyword": "ans_c4c30188-2958-4530-96a5-4690dcbba4ef",
+    "answer": "__capture_only_intended__",
+    "options": {
+      "buttons": [],
+      "capture": true,
+      "delay": 0,
+      "nested": [],
+      "keyword": {},
+      "callback": true
+    },
+    "refSerialize": "82b04da321f56a52afac0762ee3b1a4b",
+    "from": "573214254829"
+  },
+  {
+    "ref": "ans_e3ad1c49-e2af-4f2e-8f32-1c17166a1601",
+    "keyword": "key_26b3b25e-cdb2-4ab4-ba4e-698d1e6c3a60",
+    "answer": "__call_action__",
+    "options": {
+      "buttons": [],
+      "capture": false,
+      "delay": 0,
+      "nested": [],
+      "keyword": {},
+      "callback": true
+    },
+    "refSerialize": "2085737a9a99921edf395a9b56b61351",
+    "from": "573105571605"
+  },
+  {
+    "ref": "ans_ce643512-b36b-46f2-b10e-2a40bdd0056e",
+    "keyword": "ans_e3ad1c49-e2af-4f2e-8f32-1c17166a1601",
+    "answer": "📅 *AGENDAMIENTO DE CITA EN GOOGLE CALENDAR - CONTROL AUTOS GIRARDOT*\nAgenda tu revisión de 30 minutos con verificación de disponibilidad en tiempo real.\n\n👉 *Paso 1 de 5:* Por favor escribe la *PLACA* de tu vehículo (Ej: *ABC123* o *ABC12D*):",
+    "options": {
+      "buttons": [],
+      "capture": false,
+      "delay": 0,
+      "nested": [],
+      "keyword": {},
+      "callback": false
+    },
+    "refSerialize": "4a59b97efbd2fde7f06c22cccbd0bcce",
+    "from": "573105571605"
+  },
+  {
+    "ref": "ans_fab92611-d02c-44d0-b18e-9d02d557c021",
+    "keyword": "ans_ce643512-b36b-46f2-b10e-2a40bdd0056e",
+    "answer": "__capture_only_intended__",
+    "options": {
+      "buttons": [],
+      "capture": true,
+      "delay": 0,
+      "nested": [],
+      "keyword": {},
+      "callback": true
+    },
+    "refSerialize": "c768b9361168a420dfce378179c1c5df",
+    "from": "573105571605"
+  },
+  {
+    "ref": "d60a4451-1d4f-481a-ba0a-ecfa70754bb7",
+    "keyword": "82b04da321f56a52afac0762ee3b1a4b",
+    "answer": "GCZ19E.\nMOTO 4 TIEMPOS\nGASOLINA.",
+    "options": {},
+    "from": "573214254829",
+    "refSerialize": "d6665e45ef00d4460660cd099da5b9d6"
+  },
+  {
+    "ref": "ans_8abebb80-7776-480b-a03c-197f30e85bcc",
+    "keyword": "ans_c4c30188-2958-4530-96a5-4690dcbba4ef",
+    "answer": "⚠️ Opción inválida. Digita un número del *1 al 5*:",
+    "options": {
+      "buttons": [],
+      "capture": true,
+      "delay": 0,
+      "nested": [],
+      "keyword": {},
+      "callback": true
+    },
+    "refSerialize": "82b04da321f56a52afac0762ee3b1a4b",
+    "from": "573214254829"
+  },
+  {
+    "ref": "ans_e3ad1c49-e2af-4f2e-8f32-1c17166a1601",
+    "keyword": "key_26b3b25e-cdb2-4ab4-ba4e-698d1e6c3a60",
+    "answer": "__call_action__",
+    "options": {
+      "buttons": [],
+      "capture": false,
+      "delay": 0,
+      "nested": [],
+      "keyword": {},
+      "callback": true
+    },
+    "refSerialize": "2085737a9a99921edf395a9b56b61351",
+    "from": "573108751714"
+  },
+  {
+    "ref": "ans_ce643512-b36b-46f2-b10e-2a40bdd0056e",
+    "keyword": "ans_e3ad1c49-e2af-4f2e-8f32-1c17166a1601",
+    "answer": "📅 *AGENDAMIENTO DE CITA EN GOOGLE CALENDAR - CONTROL AUTOS GIRARDOT*\nAgenda tu revisión de 30 minutos con verificación de disponibilidad en tiempo real.\n\n👉 *Paso 1 de 5:* Por favor escribe la *PLACA* de tu vehículo (Ej: *ABC123* o *ABC12D*):",
+    "options": {
+      "buttons": [],
+      "capture": false,
+      "delay": 0,
+      "nested": [],
+      "keyword": {},
+      "callback": false
+    },
+    "refSerialize": "4a59b97efbd2fde7f06c22cccbd0bcce",
+    "from": "573108751714"
+  },
+  {
+    "ref": "ans_fab92611-d02c-44d0-b18e-9d02d557c021",
+    "keyword": "ans_ce643512-b36b-46f2-b10e-2a40bdd0056e",
+    "answer": "__capture_only_intended__",
+    "options": {
+      "buttons": [],
+      "capture": true,
+      "delay": 0,
+      "nested": [],
+      "keyword": {},
+      "callback": true
+    },
+    "refSerialize": "c768b9361168a420dfce378179c1c5df",
+    "from": "573108751714"
+  },
+  {
+    "ref": "fce91037-919e-481c-8c48-a2d3ca542cee",
+    "keyword": "82b04da321f56a52afac0762ee3b1a4b",
+    "answer": "1",
+    "options": {},
+    "from": "573214254829",
+    "refSerialize": "290236b1d481a790a200ea6e94b2122a"
+  },
+  {
+    "ref": "ans_d9cf0aa7-2b78-4df9-b984-9543413d82c7",
+    "keyword": "ans_8abebb80-7776-480b-a03c-197f30e85bcc",
+    "answer": "👉 *Paso 3 de 5:* Escribe la *MARCA Y MODELO/AÑO* de tu vehículo:\n_(Ejemplo: Mazda 3 2020, Renault Duster 2018, Hino Dutro 2022, Yamaha FZ 2021)_",
+    "options": {
+      "buttons": [],
+      "capture": false,
+      "delay": 0,
+      "nested": [],
+      "keyword": {},
+      "callback": false
+    },
+    "refSerialize": "aa25f572e08fd0334d7707ffc27e9a14",
+    "from": "573214254829"
+  },
+  {
+    "ref": "ans_275474b2-93a9-4cd2-9795-15a3500efb22",
+    "keyword": "ans_d9cf0aa7-2b78-4df9-b984-9543413d82c7",
+    "answer": "__capture_only_intended__",
+    "options": {
+      "buttons": [],
+      "capture": true,
+      "delay": 0,
+      "nested": [],
+      "keyword": {},
+      "callback": true
+    },
+    "refSerialize": "2ae31530189c41b6a4a8e1a51cccad9d",
+    "from": "573214254829"
+  },
+  {
+    "ref": "f4484cdf-eb6a-4434-960d-75fb16570c51",
+    "keyword": "c768b9361168a420dfce378179c1c5df",
+    "answer": "Jmv015",
+    "options": {},
+    "from": "573105571605",
+    "refSerialize": "d0e8af7ca7b6cddd2c479a06b37ec64c"
+  },
+  {
+    "ref": "ans_c4c30188-2958-4530-96a5-4690dcbba4ef",
+    "keyword": "ans_fab92611-d02c-44d0-b18e-9d02d557c021",
+    "answer": "👉 *Paso 2 de 5:* Selecciona el *TIPO DE VEHÍCULO Y COMBUSTIBLE*:\n1. 🏍️ Moto 4T (4 Tiempos)\n2. 🚗 Liviano - Gasolina\n3. 🚗 Liviano - Diésel\n4. 🚗 Liviano - Gas vehicular\n5. 🚛 Pesado - Diésel\n\nEscribe el número correspondiente (*1 al 5*):",
+    "options": {
+      "buttons": [],
+      "capture": false,
+      "delay": 0,
+      "nested": [],
+      "keyword": {},
+      "callback": false
+    },
+    "refSerialize": "fcf18582bb3db6f18a5d73aeacf6a915",
+    "from": "573105571605"
+  },
+  {
+    "ref": "ans_8abebb80-7776-480b-a03c-197f30e85bcc",
+    "keyword": "ans_c4c30188-2958-4530-96a5-4690dcbba4ef",
+    "answer": "__capture_only_intended__",
+    "options": {
+      "buttons": [],
+      "capture": true,
+      "delay": 0,
+      "nested": [],
+      "keyword": {},
+      "callback": true
+    },
+    "refSerialize": "82b04da321f56a52afac0762ee3b1a4b",
+    "from": "573105571605"
+  },
+  {
+    "ref": "cf654da2-d169-4121-a962-129e54683e3b",
+    "keyword": "82b04da321f56a52afac0762ee3b1a4b",
+    "answer": "2",
+    "options": {},
+    "from": "573105571605",
+    "refSerialize": "2294c3d08b53a6effa5df696a15b9d30"
+  },
+  {
+    "ref": "ans_d9cf0aa7-2b78-4df9-b984-9543413d82c7",
+    "keyword": "ans_8abebb80-7776-480b-a03c-197f30e85bcc",
+    "answer": "👉 *Paso 3 de 5:* Escribe la *MARCA Y MODELO/AÑO* de tu vehículo:\n_(Ejemplo: Mazda 3 2020, Renault Duster 2018, Hino Dutro 2022, Yamaha FZ 2021)_",
+    "options": {
+      "buttons": [],
+      "capture": false,
+      "delay": 0,
+      "nested": [],
+      "keyword": {},
+      "callback": false
+    },
+    "refSerialize": "aa25f572e08fd0334d7707ffc27e9a14",
+    "from": "573105571605"
+  },
+  {
+    "ref": "ans_275474b2-93a9-4cd2-9795-15a3500efb22",
+    "keyword": "ans_d9cf0aa7-2b78-4df9-b984-9543413d82c7",
+    "answer": "__capture_only_intended__",
+    "options": {
+      "buttons": [],
+      "capture": true,
+      "delay": 0,
+      "nested": [],
+      "keyword": {},
+      "callback": true
+    },
+    "refSerialize": "2ae31530189c41b6a4a8e1a51cccad9d",
+    "from": "573105571605"
+  },
+  {
+    "ref": "faca7905-0e3a-4b3f-be6f-04d2cc5d06f5",
+    "keyword": "2ae31530189c41b6a4a8e1a51cccad9d",
+    "answer": "Honda CB 110\n2018",
+    "options": {},
+    "from": "573214254829",
+    "refSerialize": "eb4a754b5048100d56c9576639981230"
+  },
+  {
+    "ref": "ans_bab3d7db-dc4b-4afc-8154-a95edf7430e7",
+    "keyword": "ans_275474b2-93a9-4cd2-9795-15a3500efb22",
+    "answer": "👉 *Paso 4 de 5:* ¿A nombre de quién registramos la cita? Escribe tu *Nombre y Apellido*:",
+    "options": {
+      "buttons": [],
+      "capture": false,
+      "delay": 0,
+      "nested": [],
+      "keyword": {},
+      "callback": false
+    },
+    "refSerialize": "fb8ba59cb82708d921645a7941e96152",
+    "from": "573214254829"
+  },
+  {
+    "ref": "ans_461a6328-6fa0-4f07-9608-fc7e8284dcf7",
+    "keyword": "ans_bab3d7db-dc4b-4afc-8154-a95edf7430e7",
+    "answer": "__capture_only_intended__",
+    "options": {
+      "buttons": [],
+      "capture": true,
+      "delay": 0,
+      "nested": [],
+      "keyword": {},
+      "callback": true
+    },
+    "refSerialize": "9db4aea7261d547b2d16a9efe55a91f6",
+    "from": "573214254829"
+  },
+  {
+    "ref": "fd96d26d-bf13-40e0-80c1-eac36fe0afa4",
+    "keyword": "2ae31530189c41b6a4a8e1a51cccad9d",
+    "answer": "Toyota fortuner 2020",
+    "options": {},
+    "from": "573105571605",
+    "refSerialize": "9dae010754a607a42cef1c9cc0301053"
+  },
+  {
+    "ref": "ans_bab3d7db-dc4b-4afc-8154-a95edf7430e7",
+    "keyword": "ans_275474b2-93a9-4cd2-9795-15a3500efb22",
+    "answer": "👉 *Paso 4 de 5:* ¿A nombre de quién registramos la cita? Escribe tu *Nombre y Apellido*:",
+    "options": {
+      "buttons": [],
+      "capture": false,
+      "delay": 0,
+      "nested": [],
+      "keyword": {},
+      "callback": false
+    },
+    "refSerialize": "fb8ba59cb82708d921645a7941e96152",
+    "from": "573105571605"
+  },
+  {
+    "ref": "ans_461a6328-6fa0-4f07-9608-fc7e8284dcf7",
+    "keyword": "ans_bab3d7db-dc4b-4afc-8154-a95edf7430e7",
+    "answer": "__capture_only_intended__",
+    "options": {
+      "buttons": [],
+      "capture": true,
+      "delay": 0,
+      "nested": [],
+      "keyword": {},
+      "callback": true
+    },
+    "refSerialize": "9db4aea7261d547b2d16a9efe55a91f6",
+    "from": "573105571605"
+  },
+  {
+    "ref": "e246c6cb-74a2-4f54-afa3-2c4380239908",
+    "keyword": "9db4aea7261d547b2d16a9efe55a91f6",
+    "answer": "Jaime Fajardo",
+    "options": {},
+    "from": "573105571605",
+    "refSerialize": "d7338dac75d8a23f0de4f75df4307ef2"
+  },
+  {
+    "ref": "ans_afedbf2f-6987-4014-87bd-f58c856b2c61",
+    "keyword": "ans_461a6328-6fa0-4f07-9608-fc7e8284dcf7",
+    "answer": "👉 *Paso 5 de 5:* ¿Para qué *FECHA* deseas tu cita?\nPuedes escribir:\n• *Hoy*\n• *Mañana*\n• O una fecha en formato *DD/MM/AAAA* (Ej: *15/09/2026*)",
+    "options": {
+      "buttons": [],
+      "capture": false,
+      "delay": 0,
+      "nested": [],
+      "keyword": {},
+      "callback": false
+    },
+    "refSerialize": "f532e9e9b49adab250a1cc4df4b9eb3d",
+    "from": "573105571605"
+  },
+  {
+    "ref": "ans_baf926f0-fd82-403e-9378-ba723a388ede",
+    "keyword": "ans_afedbf2f-6987-4014-87bd-f58c856b2c61",
+    "answer": "__capture_only_intended__",
+    "options": {
+      "buttons": [],
+      "capture": true,
+      "delay": 0,
+      "nested": [],
+      "keyword": {},
+      "callback": true
+    },
+    "refSerialize": "1f372193fd84973ca37fb578f62f38df",
+    "from": "573105571605"
+  },
+  {
+    "ref": "b8ef7389-2cc2-4469-beb6-c322c5feeb52",
+    "keyword": "c768b9361168a420dfce378179c1c5df",
+    "answer": "UEW355",
+    "options": {},
+    "from": "573108751714",
+    "refSerialize": "25ae2deb7c0b9aec13b0415fce48a823"
+  },
+  {
+    "ref": "ans_c4c30188-2958-4530-96a5-4690dcbba4ef",
+    "keyword": "ans_fab92611-d02c-44d0-b18e-9d02d557c021",
+    "answer": "👉 *Paso 2 de 5:* Selecciona el *TIPO DE VEHÍCULO Y COMBUSTIBLE*:\n1. 🏍️ Moto 4T (4 Tiempos)\n2. 🚗 Liviano - Gasolina\n3. 🚗 Liviano - Diésel\n4. 🚗 Liviano - Gas vehicular\n5. 🚛 Pesado - Diésel\n\nEscribe el número correspondiente (*1 al 5*):",
+    "options": {
+      "buttons": [],
+      "capture": false,
+      "delay": 0,
+      "nested": [],
+      "keyword": {},
+      "callback": false
+    },
+    "refSerialize": "fcf18582bb3db6f18a5d73aeacf6a915",
+    "from": "573108751714"
+  },
+  {
+    "ref": "ans_8abebb80-7776-480b-a03c-197f30e85bcc",
+    "keyword": "ans_c4c30188-2958-4530-96a5-4690dcbba4ef",
+    "answer": "__capture_only_intended__",
+    "options": {
+      "buttons": [],
+      "capture": true,
+      "delay": 0,
+      "nested": [],
+      "keyword": {},
+      "callback": true
+    },
+    "refSerialize": "82b04da321f56a52afac0762ee3b1a4b",
+    "from": "573108751714"
+  },
+  {
+    "ref": "5cb76e1d-e525-4a8c-b7c4-3aaea2be20f9",
+    "keyword": "9db4aea7261d547b2d16a9efe55a91f6",
+    "answer": "Hernán Rico. O.",
+    "options": {},
+    "from": "573214254829",
+    "refSerialize": "748b243fb9e79feb5eac939155a99356"
+  },
+  {
+    "ref": "ans_afedbf2f-6987-4014-87bd-f58c856b2c61",
+    "keyword": "ans_461a6328-6fa0-4f07-9608-fc7e8284dcf7",
+    "answer": "👉 *Paso 5 de 5:* ¿Para qué *FECHA* deseas tu cita?\nPuedes escribir:\n• *Hoy*\n• *Mañana*\n• O una fecha en formato *DD/MM/AAAA* (Ej: *15/09/2026*)",
+    "options": {
+      "buttons": [],
+      "capture": false,
+      "delay": 0,
+      "nested": [],
+      "keyword": {},
+      "callback": false
+    },
+    "refSerialize": "f532e9e9b49adab250a1cc4df4b9eb3d",
+    "from": "573214254829"
+  },
+  {
+    "ref": "ans_baf926f0-fd82-403e-9378-ba723a388ede",
+    "keyword": "ans_afedbf2f-6987-4014-87bd-f58c856b2c61",
+    "answer": "__capture_only_intended__",
+    "options": {
+      "buttons": [],
+      "capture": true,
+      "delay": 0,
+      "nested": [],
+      "keyword": {},
+      "callback": true
+    },
+    "refSerialize": "1f372193fd84973ca37fb578f62f38df",
+    "from": "573214254829"
+  },
+  {
+    "ref": "2e30f03a-d818-411c-8b27-a8883be02cfa",
+    "keyword": "1f372193fd84973ca37fb578f62f38df",
+    "answer": "Mañana",
+    "options": {},
+    "from": "573105571605",
+    "refSerialize": "90908eaea17e281d6e9f7f69d13bea46"
+  },
+  {
+    "ref": "e9e6892e-8307-40b9-ad70-da5c5d661c18",
+    "keyword": null,
+    "answer": "⏳ _Consultando disponibilidad en Google Calendar para el 2026-09-07..._",
+    "options": {
+      "media": null,
+      "buttons": [],
+      "capture": false,
+      "delay": 0
+    },
+    "from": "573105571605",
+    "refSerialize": "283e48cc77ebd781ef8edf2351fe30e6"
+  },
+  {
+    "ref": "ans_304a7b40-3a9c-4106-bb11-130aa7a71bf4",
+    "keyword": "ans_baf926f0-fd82-403e-9378-ba723a388ede",
+    "answer": "Elige tu horario escribiendo el número:",
+    "options": {
+      "buttons": [],
+      "capture": false,
+      "delay": 0,
+      "nested": [],
+      "keyword": {},
+      "callback": false
+    },
+    "refSerialize": "13d71b061a9ec5d2292578fa75fe9cd3",
+    "from": "573105571605"
+  },
+  {
+    "ref": "ans_5b63d343-515d-4c6d-bfc9-8c18a5b5578c",
+    "keyword": "ans_304a7b40-3a9c-4106-bb11-130aa7a71bf4",
+    "answer": "__capture_only_intended__",
+    "options": {
+      "buttons": [],
+      "capture": true,
+      "delay": 0,
+      "nested": [],
+      "keyword": {},
+      "callback": true
+    },
+    "refSerialize": "c8b2c1381d2f1ea0b3b14bd18b3c3b19",
+    "from": "573105571605"
+  },
+  {
+    "ref": "e4e0f9c1-e9cb-4089-8b86-7ec961ce4986",
+    "keyword": null,
+    "answer": "✅ *HORARIOS DISPONIBLES EN GOOGLE CALENDAR (2026-09-07)*\n⏱️ Duración de inspección: 30 minutos\n\n👉 *1.* 🕒 7:30 AM\n👉 *2.* 🕒 8:00 AM\n👉 *3.* 🕒 8:30 AM\n👉 *4.* 🕒 9:00 AM\n👉 *5.* 🕒 9:30 AM\n👉 *6.* 🕒 10:00 AM\n👉 *7.* 🕒 10:30 AM\n👉 *8.* 🕒 11:00 AM\n👉 *9.* 🕒 11:30 AM\n👉 *10.* 🕒 12:00 PM\n👉 *11.* 🕒 12:30 PM\n👉 *12.* 🕒 1:00 PM\n👉 *13.* 🕒 1:30 PM\n👉 *14.* 🕒 2:30 PM\n👉 *15.* 🕒 3:00 PM\n👉 *16.* 🕒 3:30 PM\n👉 *17.* 🕒 4:00 PM\n👉 *18.* 🕒 4:30 PM\n👉 *19.* 🕒 5:00 PM\n👉 *20.* 🕒 5:30 PM\n👉 *21.* 🕒 6:00 PM\n👉 *22.* 🕒 6:30 PM\n\nPor favor escribe el *NÚMERO* del horario que prefieres (Ej: *1*, *2*, *3*):",
+    "options": {
+      "media": null,
+      "buttons": [],
+      "capture": false,
+      "delay": 0
+    },
+    "from": "573105571605",
+    "refSerialize": "19c0db4c2efa4a44936caa80633cc21f"
+  },
+  {
+    "ref": "5190f52a-e220-49de-88d9-d91f2ee61919",
+    "keyword": "82b04da321f56a52afac0762ee3b1a4b",
+    "answer": "2",
+    "options": {},
+    "from": "573108751714",
+    "refSerialize": "2294c3d08b53a6effa5df696a15b9d30"
+  },
+  {
+    "ref": "ans_d9cf0aa7-2b78-4df9-b984-9543413d82c7",
+    "keyword": "ans_8abebb80-7776-480b-a03c-197f30e85bcc",
+    "answer": "👉 *Paso 3 de 5:* Escribe la *MARCA Y MODELO/AÑO* de tu vehículo:\n_(Ejemplo: Mazda 3 2020, Renault Duster 2018, Hino Dutro 2022, Yamaha FZ 2021)_",
+    "options": {
+      "buttons": [],
+      "capture": false,
+      "delay": 0,
+      "nested": [],
+      "keyword": {},
+      "callback": false
+    },
+    "refSerialize": "aa25f572e08fd0334d7707ffc27e9a14",
+    "from": "573108751714"
+  },
+  {
+    "ref": "ans_275474b2-93a9-4cd2-9795-15a3500efb22",
+    "keyword": "ans_d9cf0aa7-2b78-4df9-b984-9543413d82c7",
+    "answer": "__capture_only_intended__",
+    "options": {
+      "buttons": [],
+      "capture": true,
+      "delay": 0,
+      "nested": [],
+      "keyword": {},
+      "callback": true
+    },
+    "refSerialize": "2ae31530189c41b6a4a8e1a51cccad9d",
+    "from": "573108751714"
+  },
+  {
+    "ref": "2f9a7099-d961-4a20-b024-880bdc5c210d",
+    "keyword": "c8b2c1381d2f1ea0b3b14bd18b3c3b19",
+    "answer": "14:30",
+    "options": {},
+    "from": "573105571605",
+    "refSerialize": "2f340b2c0719050253493c2af80aaba9"
+  },
+  {
+    "ref": "d1107142-08f5-40b3-bd1d-a7b3e69247dd",
+    "keyword": null,
+    "answer": "🎉 *¡CITA AGENDADA EXITOSAMENTE EN GOOGLE CALENDAR!* 🎉\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n🔖 *Código de Reserva:* `CITA-712479`\n🏢 *CDA:* Control Autos De Girardot\n👤 *Titular:* Jaime Fajardo\n🚘 *Placa:* JMV015\n🚗 *Tipo:* Liviano (Gasolina)\n🏷️ *Vehículo:* Toyota fortuner 2020\n📅 *Fecha:* 2026-09-07\n⏰ *Hora:* 2:30 PM (Duración: 30 min)\n📍 *Dirección:* Girardot, Cundinamarca (Girardot, Cundinamarca)\n🗺️ *Google Maps:* https://maps.app.goo.gl/1NCPcLwNEUKWadjQ6\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\nℹ️ *RECORDATORIOS IMPORTANTES:*\n• 🟢 El SOAT vigente *NO es obligatorio* para la inspección técnico-mecánica.\n• Presentar la Tarjeta de Propiedad (Licencia de Tránsito).\n• Traer el vehículo limpio y el baúl desocupado.\n• Llegar 10 minutos antes de tu hora asignada.\n\nSi necesitas modificar tu cita, escribe *ASESOR* o escribe *MENU* para volver al inicio.",
+    "options": {
+      "media": null,
+      "buttons": [],
+      "capture": false,
+      "delay": 0
+    },
+    "from": "573105571605",
+    "refSerialize": "988d81f984db997ce2f8331c2e5d0da9"
+  },
+  {
+    "ref": "ans_472c7c3d-4197-4f41-baa9-bc36b7f8d48d",
+    "keyword": "key_14e7c0fb-a86d-4cfe-9b74-72f9e5ffb36e",
+    "answer": "__call_action__",
+    "options": {
+      "buttons": [],
+      "capture": false,
+      "delay": 0,
+      "nested": [],
+      "keyword": {},
+      "callback": true
+    },
+    "refSerialize": "09344ead02d7c609667045395f5e322c",
+    "from": "573015980998"
+  },
+  {
+    "ref": "6ecb1a65-8586-4d4a-ad1a-b988733f536b",
+    "keyword": "2ae31530189c41b6a4a8e1a51cccad9d",
+    "answer": "Renault duster oroch modelo 2018",
+    "options": {},
+    "from": "573108751714",
+    "refSerialize": "6ccd2c143fa6d6f7883859aa55fb1105"
+  },
+  {
+    "ref": "ans_bab3d7db-dc4b-4afc-8154-a95edf7430e7",
+    "keyword": "ans_275474b2-93a9-4cd2-9795-15a3500efb22",
+    "answer": "👉 *Paso 4 de 5:* ¿A nombre de quién registramos la cita? Escribe tu *Nombre y Apellido*:",
+    "options": {
+      "buttons": [],
+      "capture": false,
+      "delay": 0,
+      "nested": [],
+      "keyword": {},
+      "callback": false
+    },
+    "refSerialize": "fb8ba59cb82708d921645a7941e96152",
+    "from": "573108751714"
+  },
+  {
+    "ref": "ans_461a6328-6fa0-4f07-9608-fc7e8284dcf7",
+    "keyword": "ans_bab3d7db-dc4b-4afc-8154-a95edf7430e7",
+    "answer": "__capture_only_intended__",
+    "options": {
+      "buttons": [],
+      "capture": true,
+      "delay": 0,
+      "nested": [],
+      "keyword": {},
+      "callback": true
+    },
+    "refSerialize": "9db4aea7261d547b2d16a9efe55a91f6",
+    "from": "573108751714"
+  },
+  {
+    "ref": "422edeca-3101-46ff-9a7f-9e4b229cd90e",
+    "keyword": null,
+    "answer": "¡Con gusto, LUCY! 😊 Si necesitas más información o deseas agendar tu cita, aquí estamos para ayudarte. ¡Que tengas un excelente día! 🌟",
+    "options": {
+      "media": null,
+      "buttons": [],
+      "capture": false,
+      "delay": 0
+    },
+    "from": "573015980998",
+    "refSerialize": "271039df6144fe3e3479827d2bce17e0"
+  },
+  {
+    "ref": "1a3b9079-5f01-43c9-9e3a-0d5146967781",
+    "keyword": "09344ead02d7c609667045395f5e322c",
+    "answer": "Me falta tener el carro",
+    "options": {},
+    "from": "573015980998",
+    "refSerialize": "19b9ff52996178f325a298cb0b0b134b"
+  },
+  {
+    "ref": "ans_472c7c3d-4197-4f41-baa9-bc36b7f8d48d",
+    "keyword": "key_14e7c0fb-a86d-4cfe-9b74-72f9e5ffb36e",
+    "answer": "__call_action__",
+    "options": {
+      "buttons": [],
+      "capture": false,
+      "delay": 0,
+      "nested": [],
+      "keyword": {},
+      "callback": true
+    },
+    "refSerialize": "09344ead02d7c609667045395f5e322c",
+    "from": "573015980998"
+  },
+  {
+    "ref": "3670cb74-a548-4fbc-a976-a90057f5c913",
+    "keyword": null,
+    "answer": "Entiendo, LUCY. Espero que consigas tu carro pronto. Cuando estés lista, con mucho gusto te esperamos para hacer la revisión. ¡Te deseamos un buen día y un buen viaje! 🚗✨",
+    "options": {
+      "media": null,
+      "buttons": [],
+      "capture": false,
+      "delay": 0
+    },
+    "from": "573015980998",
+    "refSerialize": "559fad913ce41c26a7f542600e961645"
+  },
+  {
+    "ref": "588534ff-2bb5-46e7-afca-f7e1bd203070",
+    "keyword": "09344ead02d7c609667045395f5e322c",
+    "answer": "_event_media__c5ca3602-2641-4d22-9744-c2da74a31665",
+    "options": {},
+    "from": "573015980998",
+    "refSerialize": "bd4e9d1d89b6bdda853f50d291cf30a9"
+  },
+  {
+    "ref": "ans_7eb8850a-f0ce-4b52-926e-7cb5ffabf62f",
+    "keyword": "key_e919430d-b4ad-4f59-bae9-729e12ae91ad",
+    "answer": "__call_action__",
+    "options": {
+      "buttons": [],
+      "capture": false,
+      "delay": 0,
+      "nested": [],
+      "keyword": {},
+      "callback": true
+    },
+    "refSerialize": "180ac6c51c1d00823345f889bbdb66de",
+    "from": "573015980998"
+  },
+  {
+    "ref": "ans_1cde56f4-cbe1-4b96-afbd-ceb9a9e96af5",
+    "keyword": "ans_7eb8850a-f0ce-4b52-926e-7cb5ffabf62f",
+    "answer": "👨‍💼 *ATENCIÓN CON ASESOR* 👨‍💼\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n¡Con gusto! En breve uno de nuestros asesores de *Control Autos De Girardot* se comunicará contigo para colaborarte.\n\n📞 Teléfono directo: *+57 318 456 1999*",
+    "options": {
+      "buttons": [],
+      "capture": false,
+      "delay": 0,
+      "nested": [],
+      "keyword": {},
+      "callback": false
+    },
+    "refSerialize": "8002563d8faaa811a223a3af12f3291f",
+    "from": "573015980998"
+  },
+  {
+    "ref": "ans_60ac7859-7983-4417-beb8-2cd26e4b0107",
+    "keyword": "ans_1cde56f4-cbe1-4b96-afbd-ceb9a9e96af5",
+    "answer": "__call_action__",
+    "options": {
+      "buttons": [],
+      "capture": false,
+      "delay": 0,
+      "nested": [],
+      "keyword": {},
+      "callback": true
+    },
+    "refSerialize": "2a3c7f141fb1073ffbd7b18037497038",
+    "from": "573015980998"
+  },
+  {
+    "ref": "6d7de413-514d-473b-bee0-3b70e134963d",
+    "keyword": "1f372193fd84973ca37fb578f62f38df",
+    "answer": "11/09/2026",
+    "options": {},
+    "from": "573214254829",
+    "refSerialize": "5e5e3379fa73de861f49c1755f5da9d4"
+  },
+  {
+    "ref": "ccf08481-d427-4f79-955d-e6b3b0c804a2",
+    "keyword": null,
+    "answer": "⏳ _Consultando disponibilidad en Google Calendar para el 2026-09-11..._",
+    "options": {
+      "media": null,
+      "buttons": [],
+      "capture": false,
+      "delay": 0
+    },
+    "from": "573214254829",
+    "refSerialize": "aef83aca8ec6b5c849d0f344edc2e853"
+  },
+  {
+    "ref": "ans_304a7b40-3a9c-4106-bb11-130aa7a71bf4",
+    "keyword": "ans_baf926f0-fd82-403e-9378-ba723a388ede",
+    "answer": "Elige tu horario escribiendo el número:",
+    "options": {
+      "buttons": [],
+      "capture": false,
+      "delay": 0,
+      "nested": [],
+      "keyword": {},
+      "callback": false
+    },
+    "refSerialize": "13d71b061a9ec5d2292578fa75fe9cd3",
+    "from": "573214254829"
+  },
+  {
+    "ref": "ans_5b63d343-515d-4c6d-bfc9-8c18a5b5578c",
+    "keyword": "ans_304a7b40-3a9c-4106-bb11-130aa7a71bf4",
+    "answer": "__capture_only_intended__",
+    "options": {
+      "buttons": [],
+      "capture": true,
+      "delay": 0,
+      "nested": [],
+      "keyword": {},
+      "callback": true
+    },
+    "refSerialize": "c8b2c1381d2f1ea0b3b14bd18b3c3b19",
+    "from": "573214254829"
+  },
+  {
+    "ref": "d7b2fa58-c2d1-498b-badf-a4b2742bedbe",
+    "keyword": null,
+    "answer": "✅ *HORARIOS DISPONIBLES EN GOOGLE CALENDAR (2026-09-11)*\n⏱️ Duración de inspección: 30 minutos\n\n👉 *1.* 🕒 7:00 AM\n👉 *2.* 🕒 7:30 AM\n👉 *3.* 🕒 8:00 AM\n👉 *4.* 🕒 8:30 AM\n👉 *5.* 🕒 9:00 AM\n👉 *6.* 🕒 9:30 AM\n👉 *7.* 🕒 10:00 AM\n👉 *8.* 🕒 10:30 AM\n👉 *9.* 🕒 11:00 AM\n👉 *10.* 🕒 11:30 AM\n👉 *11.* 🕒 12:00 PM\n👉 *12.* 🕒 12:30 PM\n👉 *13.* 🕒 1:00 PM\n👉 *14.* 🕒 1:30 PM\n👉 *15.* 🕒 2:00 PM\n👉 *16.* 🕒 2:30 PM\n👉 *17.* 🕒 3:00 PM\n👉 *18.* 🕒 3:30 PM\n👉 *19.* 🕒 4:00 PM\n👉 *20.* 🕒 4:30 PM\n👉 *21.* 🕒 5:00 PM\n👉 *22.* 🕒 5:30 PM\n👉 *23.* 🕒 6:00 PM\n👉 *24.* 🕒 6:30 PM\n\nPor favor escribe el *NÚMERO* del horario que prefieres (Ej: *1*, *2*, *3*):",
+    "options": {
+      "media": null,
+      "buttons": [],
+      "capture": false,
+      "delay": 0
+    },
+    "from": "573214254829",
+    "refSerialize": "bb9a20955921fa63615ad123dc0bceb1"
+  },
+  {
+    "ref": "ans_7eb8850a-f0ce-4b52-926e-7cb5ffabf62f",
+    "keyword": "key_e919430d-b4ad-4f59-bae9-729e12ae91ad",
+    "answer": "__call_action__",
+    "options": {
+      "buttons": [],
+      "capture": false,
+      "delay": 0,
+      "nested": [],
+      "keyword": {},
+      "callback": true
+    },
+    "refSerialize": "180ac6c51c1d00823345f889bbdb66de",
+    "from": "573214254829"
+  },
+  {
+    "ref": "6208a8d3-4d23-43b4-9d57-73b0d3b9282a",
+    "keyword": "9db4aea7261d547b2d16a9efe55a91f6",
+    "answer": "Gloria Inés garzón Nieto",
+    "options": {},
+    "from": "573108751714",
+    "refSerialize": "d4eb67994a06a39430d964b72e426a8e"
+  },
+  {
+    "ref": "ans_afedbf2f-6987-4014-87bd-f58c856b2c61",
+    "keyword": "ans_461a6328-6fa0-4f07-9608-fc7e8284dcf7",
+    "answer": "👉 *Paso 5 de 5:* ¿Para qué *FECHA* deseas tu cita?\nPuedes escribir:\n• *Hoy*\n• *Mañana*\n• O una fecha en formato *DD/MM/AAAA* (Ej: *15/09/2026*)",
+    "options": {
+      "buttons": [],
+      "capture": false,
+      "delay": 0,
+      "nested": [],
+      "keyword": {},
+      "callback": false
+    },
+    "refSerialize": "f532e9e9b49adab250a1cc4df4b9eb3d",
+    "from": "573108751714"
+  },
+  {
+    "ref": "ans_baf926f0-fd82-403e-9378-ba723a388ede",
+    "keyword": "ans_afedbf2f-6987-4014-87bd-f58c856b2c61",
+    "answer": "__capture_only_intended__",
+    "options": {
+      "buttons": [],
+      "capture": true,
+      "delay": 0,
+      "nested": [],
+      "keyword": {},
+      "callback": true
+    },
+    "refSerialize": "1f372193fd84973ca37fb578f62f38df",
+    "from": "573108751714"
+  },
+  {
+    "ref": "0163176c-0307-49bf-9e4b-600de0a3d8a2",
+    "keyword": "180ac6c51c1d00823345f889bbdb66de",
+    "answer": "9",
+    "options": {},
+    "from": "573214254829",
+    "refSerialize": "a988c0775e3fda48f513c1a054140b3c"
+  },
+  {
+    "ref": "bef71f08-4a7c-4cf0-8a2b-a20116e6c6f8",
+    "keyword": "1f372193fd84973ca37fb578f62f38df",
+    "answer": "12/09/2026",
+    "options": {},
+    "from": "573108751714",
+    "refSerialize": "d25fd597d374a22c617f488562d6a8cd"
+  },
+  {
+    "ref": "bcf1f646-dbc6-4479-8373-4709340aa491",
+    "keyword": null,
+    "answer": "⏳ _Consultando disponibilidad en Google Calendar para el 2026-09-12..._",
+    "options": {
+      "media": null,
+      "buttons": [],
+      "capture": false,
+      "delay": 0
+    },
+    "from": "573108751714",
+    "refSerialize": "da402374c5d4ae29ac82f15f64a900df"
+  },
+  {
+    "ref": "ans_304a7b40-3a9c-4106-bb11-130aa7a71bf4",
+    "keyword": "ans_baf926f0-fd82-403e-9378-ba723a388ede",
+    "answer": "Elige tu horario escribiendo el número:",
+    "options": {
+      "buttons": [],
+      "capture": false,
+      "delay": 0,
+      "nested": [],
+      "keyword": {},
+      "callback": false
+    },
+    "refSerialize": "13d71b061a9ec5d2292578fa75fe9cd3",
+    "from": "573108751714"
+  },
+  {
+    "ref": "ans_5b63d343-515d-4c6d-bfc9-8c18a5b5578c",
+    "keyword": "ans_304a7b40-3a9c-4106-bb11-130aa7a71bf4",
+    "answer": "__capture_only_intended__",
+    "options": {
+      "buttons": [],
+      "capture": true,
+      "delay": 0,
+      "nested": [],
+      "keyword": {},
+      "callback": true
+    },
+    "refSerialize": "c8b2c1381d2f1ea0b3b14bd18b3c3b19",
+    "from": "573108751714"
+  },
+  {
+    "ref": "37facd4b-e1ed-4534-8d58-771a9311b559",
+    "keyword": null,
+    "answer": "✅ *HORARIOS DISPONIBLES EN GOOGLE CALENDAR (2026-09-12)*\n⏱️ Duración de inspección: 30 minutos\n\n👉 *1.* 🕒 7:00 AM\n👉 *2.* 🕒 7:30 AM\n👉 *3.* 🕒 8:00 AM\n👉 *4.* 🕒 8:30 AM\n👉 *5.* 🕒 9:00 AM\n👉 *6.* 🕒 9:30 AM\n👉 *7.* 🕒 10:00 AM\n👉 *8.* 🕒 10:30 AM\n👉 *9.* 🕒 11:00 AM\n👉 *10.* 🕒 11:30 AM\n👉 *11.* 🕒 12:00 PM\n👉 *12.* 🕒 12:30 PM\n👉 *13.* 🕒 1:00 PM\n👉 *14.* 🕒 1:30 PM\n👉 *15.* 🕒 2:00 PM\n👉 *16.* 🕒 2:30 PM\n👉 *17.* 🕒 3:00 PM\n👉 *18.* 🕒 3:30 PM\n👉 *19.* 🕒 4:00 PM\n👉 *20.* 🕒 4:30 PM\n\nPor favor escribe el *NÚMERO* del horario que prefieres (Ej: *1*, *2*, *3*):",
+    "options": {
+      "media": null,
+      "buttons": [],
+      "capture": false,
+      "delay": 0
+    },
+    "from": "573108751714",
+    "refSerialize": "8dc6e24ff084c97918587739a7f96be8"
+  },
+  {
+    "ref": "ans_7eb8850a-f0ce-4b52-926e-7cb5ffabf62f",
+    "keyword": "key_e919430d-b4ad-4f59-bae9-729e12ae91ad",
+    "answer": "__call_action__",
+    "options": {
+      "buttons": [],
+      "capture": false,
+      "delay": 0,
+      "nested": [],
+      "keyword": {},
+      "callback": true
+    },
+    "refSerialize": "180ac6c51c1d00823345f889bbdb66de",
+    "from": "573108751714"
+  },
+  {
+    "ref": "12886be4-fb50-42c5-9098-cd522d56a3d3",
+    "keyword": "180ac6c51c1d00823345f889bbdb66de",
+    "answer": ",7",
+    "options": {},
+    "from": "573108751714",
+    "refSerialize": "4a55ca18f575594a029210c02746e4d9"
+  },
+  {
+    "ref": "b8a4fd5b-0019-4d98-b444-0849e67b9951",
+    "keyword": "4a55ca18f575594a029210c02746e4d9",
+    "answer": "7",
+    "options": {},
+    "from": "573108751714",
+    "refSerialize": "fd578dcac4948926a5e7e63bfd1b1267"
+  },
+  {
+    "ref": "ans_472c7c3d-4197-4f41-baa9-bc36b7f8d48d",
+    "keyword": "key_14e7c0fb-a86d-4cfe-9b74-72f9e5ffb36e",
+    "answer": "__call_action__",
+    "options": {
+      "buttons": [],
+      "capture": false,
+      "delay": 0,
+      "nested": [],
+      "keyword": {},
+      "callback": true
+    },
+    "refSerialize": "09344ead02d7c609667045395f5e322c",
+    "from": "573108751714"
+  },
+  {
+    "ref": "ans_472c7c3d-4197-4f41-baa9-bc36b7f8d48d",
+    "keyword": "key_14e7c0fb-a86d-4cfe-9b74-72f9e5ffb36e",
+    "answer": "__call_action__",
+    "options": {
+      "buttons": [],
+      "capture": false,
+      "delay": 0,
+      "nested": [],
+      "keyword": {},
+      "callback": true
+    },
+    "refSerialize": "09344ead02d7c609667045395f5e322c",
+    "from": "573108751714"
+  },
+  {
+    "ref": "ans_304a7b40-3a9c-4106-bb11-130aa7a71bf4",
+    "keyword": "ans_baf926f0-fd82-403e-9378-ba723a388ede",
+    "answer": "Elige tu horario escribiendo el número:",
+    "options": {
+      "buttons": [],
+      "capture": false,
+      "delay": 0,
+      "nested": [],
+      "keyword": {},
+      "callback": false
+    },
+    "refSerialize": "13d71b061a9ec5d2292578fa75fe9cd3",
+    "from": "573108751714"
+  },
+  {
+    "ref": "014ed0ea-9648-4411-b53e-ecbda60823a4",
+    "keyword": null,
+    "answer": "¡Perfecto, Gloria Inés! He agendado tu cita para la revisión técnico-mecánica de tu Renault Duster Oroch el **12 de septiembre de 2026 a las 10:00 AM**. \n\nRecuerda que solo necesitas presentar la licencia de tránsito y que el vehículo esté limpio. Si tienes alguna otra pregunta o necesitas algo más, ¡aquí estoy para ayudarte! 😊🚗",
+    "options": {
+      "media": null,
+      "buttons": [],
+      "capture": false,
+      "delay": 0
+    },
+    "from": "573108751714",
+    "refSerialize": "9251491bb3a4309a1a7495af7349a8c1"
+  },
+  {
+    "ref": "c1633dd5-419e-4a09-a623-ff582c8979ef",
+    "keyword": "13d71b061a9ec5d2292578fa75fe9cd3",
+    "answer": "_event_media__28bbe0c8-8e61-46f3-97ec-37b473c6f989",
+    "options": {},
+    "from": "573108751714",
+    "refSerialize": "de3a5978b35499208a6b519cebb66d16"
+  },
+  {
+    "ref": "ans_e3ad1c49-e2af-4f2e-8f32-1c17166a1601",
+    "keyword": "key_26b3b25e-cdb2-4ab4-ba4e-698d1e6c3a60",
+    "answer": "__call_action__",
+    "options": {
+      "buttons": [],
+      "capture": false,
+      "delay": 0,
+      "nested": [],
+      "keyword": {},
+      "callback": true
+    },
+    "refSerialize": "2085737a9a99921edf395a9b56b61351",
+    "from": "573123880368"
+  },
+  {
+    "ref": "ans_ce643512-b36b-46f2-b10e-2a40bdd0056e",
+    "keyword": "ans_e3ad1c49-e2af-4f2e-8f32-1c17166a1601",
+    "answer": "📅 *AGENDAMIENTO DE CITA EN GOOGLE CALENDAR - CONTROL AUTOS GIRARDOT*\nAgenda tu revisión de 30 minutos con verificación de disponibilidad en tiempo real.\n\n👉 *Paso 1 de 5:* Por favor escribe la *PLACA* de tu vehículo (Ej: *ABC123* o *ABC12D*):",
+    "options": {
+      "buttons": [],
+      "capture": false,
+      "delay": 0,
+      "nested": [],
+      "keyword": {},
+      "callback": false
+    },
+    "refSerialize": "4a59b97efbd2fde7f06c22cccbd0bcce",
+    "from": "573123880368"
+  },
+  {
+    "ref": "ans_fab92611-d02c-44d0-b18e-9d02d557c021",
+    "keyword": "ans_ce643512-b36b-46f2-b10e-2a40bdd0056e",
+    "answer": "__capture_only_intended__",
+    "options": {
+      "buttons": [],
+      "capture": true,
+      "delay": 0,
+      "nested": [],
+      "keyword": {},
+      "callback": true
+    },
+    "refSerialize": "c768b9361168a420dfce378179c1c5df",
+    "from": "573123880368"
+  },
+  {
+    "ref": "7575371f-07f1-4f24-97cf-379632d5c306",
+    "keyword": "c768b9361168a420dfce378179c1c5df",
+    "answer": "RBU 741",
+    "options": {},
+    "from": "573123880368",
+    "refSerialize": "c3d237d7e4560f268dd0924d0cbf08fc"
+  },
+  {
+    "ref": "ans_c4c30188-2958-4530-96a5-4690dcbba4ef",
+    "keyword": "ans_fab92611-d02c-44d0-b18e-9d02d557c021",
+    "answer": "👉 *Paso 2 de 5:* Selecciona el *TIPO DE VEHÍCULO Y COMBUSTIBLE*:\n1. 🏍️ Moto 4T (4 Tiempos)\n2. 🚗 Liviano - Gasolina\n3. 🚗 Liviano - Diésel\n4. 🚗 Liviano - Gas vehicular\n5. 🚛 Pesado - Diésel\n\nEscribe el número correspondiente (*1 al 5*):",
+    "options": {
+      "buttons": [],
+      "capture": false,
+      "delay": 0,
+      "nested": [],
+      "keyword": {},
+      "callback": false
+    },
+    "refSerialize": "fcf18582bb3db6f18a5d73aeacf6a915",
+    "from": "573123880368"
+  },
+  {
+    "ref": "ans_8abebb80-7776-480b-a03c-197f30e85bcc",
+    "keyword": "ans_c4c30188-2958-4530-96a5-4690dcbba4ef",
+    "answer": "__capture_only_intended__",
+    "options": {
+      "buttons": [],
+      "capture": true,
+      "delay": 0,
+      "nested": [],
+      "keyword": {},
+      "callback": true
+    },
+    "refSerialize": "82b04da321f56a52afac0762ee3b1a4b",
+    "from": "573123880368"
+  },
+  {
+    "ref": "ans_472c7c3d-4197-4f41-baa9-bc36b7f8d48d",
+    "keyword": "key_14e7c0fb-a86d-4cfe-9b74-72f9e5ffb36e",
+    "answer": "__call_action__",
+    "options": {
+      "buttons": [],
+      "capture": false,
+      "delay": 0,
+      "nested": [],
+      "keyword": {},
+      "callback": true
+    },
+    "refSerialize": "09344ead02d7c609667045395f5e322c",
+    "from": "573229023586"
+  },
+  {
+    "ref": "e5ba9245-e614-4a4c-92a0-72cdc9bd0e08",
+    "keyword": null,
+    "answer": "¡Hola Libardo! Buenas noches. 😊\n\nEntiendo, gracias por informarnos. Si en algún momento necesitas realizar la revisión de otro vehículo o tienes alguna consulta, aquí estaremos para ayudarte. ¡Te deseamos una excelente noche! 🌙",
+    "options": {
+      "media": null,
+      "buttons": [],
+      "capture": false,
+      "delay": 0
+    },
+    "from": "573229023586",
+    "refSerialize": "b3cc2e722400e62c39a2c35aae50b50b"
+  },
+  {
+    "ref": "ans_472c7c3d-4197-4f41-baa9-bc36b7f8d48d",
+    "keyword": "key_14e7c0fb-a86d-4cfe-9b74-72f9e5ffb36e",
+    "answer": "__call_action__",
+    "options": {
+      "buttons": [],
+      "capture": false,
+      "delay": 0,
+      "nested": [],
+      "keyword": {},
+      "callback": true
+    },
+    "refSerialize": "09344ead02d7c609667045395f5e322c",
+    "from": "573158424036"
+  },
+  {
+    "ref": "94e3d1ef-6ad9-4c5f-9378-3a0eacbb121a",
+    "keyword": null,
+    "answer": "¡Con mucho gusto, ROSA LILIAA GUERRA! 😊 Si en algún momento decides agendar tu cita, aquí estaremos para ayudarte. Recuerda que la revisión solo toma 30 minutos. ¡Que tengas un excelente día! 🌟",
+    "options": {
+      "media": null,
+      "buttons": [],
+      "capture": false,
+      "delay": 0
+    },
+    "from": "573158424036",
+    "refSerialize": "4c7d4b1d349c6051b76cfaeeb270c5a2"
+  },
+  {
+    "ref": "b7b6a545-b3b1-4124-92f3-9f9a8b92d05a",
+    "keyword": "09344ead02d7c609667045395f5e322c",
+    "answer": "Muchas gracias",
+    "options": {},
+    "from": "573229023586",
+    "refSerialize": "2d9310be9082475030a4b3fd6bdbeb40"
+  },
+  {
+    "ref": "ans_472c7c3d-4197-4f41-baa9-bc36b7f8d48d",
+    "keyword": "key_14e7c0fb-a86d-4cfe-9b74-72f9e5ffb36e",
+    "answer": "__call_action__",
+    "options": {
+      "buttons": [],
+      "capture": false,
+      "delay": 0,
+      "nested": [],
+      "keyword": {},
+      "callback": true
+    },
+    "refSerialize": "09344ead02d7c609667045395f5e322c",
+    "from": "573229023586"
+  },
+  {
+    "ref": "eaba3ab7-6d05-4764-b376-34c7bb1092e9",
+    "keyword": null,
+    "answer": "¡De nada, Libardo! 😊 Si necesitas algo más en el futuro, no dudes en contactarnos. ¡Que tengas un excelente día! 🌟",
+    "options": {
+      "media": null,
+      "buttons": [],
+      "capture": false,
+      "delay": 0
+    },
+    "from": "573229023586",
+    "refSerialize": "d30a714fbfcc59cb51305bd0bcd2a0c0"
   }
 ]

@@ -105,5 +105,41 @@
     "googleHtmlLink": "https://www.google.com/calendar/event?eid=NzhydDB0M3V0MGltamE2azNlcms1cDdoZ2MgY2FqYWNkYWdpcmFyZG90QG0",
     "createdAt": "2026-09-06T17:34:19.592Z",
     "status": "CONFIRMED"
+  },
+  {
+    "id": "CITA-712479",
+    "phone": "573105571605",
+    "name": "Jaime Fajardo",
+    "plate": "JMV015",
+    "vehicleType": "Liviano",
+    "fuelType": "Gasolina",
+    "brand": "Toyota fortuner 2020",
+    "model": "",
+    "date": "2026-09-07",
+    "timeSlot": "2:30 PM",
+    "isoStart": "2026-09-07T14:30:00-05:00",
+    "isoEnd": "2026-09-07T15:00:00-05:00",
+    "googleEventId": "cr98ohm61j2h62clc0v30423r8",
+    "googleHtmlLink": "https://www.google.com/calendar/event?eid=Y3I5OG9obTYxajJoNjJjbGMwdjMwNDIzcjggY2FqYWNkYWdpcmFyZG90QG0",
+    "createdAt": "2026-09-07T00:08:32.479Z",
+    "status": "CONFIRMED"
+  },
+  {
+    "id": "CITA-866656",
+    "phone": "573108751714",
+    "name": "GARZON NIETO GLORIA INES",
+    "plate": "PLACA",
+    "vehicleType": "Liviano",
+    "fuelType": "GASOLINA",
+    "brand": "RENAULT",
+    "model": "DUSTER OROCH (2017)",
+    "date": "2026-09-12",
+    "timeSlot": "10:00 AM",
+    "isoStart": "2026-09-12T15:00:00.000Z",
+    "isoEnd": "2026-09-12T15:30:00.000Z",
+    "googleEventId": "577dbujjq4hg405h7lc1lptg90",
+    "googleHtmlLink": "https://www.google.com/calendar/event?eid=NTc3ZGJ1ampxNGhnNDA1aDdsYzFscHRnOTAgY2FqYWNkYWdpcmFyZG90QG0",
+    "createdAt": "2026-09-07T00:11:06.656Z",
+    "status": "CONFIRMED"
   }
 ]

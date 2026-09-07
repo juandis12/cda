@@ -67,14 +67,24 @@ export function calculateDaysUntil(dateStr: string): number {
 }
 
 /**
- * 1. Enviar recordatorios a clientes cuya RTM está próxima a vencer (en los próximos 30 días o recién vencida)
+ * Intervalos exactos autorizados para enviar avisos de vencimiento (para no saturar al usuario):
+ * - Faltando 30 días
+ * - Faltando 15 días
+ * - Faltando 10 días
+ * - Faltando 3 días
+ * - Faltando 1 día (Mañana)
+ */
+export const TARGET_EXPIRATION_DAYS = [30, 15, 10, 3, 1];
+
+/**
+ * 1. Enviar recordatorios a clientes cuya RTM está próxima a vencer (en los hitos exactos de 30, 15, 10, 3 y 1 día)
  */
 export async function sendRtmExpirationReminders(provider: any): Promise<number> {
   if (!provider?.vendor?.user?.id) {
     console.log('⏳ [Recordatorios RTM] WhatsApp no está conectado aún. Esperando vinculación...');
     return 0;
   }
-  console.log('🔍 [Recordatorios RTM] Verificando vencimientos próximos de la base de datos...');
+  console.log('🔍 [Recordatorios RTM] Verificando vencimientos próximos de la base de datos (Hitos: 30, 15, 10, 3 y 1 día)...');
   const allCustomers = getAllCustomers();
   let sentCount = 0;
 
@@ -87,8 +97,8 @@ export async function sendRtmExpirationReminders(provider: any): Promise<number>
 
     const daysLeft = calculateDaysUntil(customer.rtmExpirationDate);
 
-    // Enviar ÚNICAMENTE a clientes cuya RTM está a máximo 1 mes (30 días) para vencerse (0 a 30 días)
-    if (daysLeft > 30 || daysLeft < 0) {
+    // Enviar ÚNICAMENTE en los hitos configurados: 30, 15, 10, 3 o 1 día
+    if (!TARGET_EXPIRATION_DAYS.includes(daysLeft)) {
       continue;
     }
 
@@ -99,12 +109,10 @@ export async function sendRtmExpirationReminders(provider: any): Promise<number>
     const vehicleInfo = [customer.brand, customer.model].filter(Boolean).join(' ') || 'tu vehículo';
 
     let urgencyText = '';
-    if (daysLeft > 1) {
-      urgencyText = `vence en *${daysLeft} día(s)* (Fecha: *${customer.rtmExpirationDate}*)`;
-    } else if (daysLeft === 1) {
+    if (daysLeft === 1) {
       urgencyText = `vence *MAÑANA* (Fecha: *${customer.rtmExpirationDate}*)`;
     } else {
-      urgencyText = `vence *HOY* (Fecha: *${customer.rtmExpirationDate}*)`;
+      urgencyText = `vence en *${daysLeft} días* (Fecha: *${customer.rtmExpirationDate}*)`;
     }
 
     const priceInfo = customer.price ? `\n💰 *Valor oficial:* ${customer.price}` : '';
