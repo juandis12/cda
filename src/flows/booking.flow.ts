@@ -1,5 +1,5 @@
 import { addKeyword } from '@builderbot/bot';
-import { cdaConfig, isBlacklisted } from '../config/cda.config.js';
+import { cdaConfig, isBlacklisted, extractColombianPlate } from '../config/cda.config.js';
 import { getAvailableTimeSlots, createCalendarAppointment, TimeSlot } from '../services/calendar.service.js';
 import { normalizePhoneNumber } from '../services/chat-history.service.js';
 import { isBotPaused } from '../services/pause.service.js';
@@ -77,9 +77,9 @@ export const bookingFlow = addKeyword([
     ],
     { capture: true },
     async (ctx, { state, fallBack }) => {
-      const plate = ctx.body.trim().toUpperCase().replace(/[^A-Z0-9]/g, '');
-      if (plate.length < 5 || plate.length > 7) {
-        return fallBack('⚠️ Por favor ingresa una placa válida colombiana (Ejemplo: *ABC123* o *XYZ45D*):');
+      const plate = extractColombianPlate(ctx.body);
+      if (!plate) {
+        return fallBack('⚠️ Por favor ingresa una placa válida colombiana con letras y números (Ejemplo: *ABC123* para carro o *ABC12D* para moto):');
       }
       await state.update({ plate });
     }

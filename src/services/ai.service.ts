@@ -1,6 +1,6 @@
 import fs from 'fs';
 import path from 'path';
-import { cdaConfig } from '../config/cda.config.js';
+import { cdaConfig, extractColombianPlate } from '../config/cda.config.js';
 import { getAllCustomers, CustomerRecord } from './customers.service.js';
 import { getConversation, ChatMessage } from './chat-history.service.js';
 import { createCalendarAppointment } from './calendar.service.js';
@@ -88,10 +88,16 @@ Si SÍ hay fecha y hora confirmada, responde ÚNICAMENTE con este JSON (sin mark
           const start = new Date(Date.UTC(y, m - 1, d, hour + 5, parseInt(minStr || '0', 10), 0));
           const end = new Date(start.getTime() + 30 * 60 * 1000);
 
+          const plateToUse = extractColombianPlate(parsed.plate) || customer?.plate || '';
+          if (!plateToUse) {
+            console.warn(`⚠️ [Cita AI] No se pudo determinar una placa válida para +${cleanPhone}`);
+            return;
+          }
+
           await createCalendarAppointment({
             phone: cleanPhone,
             name: customer?.name || 'Cliente CDA',
-            plate: parsed.plate || customer?.plate || 'PARTICULAR',
+            plate: plateToUse,
             vehicleType: parsed.vehicleType || customer?.vehicleType || 'Liviano',
             fuelType: customer?.fuel || 'Gasolina',
             brand: customer?.brand || '',

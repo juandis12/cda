@@ -217,3 +217,61 @@ export const cdaConfig: CDAConfig = {
     { name: "Jefe Leonardo (2)", phone: "573144130586" },
   ],
 };
+
+const INVALID_PLATE_WORDS = new Set([
+  'PLACA', 'CARRO', 'MOTOS', 'MOTOCICLETA', 'VEHICULO', 'AUTOMOVIL', 'CAMIONETA',
+  'GASOLINA', 'DIESEL', 'PARTICULAR', 'PUBLICO', 'CONFIRMADO', 'AGENDAR', 'REVISION',
+  'TECNICOMECANICA', 'BAJAJ', 'HONDA', 'YAMAHA', 'SUZUKI', 'HERO', 'AKT', 'KTM',
+  'CHEVROLET', 'RENAULT', 'MAZDA', 'TOYOTA', 'NISSAN', 'VOLKSWAGEN', 'HYUNDAI',
+  'KIA', 'FORD', 'MERCEDES', 'BMW', 'AUDI', 'DUSTER', 'OROCH', 'AVAL', 'DISCOVER',
+  'PULSAR', 'SPARK', 'AVEO', 'COROLLA', 'HILUX', 'LOGAN', 'SANDERO', 'PICANTO'
+]);
+
+/**
+ * Valida y extrae una placa colombiana legítima desde un texto arbitrario.
+ * Formatos válidos:
+ * - Carros / Livianos / Pesados: 3 letras + 3 números (ej. BKO617, JDP269, UEW355)
+ * - Motos: 3 letras + 2 números + 1 letra (ej. TFA43E, EDS40C, AGI18G, FAI65A)
+ * - Formato antiguo: 2 letras + 4 números (ej. AB1234)
+ */
+export function extractColombianPlate(raw: string): string | null {
+  if (!raw) return null;
+  const clean = raw.toUpperCase().replace(/[\s\-\_\.]+/g, ' ').trim();
+
+  // 1. Carros: 3 letras + 3 dígitos (ej: BKO 617, BKO617)
+  const carMatch = clean.match(/\b([A-Z]{3})\s*(\d{3})\b/);
+  if (carMatch) {
+    const candidate = `${carMatch[1]}${carMatch[2]}`;
+    if (!INVALID_PLATE_WORDS.has(candidate)) return candidate;
+  }
+
+  // 2. Motos: 3 letras + 2 dígitos + 1 letra (ej: TFA 43E, TFA43E, EDS 40C)
+  const motoMatch = clean.match(/\b([A-Z]{3})\s*(\d{2}[A-Z])\b/);
+  if (motoMatch) {
+    const candidate = `${motoMatch[1]}${motoMatch[2]}`;
+    if (!INVALID_PLATE_WORDS.has(candidate)) return candidate;
+  }
+
+  // 3. Clásicos/Antiguos: 2 letras + 4 dígitos (ej: AB 1234)
+  const oldMatch = clean.match(/\b([A-Z]{2})\s*(\d{4})\b/);
+  if (oldMatch) {
+    const candidate = `${oldMatch[1]}${oldMatch[2]}`;
+    if (!INVALID_PLATE_WORDS.has(candidate)) return candidate;
+  }
+
+  // 4. Compacto sin espacios (5 a 6 caracteres alfanuméricos con letras y números)
+  const compact = raw.toUpperCase().replace(/[^A-Z0-9]/g, '');
+  if (compact.length >= 5 && compact.length <= 6) {
+    const hasLetters = /[A-Z]/.test(compact);
+    const hasDigits = /[0-9]/.test(compact);
+    if (hasLetters && hasDigits && !INVALID_PLATE_WORDS.has(compact)) {
+      return compact;
+    }
+  }
+
+  return null;
+}
+
+export function isValidColombianPlate(plate: string): boolean {
+  return !!extractColombianPlate(plate);
+}

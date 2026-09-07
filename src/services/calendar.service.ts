@@ -1,8 +1,9 @@
 import { google } from 'googleapis';
 import fs from 'fs';
 import path from 'path';
-import { cdaConfig } from '../config/cda.config.js';
+import { cdaConfig, extractColombianPlate } from '../config/cda.config.js';
 import { saveBooking, getBookingsByDate, getAllBookings, updateAllBookings, BookingData } from './booking.service.js';
+import { getAllCustomers } from './customers.service.js';
 
 const SCOPES = ['https://www.googleapis.com/auth/calendar'];
 const CREDENTIALS_PATH = path.resolve(process.cwd(), 'google-credentials.json');
@@ -222,14 +223,29 @@ export async function createCalendarAppointment(req: BookingRequest) {
   let googleEventId: string | null = null;
   let googleHtmlLink: string | null = null;
 
-  const summary = `🚗 RTM ${req.plate} - ${req.name} (${cdaConfig.shortName})`;
+  // Validar y normalizar la placa colombiana
+  let validPlate = extractColombianPlate(req.plate);
+  if (!validPlate && req.phone) {
+    const allCustomers = getAllCustomers();
+    const matched = allCustomers.find((c) => {
+      const cPhone = (c.phone || '').replace(/[^0-9]/g, '');
+      const rPhone = (req.phone || '').replace(/[^0-9]/g, '');
+      return cPhone && rPhone && (cPhone === rPhone || rPhone.endsWith(cPhone) || cPhone.endsWith(rPhone));
+    });
+    if (matched?.plate) {
+      validPlate = matched.plate.toUpperCase();
+    }
+  }
+  const cleanPlate = validPlate || req.plate.toUpperCase().replace(/[^A-Z0-9]/g, '');
+
+  const summary = `🚗 RTM ${cleanPlate} - ${req.name} (${cdaConfig.shortName})`;
   const description = [
     `🚘 CITA DE REVISIÓN TÉCNICO-MECÁNICA`,
     `━━━━━━━━━━━━━━━━━━━━━━━━━━━━━`,
     `🏢 CDA: ${cdaConfig.name}`,
     `👤 Cliente: ${req.name}`,
     `📞 Teléfono: ${req.phone}`,
-    `🚘 Placa: ${req.plate}`,
+    `🚘 Placa: ${cleanPlate}`,
     `📌 Tipo: ${req.vehicleType}`,
     `⛽ Combustible: ${req.fuelType || 'No especificado'}`,
     `🏷️ Marca y Modelo: ${req.brand || 'N/A'} - ${req.model || 'N/A'}`,
@@ -363,14 +379,60 @@ export async function syncBookingsWithGoogleCalendar(): Promise<{
       const summary = ev.summary || '';
       const desc = ev.description || '';
 
-      const plateMatch = summary.match(/RTM\s+([A-Z0-9]{5,6})/i) || desc.match(/Placa:\s*([A-Z0-9]{5,6})/i);
-      const plate = plateMatch ? plateMatch[1].toUpperCase() : '';
-
-      const nameMatch = desc.match(/Cliente:\s*([^\n\r]+)/i) || summary.match(/-\s*([^(]+)/);
-      const name = nameMatch ? nameMatch[1].trim() : 'Cliente CDA';
-
       const phoneMatch = desc.match(/Tel(?:éfono)?:\s*([0-9]+)/i);
       const phone = phoneMatch ? phoneMatch[1] : '';
+
+      // Buscar si ya existe la cita local por googleEventId
+      let existing = localBookings.find((b) => b.googleEventId === ev.id);
+
+      // 1. Validar y extraer placa colombiana legítima desde descripción o resumen
+      let plate = extractColombianPlate(desc) || extractColombianPlate(summary) || '';
+
+      // 2. Si no se encontró placa en el evento pero hay teléfono, buscar en la base de datos de clientes
+      const allCustomers = getAllCustomers();
+      if (!plate && phone) {
+        const matchedCustomer = allCustomers.find((c) => {
+          const cPhone = (c.phone || '').replace(/[^0-9]/g, '');
+          return cPhone && (cPhone === phone || phone.endsWith(cPhone) || cPhone.endsWith(phone));
+        });
+        if (matchedCustomer?.plate) {
+          plate = matchedCustomer.plate.toUpperCase();
+        }
+      }
+
+      // 3. Si sigue sin placa pero ya existía localmente con una placa válida, preservar la placa válida local
+      if (!plate && existing?.plate && extractColombianPlate(existing.plate)) {
+        plate = existing.plate;
+      }
+
+      // Buscar si ya existe localmente por placa + fecha
+      if (!existing && plate) {
+        existing = localBookings.find((b) => b.plate === plate && (b.date === colDateStr || b.isoStart?.startsWith(colDateStr)));
+      }
+
+      const nameMatch = desc.match(/Cliente:\s*([^\n\r]+)/i) || summary.match(/-\s*([^(]+)/);
+      let name = nameMatch ? nameMatch[1].trim() : '';
+
+      if (!name || name === 'Cliente CDA') {
+        const matched = allCustomers.find((c) => (phone && c.phone && c.phone.includes(phone)) || (plate && c.plate === plate));
+        if (matched?.name) name = matched.name;
+        else name = name || 'Cliente CDA';
+      }
+
+      // Si la placa se corrigió y Google Calendar tenía un título incorrecto, parcharlo en Google Calendar
+      if (plate && (summary.includes('PLACA') || summary.includes('BAJAJ') || !extractColombianPlate(summary))) {
+        try {
+          const newSummary = `🚗 RTM ${plate} - ${name} (${cdaConfig.shortName})`;
+          calendar.events.patch({
+            calendarId,
+            eventId: ev.id,
+            requestBody: {
+              summary: newSummary,
+            },
+          }).catch(() => {});
+          console.log(`🔧 [Google Calendar Auto-Fix] Evento corregido en Google Calendar: "${newSummary}" (ID: ${ev.id})`);
+        } catch {}
+      }
 
       const typeMatch = desc.match(/Tipo:\s*([^\n\r]+)/i);
       const vehicleType = typeMatch ? typeMatch[1].trim() : 'Liviano';
@@ -379,12 +441,6 @@ export async function syncBookingsWithGoogleCalendar(): Promise<{
       const brandModelStr = brandModelMatch ? brandModelMatch[1].trim() : '';
       const [brand, ...modelParts] = brandModelStr.split(' - ');
       const model = modelParts.join(' - ');
-
-      // Buscar si ya existe la cita local por googleEventId o por placa + fecha cercana
-      let existing = localBookings.find((b) => b.googleEventId === ev.id);
-      if (!existing && plate) {
-        existing = localBookings.find((b) => b.plate === plate && (b.date === colDateStr || b.isoStart?.startsWith(colDateStr)));
-      }
 
       if (existing) {
         // Verificar si la fecha o la hora en Google Calendar son diferentes a las locales

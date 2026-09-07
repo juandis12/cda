@@ -9056,5 +9056,33 @@
     },
     "from": "573229023586",
     "refSerialize": "d30a714fbfcc59cb51305bd0bcd2a0c0"
+  },
+  {
+    "ref": "ans_aee0e053-8a04-42ee-ac84-6070fdf36d54",
+    "keyword": "key_b1364b63-db80-493a-a4ea-d75dad1439d1",
+    "answer": "__call_action__",
+    "options": {
+      "buttons": [],
+      "capture": false,
+      "delay": 0,
+      "nested": [],
+      "keyword": {},
+      "callback": true
+    },
+    "refSerialize": "5483c1ae6f0b3dbf89a57483dcef12cb",
+    "from": "573132528434"
+  },
+  {
+    "ref": "3f4222bd-7c93-42ad-9274-b21ed02b15e3",
+    "keyword": null,
+    "answer": "¡Con gusto, JOSE ALADINO! Si necesitas algo más o deseas agendar tu cita, aquí estaré para ayudarte. ¡Que tengas un excelente día! 😊🚗✨",
+    "options": {
+      "media": null,
+      "buttons": [],
+      "capture": false,
+      "delay": 0
+    },
+    "from": "573132528434",
+    "refSerialize": "4017f5a6fedf0db4f68264bf63ed929f"
   }
 ]
